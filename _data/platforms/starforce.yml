@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Starforce
+manufacturer: Tehkan
+year: 1984
