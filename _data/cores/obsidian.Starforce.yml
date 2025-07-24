@@ -1,0 +1,55 @@
+--- !ruby/object:Inventory::Core
+id: obsidian.Starforce
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-StarForce
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: obsidian-dot-dev
+  html_url: https://github.com/obsidian-dot-dev/openFPGA-StarForce
+releases:
+- !ruby/object:Inventory::Release
+  date: 2025-07-24 02:29:48.000000000 Z
+  download_url: https://github.com/obsidian-dot-dev/openFPGA-StarForce/releases/download/v0.9.0/openFPGA-StarForce.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - starforce
+      shortname: Starforce
+      description: Tehkan's Starforce, released in 1984
+      author: obsidian
+      url: https://github.com/obsidian-dot-dev/openFPGA-Starforce
+      version: 0.9.0
+      date_release: '2025-07-23'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+  updaters:
+  info:
+  requires_license: false
+funding:
