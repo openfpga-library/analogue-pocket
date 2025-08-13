@@ -1,11 +1,11 @@
 openapi: 3.0.3
 info:
-  title: openFPGA Cores Inventory - Analogue Pocket - OpenAPI 3.0
+  title: openFPGA Library - Analogue Pocket - OpenAPI 3.0
   description: |-
-    Welcome to the openFPGA Cores Inventory API service for the [Analogue Pocket](https://www.analogue.co/pocket). This service provides programmatic access to the list of openFPGA cores supported by the Analogue Pocket that have been developed by the community.
+    Welcome to the openFPGA Library API service for the [Analogue Pocket](https://www.analogue.co/pocket). This service provides programmatic access to the list of openFPGA cores supported by the Analogue Pocket that have been developed by the community.
   termsOfService: http://swagger.io/terms/
   contact:
-    name: openFPGA Cores Inventory
+    name: openFPGA Library
     url: https://openfpga-library.github.io
   license:
     name: MIT License

@@ -1,5 +1,5 @@
 # openFPGA Library
-openFPGA Cores Inventory is the premier destination for keeping track of cores built with [openFPGA](https://www.analogue.co/developer).
+openFPGA Library is the premier destination for keeping track of cores built with [openFPGA](https://www.analogue.co/developer).
 
 ## Installation
 You will need to install [Ruby](https://www.ruby-lang.org/en/documentation/installation/), then run the following command in the root of the project:
@@ -18,7 +18,7 @@ $ bundle exec jekyll serve
 Then navigate to `http://localhost:4000/`
 
 ## Cores API
-openFPGA Cores Inventory provides a read-only API for developers. More information can be found in the [documentation](https://openfpga-library.github.io/analogue-pocket/api/swagger/).
+openFPGA Library provides a read-only API for developers. More information can be found in the [documentation](https://openfpga-library.github.io/analogue-pocket/api/swagger/).
 
 ## Adding a new core
 To add a new core, you will need to edit the `_data/repos.yml` file. You must add the following fields:

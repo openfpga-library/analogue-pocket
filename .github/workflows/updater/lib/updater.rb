@@ -37,7 +37,7 @@ class Updater < Thor
     true
   end
 
-  desc 'update-inventory', 'Update openFPGA Cores Inventory'
+  desc 'update-inventory', 'Update openFPGA Library'
   def update_inventory
     sources = @inventory_service.sources
     sources.each do |source|
