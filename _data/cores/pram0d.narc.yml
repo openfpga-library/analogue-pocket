@@ -78,8 +78,8 @@ releases:
   info:
   requires_license: true
 - !ruby/object:Inventory::Release
-  date: 2024-11-28 20:30:27.000000000 Z
-  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/33e0dc5f8d70b4f75b3fcdf62c5131f4b71d66e0/Releases/pram0d.zunit.zip
+  date: 2024-12-25 16:05:50.000000000 Z
+  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/0c5d82a2b6ddb2da9327218fcc51542d3680fe32/Releases/pram0d.yunit.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
@@ -148,8 +148,8 @@ releases:
   info:
   requires_license: true
 - !ruby/object:Inventory::Release
-  date: 2024-12-25 16:05:50.000000000 Z
-  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/0c5d82a2b6ddb2da9327218fcc51542d3680fe32/Releases/pram0d.yunit.zip
+  date: 2024-11-28 20:30:27.000000000 Z
+  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/33e0dc5f8d70b4f75b3fcdf62c5131f4b71d66e0/Releases/pram0d.zunit.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
