@@ -47,5 +47,5 @@ gem 'slugify', '~> 1.0.7'
 gem 'thor', '~> 1.4.0'
 
 group :test, :development do
-  gem 'rubocop', '~> 1.78'
+  gem 'rubocop', '~> 1.79'
 end
