@@ -43,9 +43,9 @@ jobs:
 
       - name: Updater - Update Cores
         run: |
-          echo "⚙️ Updating Analogue Pocket Cores Inventory..."
+          echo "⚙️ Updating openFPGA Library for Analogue Pocket..."
           ruby .github/workflows/updater/lib/updater.rb update-inventory
-          echo "🎉 Successfully updated Analogue Pocket Cores Inventory!"
+          echo "🎉 Successfully updated openFPGA library for Analogue Pocket!"
 
       - name: Updater - Generate Posts
         run: |
@@ -58,7 +58,7 @@ jobs:
         id: cpr
         uses: peter-evans/create-pull-request@v7
         with:
-          title: AUTOMATED PR FOR - Update Analogue Pocket Cores Inventory
+          title: AUTOMATED PR FOR - Update openFPGA library for Analogue Pocket
           body: Update Analogue Pocket Cores Inventory
           token: ${{ steps.generate-token.outputs.token }}
           add-paths: |
