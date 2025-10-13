@@ -233,4 +233,60 @@ releases:
   updaters:
   info:
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2025-10-13 20:43:17.000000000 Z
+  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/479bef7a80073eb40dcbbdaa493213a0c1d35bda/Releases/pram0d.tmnt2.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - tmnt2
+      shortname: tmnt2
+      description: 'TMNT: Turtles In Time'
+      author: pram0d
+      url: https://coinopcollection.org
+      version: 1.0.3
+      date_release: '2025-10-07'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game JSON Setup
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: NVRAM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info:
+  requires_license: false
 funding:
