@@ -1,7 +1,7 @@
 ---
 layout: post
 author: jotego
-title: jotego.jtkicker - e00420d
+title: jotego.jtkicker - 3eb462a
 date: 2025-10-31
 categories: [Arcade, jtkicker]
 tags: [jotego.jtkicker]

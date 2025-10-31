@@ -1,7 +1,7 @@
 ---
 layout: post
 author: jotego
-title: jotego.jttoki - e00420d
+title: jotego.jttoki - 3eb462a
 date: 2025-10-31
 categories: [Arcade, jttoki]
 tags: [jotego.jttoki]
