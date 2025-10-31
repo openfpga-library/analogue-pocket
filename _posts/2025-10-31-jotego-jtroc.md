@@ -1,7 +1,7 @@
 ---
 layout: post
 author: jotego
-title: jotego.jtroc - e00420d
+title: jotego.jtroc - 3eb462a
 date: 2025-10-31
 categories: [Arcade, jtroc]
 tags: [jotego.jtroc]

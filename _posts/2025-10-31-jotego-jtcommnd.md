@@ -1,7 +1,7 @@
 ---
 layout: post
 author: jotego
-title: jotego.jtcommnd - e00420d
+title: jotego.jtcommnd - 3eb462a
 date: 2025-10-31
 categories: [Arcade, jtcommnd]
 tags: [jotego.jtcommnd]
