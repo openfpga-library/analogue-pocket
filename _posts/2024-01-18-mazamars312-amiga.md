@@ -18,6 +18,6 @@ To Be Done:
 Special Thanks
 * VexRISCV - For the bases of the MPU for this core
 * Boogerman for some coding questions - You still owe me on the use of my jtag tho LOL
-* MIST, Mister, DeMistiFy and minimig communities
-* And Amiga Vision As well for the Images
+* MIST, Mister, DeMistiFy and Minimig communities
+* And AmigaVision for their setup and general assistance with getting the core right
 
