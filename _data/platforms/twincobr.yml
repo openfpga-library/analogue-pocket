@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Twin Cobra
+manufacturer: Coin-Op Collection
+year: 2025
