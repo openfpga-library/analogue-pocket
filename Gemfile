@@ -39,7 +39,7 @@ gem 'webrick', '~> 1.9'
 
 gem 'chunky_png', '~> 1.4.0'
 gem 'faraday-retry', '~> 2.3.1'
-gem 'json-schema', '~> 6.0.0'
+gem 'json-schema', '~> 6.1.0'
 gem 'netrc', '~> 0.11.0'
 gem 'octokit', '~> 4.25.1'
 gem 'rubyzip', '~> 2.4.1'
