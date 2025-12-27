@@ -1,0 +1,65 @@
+--- !ruby/object:Inventory::Core
+id: coc.snowbros
+repository: !ruby/object:GitHub::Repository
+  name: Distribution-OpenFPGA
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: Coin-OpCollection
+  html_url: https://github.com/Coin-OpCollection/Distribution-OpenFPGA
+releases:
+- !ruby/object:Inventory::Release
+  date: 2025-12-27 00:46:38.000000000 Z
+  download_url: https://raw.githubusercontent.com/Coin-OpCollection/Distribution-OpenFPGA/a535de941a875a54ace8af1e3ead8167bc9be42c/Releases/coc.snowbros.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snowbros
+      shortname: snowbros
+      description: Toaplan Snow Bros. Hardware
+      author: coc
+      url: https://coinopcollection.org
+      version: 1.0.0
+      date_release: '2025-12-26'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game JSON Setup
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: NVRAM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info:
+  requires_license: false
+funding:
