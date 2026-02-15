@@ -190,3 +190,40 @@ releases:
 
     '
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-02-15 08:00:35.000000000 Z
+  download_url: https://github.com/ericlewis/openfpga-lunarlander/releases/download/v1.0.2/ericlewis.LunarLander-1.0.2.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - lunarlander
+      shortname: LunarLander
+      description: Atari's 1979 Lunar Lander.
+      author: ericlewis
+      url: https://github.com/ericlewis/openfpga-lunarlander
+      version: 1.0.2
+      date_release: '2026-02-15'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: llander.rom
+      extensions:
+  updaters:
+  info: 'Atari''s Lunar Lander released in 1979. Ported from MiSTer.
+
+    '
+  requires_license: false
