@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: PocketQuake
+manufacturer: ThinkElastic
+year: 2026
