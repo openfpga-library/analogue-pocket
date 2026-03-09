@@ -220,3 +220,4 @@
 - repository: obsidian-dot-dev/openfpga-starforce
 - repository: thinkelastic/pocketquake
 - repository: thinkelastic/pocketdoom
+- repository: desaster/openfpga-vector06c
