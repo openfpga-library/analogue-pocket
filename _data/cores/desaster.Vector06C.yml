@@ -1,0 +1,97 @@
+--- !ruby/object:Inventory::Core
+id: desaster.Vector06C
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-vector06c
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: desaster
+  html_url: https://github.com/desaster/openfpga-vector06c
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-03-04 22:58:28.000000000 Z
+  download_url: https://github.com/desaster/openfpga-vector06c/releases/download/v1.0.0/desaster.Vector06C_1.0.0_2026-03-05.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - vector06c
+      shortname: Vector06C
+      description: Vector-06C for Analogue Pocket
+      author: desaster
+      url: ''
+      version: 1.0.0
+      date_release: '2026-03-05'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM/COM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+      - com
+    - !ruby/object:Analogue::Data::DataSlot
+      name: C00/R0M
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - c00
+      - r0m
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy Disk A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - fdd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy Disk B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - fdd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: EDD (Ramdisk)
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - edd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Boot ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: boot.bin
+      extensions:
+      - bin
+  updaters:
+  info:
+  requires_license: false
+funding:
