@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: PocketTyrian
+manufacturer: Epic MegaGames
+year: 1995
