@@ -1,7 +1,7 @@
 ---
 layout: post
 author: mincer_ray
-title: mincer_ray.GBA - 0.1.2
+title: mincer_ray.GBA - 0.1.4
 date: 2026-03-14
 categories: [Handheld, Game Boy Advance]
 tags: [mincer_ray.GBA]
