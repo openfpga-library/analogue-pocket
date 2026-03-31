@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Mania Challenge
+manufacturer: Coin-Op Collection
+year: 2026
