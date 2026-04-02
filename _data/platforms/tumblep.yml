@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Tumble Pop
+manufacturer: Coin-Op Collection
+year: 1991
