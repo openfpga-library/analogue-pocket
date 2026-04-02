@@ -45,6 +45,8 @@
     - Releases/coc.fshark.zip
     - Releases/coc.matmania.zip
     - Releases/coc.maniach.zip
+  assets:
+    - Releases/coc.tumblep.zip
 - repository: dave18/memtest_pocket
 - repository: dave18/openfpga_zx-spectrum
 - repository: ericlewis/openfpga-asteroids
