@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: ModPlayer
+manufacturer: RndMnkIII
+year: 2026
