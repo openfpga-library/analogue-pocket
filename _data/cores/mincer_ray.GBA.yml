@@ -502,5 +502,67 @@ releases:
 
     Licensed under GPL-2.0
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-04-09 14:34:22.000000000 Z
+  download_url: https://github.com/mincer-ray/openfpga-GBA/releases/download/v0.4.0/mincer_ray.GBA_0.4.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gba
+      shortname: GBA
+      description: Game Boy Advance
+      author: mincer_ray
+      url: https://github.com/mincer-ray/openfpga-GBA
+      version: 0.4.0
+      date_release: '2026-04-09'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - gba
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: gba_bios.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+      - srm
+  updaters:
+  info: |
+    Port by mincer_ray. Original core GBA_MiSTer by various contributers.
+
+    Any bugs are likely related to the Pocket port, do not report them to the MiSTer repo.
+
+    Licensed under GPL-2.0
+  requires_license: false
 funding: !ruby/object:GitHub::Funding
   ko_fi: https://ko-fi.com/mincer_ray
