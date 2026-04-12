@@ -71,6 +71,6 @@ jobs:
         if: steps.cpr.outputs.pull-request-number
         run: |
           gh pr merge --squash --auto "${{ steps.cpr.outputs.pull-request-number }}"
-          gh pr review --approve "${{ steps.cpr.outputs.pull-request-number }}"
+          # gh pr review --approve "${{ steps.cpr.outputs.pull-request-number }}"
         env:
           GH_TOKEN: ${{ steps.generate-token.outputs.token }}
