@@ -1,0 +1,62 @@
+--- !ruby/object:Inventory::Core
+id: obsidian.SpaceInvaders
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-SpaceInvaders
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: obsidian-dot-dev
+  html_url: https://github.com/obsidian-dot-dev/openFPGA-SpaceInvaders
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-04-28 01:44:01.000000000 Z
+  download_url: https://github.com/obsidian-dot-dev/openFPGA-SpaceInvaders/releases/download/v0.9.1/openFPGA-SpaceInvaders-v0.9.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - spaceinvaders
+      shortname: SpaceInvaders
+      description: Space Invaders arcade Machine
+      author: obsidian
+      url: https://github.com/obsidian-dot-dev/openFPGA-SpaceInvaders
+      version: 0.9.1
+      date_release: '2026-04-27'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: invaders.rom
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BG
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: backdrop_high.bin
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BGL
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: backdrop_low.bin
+      extensions:
+  updaters:
+  info:
+  requires_license: false
+funding:
