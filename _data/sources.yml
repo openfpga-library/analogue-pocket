@@ -227,6 +227,7 @@
 - repository: obsidian-dot-dev/openfpga-starforce
 - repository: thinkelastic/pocketquake
 - repository: thinkelastic/pocketdoom
+- repository: thinkelastic/duke3d
 - repository: desaster/openfpga-vector06c
 - repository: mincer-ray/openfpga-gba
 - repository: obsidian-dot-dev/pockettyrian
