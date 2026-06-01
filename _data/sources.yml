@@ -236,3 +236,4 @@
 - repository: thinkelastic/duke3d
 - repository: thinkelastic/doom
 - repository: openfpgaos/quake
+- repository: openfpgaos/doom
