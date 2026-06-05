@@ -238,3 +238,4 @@
 - repository: openfpgaos/quake
 - repository: openfpgaos/doom
 - repository: openfpgaos/duke3d
+- repository: openfpgaos/wolfenstein
