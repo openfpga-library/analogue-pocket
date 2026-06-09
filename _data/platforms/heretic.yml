@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: Heretic
+manufacturer: TheDiscordian
+year: 2026
