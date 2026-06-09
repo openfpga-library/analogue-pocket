@@ -239,3 +239,4 @@
 - repository: openfpgaos/doom
 - repository: openfpgaos/duke3d
 - repository: openfpgaos/wolfenstein
+- repository: timboettiger/openfpga-snes-pro-action-replay-mk3
