@@ -1,0 +1,712 @@
+--- !ruby/object:Inventory::Core
+id: timboettiger.Pro Action Replay
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-SNES-pro-action-replay-mk3
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: timboettiger
+  html_url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-06-05 20:29:56.000000000 Z
+  download_url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3/releases/download/v0.5.1-beta/timboettiger.ProActionReplayMK3_SNES_0.5.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: Pro Action Replay
+      description: Super Nintendo with Pro Action Replay MK3 hardware emulation.
+      author: timboettiger
+      url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3
+      version: 0.5.1
+      date_release: '2026-06-05'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - smc
+      - sfc
+      - bs
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MK3 Cheats
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mk3sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MK3 BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: snes-pro-action-replay-mk3.bin
+      extensions:
+      - bin
+  updaters:
+  info: |
+    Pro Action Replay MK3 emulation by Tim Boettiger (SNES core by srg320, openFPGA port by agg23).
+
+    Adds Pro Action Replay MK3 cheat cartridge emulation to agg23's SNES openFPGA core. The MK3 BIOS wraps standard SNES ROMs and provides all functions from the original hardware.
+
+    The original 3-position switch is exposed as openFPGA core options.
+
+    To use the core, place a verified MK3 BIOS dump (snes-pro-action-replay-mk3.bin) inside the asset folder of this core before loading.
+
+    Report Action Replay MK3-specific issues to Tim Boettiger; report underlying SNES core issues to agg23 or upstream.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-06-06 21:02:11.000000000 Z
+  download_url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3/releases/download/v0.6.0/timboettiger.ProActionReplayMK3_SNES_0.6.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: Pro Action Replay
+      description: Super Nintendo with Pro Action Replay MK3 hardware emulation.
+      author: timboettiger
+      url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3
+      version: 0.6.0
+      date_release: '2026-06-06'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - smc
+      - sfc
+      - bs
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MK3 Cheats
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mk3sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MK3 BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: snes-pro-action-replay-mk3.bin
+      extensions:
+      - bin
+  updaters:
+  info: |
+    Pro Action Replay MK3 emulation by Tim Boettiger (SNES core by srg320, openFPGA port by agg23).
+
+    Adds Pro Action Replay MK3 cheat cartridge emulation to agg23's SNES openFPGA core. The MK3 BIOS wraps standard SNES ROMs and provides all functions from the original hardware.
+
+    The original 3-position switch is exposed as openFPGA core options.
+
+    To use the core, place a verified MK3 BIOS dump (snes-pro-action-replay-mk3.bin) inside the asset folder of this core before loading.
+
+    Report Action Replay MK3-specific issues to Tim Boettiger; report underlying SNES core issues to agg23 or upstream.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-06-07 12:08:38.000000000 Z
+  download_url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3/releases/download/v0.6.1-alpha/timboettiger.ProActionReplayMK3_SNES_0.6.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: Pro Action Replay
+      description: Super Nintendo with Pro Action Replay MK3 hardware emulation.
+      author: timboettiger
+      url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3
+      version: 0.6.0
+      date_release: '2026-06-06'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - smc
+      - sfc
+      - bs
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MK3 Cheats
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mk3sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MK3 BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: snes-pro-action-replay-mk3.bin
+      extensions:
+      - bin
+  updaters:
+  info: |
+    Pro Action Replay MK3 emulation by Tim Boettiger (SNES core by srg320, openFPGA port by agg23).
+
+    Adds Pro Action Replay MK3 cheat cartridge emulation to agg23's SNES openFPGA core. The MK3 BIOS wraps standard SNES ROMs and provides all functions from the original hardware.
+
+    The original 3-position switch is exposed as openFPGA core options.
+
+    To use the core, place a verified MK3 BIOS dump (snes-pro-action-replay-mk3.bin) inside the asset folder of this core before loading.
+
+    Report Action Replay MK3-specific issues to Tim Boettiger; report underlying SNES core issues to agg23 or upstream.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-06-08 08:40:38.000000000 Z
+  download_url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3/releases/download/v0.6.1-beta/timboettiger.ProActionReplayMK3_SNES_0.6.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: Pro Action Replay
+      description: Super Nintendo with Pro Action Replay MK3 hardware emulation.
+      author: timboettiger
+      url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3
+      version: 0.6.0
+      date_release: '2026-06-06'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - smc
+      - sfc
+      - bs
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MK3 Cheats
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mk3sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MK3 BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: snes-pro-action-replay-mk3.bin
+      extensions:
+      - bin
+  updaters:
+  info: |
+    Pro Action Replay MK3 emulation by Tim Boettiger (SNES core by srg320, openFPGA port by agg23).
+
+    Adds Pro Action Replay MK3 cheat cartridge emulation to agg23's SNES openFPGA core. The MK3 BIOS wraps standard SNES ROMs and provides all functions from the original hardware.
+
+    The original 3-position switch is exposed as openFPGA core options.
+
+    To use the core, place a verified MK3 BIOS dump (snes-pro-action-replay-mk3.bin) inside the asset folder of this core before loading.
+
+    Report Action Replay MK3-specific issues to Tim Boettiger; report underlying SNES core issues to agg23 or upstream.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-06-08 13:49:54.000000000 Z
+  download_url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3/releases/download/v0.6.1-beta2/timboettiger.ProActionReplayMK3_SNES_0.6.1-beta2.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: Pro Action Replay
+      description: Super Nintendo with integrated Pro Action Replay MK3.
+      author: timboettiger
+      url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3
+      version: 0.6.1-beta2
+      date_release: '2026-06-08'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - smc
+      - sfc
+      - bs
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MK3 Cheats
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mk3sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MK3 BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: snes-pro-action-replay-mk3.bin
+      extensions:
+      - bin
+  updaters:
+  info: |
+    Pro Action Replay MK3 emulation by Tim Boettiger (SNES core by srg320, openFPGA port by agg23).
+
+    Adds Pro Action Replay MK3 cheat cartridge emulation to agg23's SNES openFPGA core. The MK3 BIOS wraps standard SNES ROMs and provides all functions from the original hardware.
+
+    The original 3-position switch is exposed as openFPGA core options.
+
+    To use the core, place a verified MK3 BIOS dump (snes-pro-action-replay-mk3.bin) inside the asset folder of this core before loading.
+
+    Report Action Replay MK3-specific issues to Tim Boettiger; report underlying SNES core issues to agg23 or upstream.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-06-09 11:23:06.000000000 Z
+  download_url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3/releases/download/v0.6.1-beta3/timboettiger.ProActionReplayMK3_SNES_0.6.1-beta3.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: Pro Action Replay
+      description: Super Nintendo with integrated Pro Action Replay MK3.
+      author: timboettiger
+      url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3
+      version: 0.6.1-beta3
+      date_release: '2026-06-08'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - smc
+      - sfc
+      - bs
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MK3 Cheats
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mk3sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MK3 BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: snes-pro-action-replay-mk3.bin
+      extensions:
+      - bin
+  updaters:
+  info: |
+    Pro Action Replay MK3 emulation by Tim Boettiger (SNES core by srg320, openFPGA port by agg23).
+
+    Adds Pro Action Replay MK3 cheat cartridge emulation to agg23's SNES openFPGA core. The MK3 BIOS wraps standard SNES ROMs and provides all functions from the original hardware.
+
+    The original 3-position switch is exposed as openFPGA core options.
+
+    To use the core, place a verified MK3 BIOS dump (snes-pro-action-replay-mk3.bin) inside the asset folder of this core before loading.
+
+    Report Action Replay MK3-specific issues to Tim Boettiger; report underlying SNES core issues to agg23 or upstream.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-06-09 11:43:33.000000000 Z
+  download_url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3/releases/download/v0.6.1-beta4/timboettiger.ProActionReplayMK3_SNES_0.6.1-beta4.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: Pro Action Replay
+      description: Super Nintendo with integrated Pro Action Replay MK3.
+      author: timboettiger
+      url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3
+      version: 0.6.1-beta4
+      date_release: '2026-06-08'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - smc
+      - sfc
+      - bs
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MK3 Cheats
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mk3sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MK3 BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: snes-pro-action-replay-mk3.bin
+      extensions:
+      - bin
+  updaters:
+  info: |
+    Pro Action Replay MK3 emulation by Tim Boettiger (SNES core by srg320, openFPGA port by agg23).
+
+    Adds Pro Action Replay MK3 cheat cartridge emulation to agg23's SNES openFPGA core. The MK3 BIOS wraps standard SNES ROMs and provides all functions from the original hardware.
+
+    The original 3-position switch is exposed as openFPGA core options.
+
+    To use the core, place a verified MK3 BIOS dump (snes-pro-action-replay-mk3.bin) inside the asset folder of this core before loading.
+
+    Report Action Replay MK3-specific issues to Tim Boettiger; report underlying SNES core issues to agg23 or upstream.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-06-09 15:50:41.000000000 Z
+  download_url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3/releases/download/v0.6.1/timboettiger.ProActionReplayMK3_SNES_0.6.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: Pro Action Replay
+      description: Super Nintendo with integrated Pro Action Replay MK3.
+      author: timboettiger
+      url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3
+      version: 0.6.1
+      date_release: '2026-06-08'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - smc
+      - sfc
+      - bs
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MK3 Cheats
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mk3sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MK3 BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: snes-pro-action-replay-mk3.bin
+      extensions:
+      - bin
+  updaters:
+  info: |
+    Pro Action Replay MK3 emulation by Tim Boettiger (SNES core by srg320, openFPGA port by agg23).
+
+    Adds Pro Action Replay MK3 cheat cartridge emulation to agg23's SNES openFPGA core. The MK3 BIOS wraps standard SNES ROMs and provides all functions from the original hardware.
+
+    The original 3-position switch is exposed as openFPGA core options.
+
+    To use the core, place a verified MK3 BIOS dump (snes-pro-action-replay-mk3.bin) inside the asset folder of this core before loading.
+
+    Report Action Replay MK3-specific issues to Tim Boettiger; report underlying SNES core issues to agg23 or upstream.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-06-09 17:01:18.000000000 Z
+  download_url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3/releases/download/v0.6.2/timboettiger.ProActionReplayMK3_SNES_0.6.2.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snes
+      shortname: Pro Action Replay
+      description: Pro Action Replay MK3 cheat device integrated with a Super Nintendo
+        core.
+      author: timboettiger
+      url: https://github.com/timboettiger/openfpga-SNES-pro-action-replay-mk3
+      version: 0.6.2
+      date_release: '2026-06-08'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - smc
+      - sfc
+      - bs
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MK3 Cheats
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mk3sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MK3 BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: snes-pro-action-replay-mk3.bin
+      extensions:
+      - bin
+  updaters:
+  info: |
+    Pro Action Replay MK3 cheat device implementation by Tim Boettiger (SNES core by srg320, openFPGA port by agg23).
+
+    A SNES core for the Analogue Pocket that integrates the Datel Pro Action Replay MK3 cheat cartridge on top of agg23's openFPGA SNES core. The MK3 BIOS wraps standard SNES ROMs and provides all functions from the original hardware.
+
+    The original 3-position switch is exposed in form of openFPGA core options, the cartridge leds are displayed as optional OSD.
+
+    To use the core, place a verified MK3 BIOS dump (snes-pro-action-replay-mk3.bin) inside the asset folder of this core before loading.
+
+    Report Action Replay MK3-specific issues to Tim Boettiger; report underlying SNES core issues to agg23 or upstream.
+  requires_license: false
+funding:
