@@ -241,3 +241,4 @@
 - repository: openfpgaos/wolfenstein
 - repository: timboettiger/openfpga-snes-pro-action-replay-mk3
 - repository: openfpgaos/diablo
+- repository: drizzt/openfpga-sms
