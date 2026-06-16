@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Pac-Man
+manufacturer: Namco
+year: 1980

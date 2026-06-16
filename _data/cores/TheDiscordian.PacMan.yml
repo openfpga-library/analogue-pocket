@@ -1,0 +1,131 @@
+--- !ruby/object:Inventory::Core
+id: TheDiscordian.PacMan
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-pacman
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: TheDiscordian
+  html_url: https://github.com/TheDiscordian/openfpga-pacman
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-06-16 17:24:47.000000000 Z
+  download_url: https://github.com/TheDiscordian/openfpga-pacman/releases/download/v1.0.0/TheDiscordian.PacMan_1.0.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - pacman
+      shortname: PacMan
+      description: Namco Pac-Man arcade hardware — hardware-compatible FPGA core.
+        Runs Pac-Man, Ms. Pac-Man and same-board variants.
+      author: TheDiscordian
+      url: https://github.com/TheDiscordian/openfpga-pacman
+      version: 1.0.0
+      date_release: '2026-06-16'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    openFPGA Pac-Man
+
+    Namco Pac-Man arcade hardware for the Analogue Pocket. Hardware-compatible FPGA
+    core covering Pac-Man, Ms. Pac-Man and same-board variants.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-06-16 21:55:18.000000000 Z
+  download_url: https://github.com/TheDiscordian/openfpga-pacman/releases/download/v1.0.1/TheDiscordian.PacMan_1.0.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - pacman
+      shortname: PacMan
+      description: Namco Pac-Man arcade hardware — hardware-compatible FPGA core.
+        Runs Pac-Man, Ms. Pac-Man and same-board variants.
+      author: TheDiscordian
+      url: https://github.com/TheDiscordian/openfpga-pacman
+      version: 1.0.1
+      date_release: '2026-06-16'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    openFPGA Pac-Man
+
+    Namco Pac-Man arcade hardware for the Analogue Pocket. Hardware-compatible FPGA
+    core covering Pac-Man, Ms. Pac-Man and same-board variants.
+  requires_license: false
+funding:
