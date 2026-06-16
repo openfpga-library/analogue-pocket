@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade Multi
+name: Data East 32-bit ARM
+manufacturer: Data East
+year: 1991
