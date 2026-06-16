@@ -245,3 +245,4 @@
 - repository: opengateware/arcade-deco32
   assets:
     - opengateware.deco32(.*)-pocket.zip
+- repository: thediscordian/openfpga-pacman
