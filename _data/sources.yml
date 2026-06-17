@@ -233,8 +233,6 @@
 - repository: obsidian-dot-dev/pockettyrian
 - repository: rndmnkiii/modplayer_openfpgaos
 - repository: obsidian-dot-dev/openfpga-spaceinvaders
-- repository: thinkelastic/duke3d
-- repository: thinkelastic/doom
 - repository: openfpgaos/quake
 - repository: openfpgaos/doom
 - repository: openfpgaos/duke3d
