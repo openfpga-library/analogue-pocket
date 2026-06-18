@@ -1,0 +1,660 @@
+--- !ruby/object:Inventory::Core
+id: ThinkElastic.Duke3D
+repository: !ruby/object:GitHub::Repository
+  name: Duke3D
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: openfpgaOS
+  html_url: https://github.com/openfpgaOS/Duke3D
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-05-13 21:02:19.000000000 Z
+  download_url: https://github.com/openfpgaOS/Duke3D/releases/download/1.0.0/duke3d-v1.0.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - duke3d
+      shortname: Duke3D
+      description: Duke Nukem 3D on openfpgaOS
+      author: ThinkElastic
+      url: ''
+      version: 1.0.0
+      date_release: '2026-03-21'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: Duke3D.json
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: OS Binary
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: os.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Application
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d.elf
+      extensions:
+      - elf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game Data
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d.grp
+      extensions:
+      - grp
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sound Bank
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: bank.ofsf
+      extensions:
+      - ofsf
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 4
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sound Bank
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - ofsf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d.cfg
+      extensions:
+      - cfg
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_0.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_1.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_2.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_3.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 4
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_4.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 5
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_5.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 6
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_6.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 7
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_7.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 8
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_8.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 9
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_9.sav
+      extensions:
+      - sav
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-05-23 03:05:19.000000000 Z
+  download_url: https://github.com/openfpgaOS/Duke3D/releases/download/v1.0.1/duke3d-v1.0.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - duke3d
+      shortname: Duke3D
+      description: Duke Nukem 3D on openfpgaOS
+      author: ThinkElastic
+      url: ''
+      version: 1.0.1
+      date_release: '2026-05-22'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: Duke3D.json
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: OS Binary
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: os.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Application
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d.elf
+      extensions:
+      - elf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game Data
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d.grp
+      extensions:
+      - grp
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sound Bank
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: bank.ofsf
+      extensions:
+      - ofsf
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 4
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sound Bank
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - ofsf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d.cfg
+      extensions:
+      - cfg
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_0.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_1.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_2.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_3.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 4
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_4.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 5
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_5.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 6
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_6.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 7
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_7.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 8
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_8.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 9
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_9.sav
+      extensions:
+      - sav
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-05-26 22:19:45.000000000 Z
+  download_url: https://github.com/openfpgaOS/Duke3D/releases/download/v1.0.2/duke3d-v1.0.2.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - duke3d
+      shortname: Duke3D
+      description: Duke Nukem 3D on openfpgaOS
+      author: ThinkElastic
+      url: ''
+      version: 1.0.2
+      date_release: '2026-05-26'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename: Duke3D.json
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: OS Binary
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: os.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Application
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d.elf
+      extensions:
+      - elf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game Data
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d.grp
+      extensions:
+      - grp
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sound Bank
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: bank.ofsf
+      extensions:
+      - ofsf
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 4
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sound Bank
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - ofsf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d.cfg
+      extensions:
+      - cfg
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_0.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_1.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_2.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_3.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 4
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_4.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 5
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_5.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 6
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_6.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 7
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_7.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 8
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_8.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 9
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: duke3d_9.sav
+      extensions:
+      - sav
+  updaters:
+  info:
+  requires_license: false
+funding:
