@@ -238,6 +238,10 @@
 - repository: timboettiger/openfpga-snes-pro-action-replay-mk3
 - repository: openfpgaos/diablo
 - repository: drizzt/openfpga-sms
+  assets:
+    - openfpga-SMS_.*\.zip
+    - openfpga-GG_.*\.zip
+    - openfpga-SG-1000_.*\.zip
 - repository: opengateware/arcade-deco32
   assets:
     - opengateware.deco32(.*)-pocket.zip
