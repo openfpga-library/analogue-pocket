@@ -69,7 +69,7 @@ class Updater < Thor
           next if asset.nil?
 
           @logger.info("Processing asset: #{asset.name}")
-          new_release ||= update_source(repository, funding, asset.created_at, asset.browser_download_url)
+          new_release = update_source(repository, funding, asset.created_at, asset.browser_download_url) || new_release
         end
 
         break unless new_release
