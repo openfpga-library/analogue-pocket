@@ -246,3 +246,6 @@
   assets:
     - opengateware.deco32(.*)-pocket.zip
 - repository: thediscordian/openfpga-pacman
+- repository: harpmudd/harpmudd.tapper
+  assets:
+    - HarpMudd.tapper_
