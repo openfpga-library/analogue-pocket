@@ -1,0 +1,9 @@
+--- !ruby/object:Inventory::Core
+id: HarpMudd.Tapper
+repository: !ruby/object:GitHub::Repository
+  name: HarpMudd.tapper
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: harpmudd
+  html_url: https://github.com/harpmudd/HarpMudd.tapper
+releases: []
+funding: !ruby/object:GitHub::Funding {}
