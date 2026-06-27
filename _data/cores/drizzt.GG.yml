@@ -261,4 +261,55 @@ releases:
     to the MiSTer repo.
     Licensed under GPLv3.
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-06-27 11:00:05.000000000 Z
+  download_url: https://github.com/drizzt/openfpga-SMS/releases/download/v1.3.0/openfpga-GG_1.3.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gg
+      shortname: GG
+      description: Sega Game Gear
+      author: drizzt
+      url: https://github.com/drizzt/openfpga-SMS
+      version: 1.3.0
+      date_release: '2026-06-27'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - gg
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Sega Master System / Game Gear / SG-1000 for Analogue Pocket.
+    Port by drizzt. Original core SMS_MiSTer by various contributors.
+    Any bugs are likely related to the Pocket port, do not report them
+    to the MiSTer repo.
+    Licensed under GPLv3.
+  requires_license: false
 funding:
