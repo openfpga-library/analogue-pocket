@@ -247,3 +247,4 @@
     - opengateware.deco32(.*)-pocket.zip
 - repository: thediscordian/openfpga-pacman
 - repository: harpmudd/harpmudd.tapper
+- repository: openfpgaos/scummvm
