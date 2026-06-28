@@ -1,7 +1,7 @@
 {
   "dependencies": {
-    "eslint": "^9.39.2",
-    "eslint-plugin-yml": "^1.2.0",
-    "js-yaml": "^4.3.0"
+    "eslint": "^10.6.0",
+    "eslint-plugin-yml": "^3.5.0",
+    "js-yaml": "^5.2.0"
   }
 }
