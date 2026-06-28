@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: ScummVM
+manufacturer: ThinkElastic
+year: 2026
