@@ -248,3 +248,4 @@
 - repository: thediscordian/openfpga-pacman
 - repository: harpmudd/harpmudd.tapper
 - repository: openfpgaos/scummvm
+- repository: harpmudd/harpmudd.zaxxon
