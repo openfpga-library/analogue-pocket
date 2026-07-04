@@ -1,7 +1,7 @@
 ---
 layout: post
 author: drizzt
-title: drizzt.SMS - 1.4.0
+title: drizzt.SMS - 1.5.0
 date: 2026-07-04
 categories: [Console, Master System]
 tags: [drizzt.SMS]
