@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: 'G.I. Joe: A Real American Hero'
+manufacturer: Coin-Op Collection
+year: 2026
