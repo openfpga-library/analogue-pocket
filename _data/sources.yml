@@ -48,9 +48,6 @@
     - Releases/coc.tumblep.zip
     - Releases/coc.oscar.zip
     - Releases/coc.gijoe.zip
-  assets:
-    - Releases/coc.tumblep.zip
-    - No response
 - repository: dave18/memtest_pocket
 - repository: dave18/openfpga_zx-spectrum
 - repository: ericlewis/openfpga-asteroids
