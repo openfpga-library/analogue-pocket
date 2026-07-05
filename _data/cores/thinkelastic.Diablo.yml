@@ -316,4 +316,314 @@ releases:
   updaters:
   info:
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-07-05 05:17:50.000000000 Z
+  download_url: https://github.com/openfpgaOS/Diablo/releases/download/diablo-v1.0.1/diablo-v1.0.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - diablo
+      shortname: Diablo
+      description: Diablo on openfpgaOS
+      author: thinkelastic
+      url: ''
+      version: 1.0.1
+      date_release: '2026-07-04'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: OS Binary
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: OS Config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - ini
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Application
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - elf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: DIABDAT MPQ
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mpq
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mid
+      - mod
+      - ofsf
+      - dat
+      - png
+      - bin
+      - grp
+      - pak
+      - wad
+      - rom
+      - nes
+      - iso
+      - mpq
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mid
+      - dat
+      - png
+      - bin
+      - grp
+      - pak
+      - wad
+      - rom
+      - nes
+      - iso
+      - mpq
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 4
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mpq
+      - ofsf
+      - mid
+      - dat
+      - png
+      - bin
+      - grp
+      - pak
+      - wad
+      - rom
+      - nes
+      - iso
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Shared Config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - cfg
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: diablo.ini
+      extensions:
+      - ini
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: single_0.sv
+      extensions:
+      - sv
+      - sav
+      - hsv
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: single_1.sv
+      extensions:
+      - sv
+      - sav
+      - hsv
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: single_2.sv
+      extensions:
+      - sv
+      - sav
+      - hsv
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: single_3.sv
+      extensions:
+      - sv
+      - sav
+      - hsv
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 4
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: single_4.sv
+      extensions:
+      - sv
+      - sav
+      - hsv
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 5
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: single_5.sv
+      extensions:
+      - sv
+      - sav
+      - hsv
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 6
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: single_6.sv
+      extensions:
+      - sv
+      - sav
+      - hsv
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 7
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: single_7.sv
+      extensions:
+      - sv
+      - sav
+      - hsv
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 8
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: single_8.sv
+      extensions:
+      - sv
+      - sav
+      - hsv
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 9
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: single_9.sv
+      extensions:
+      - sv
+      - sav
+      - hsv
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hellfire Monk MPQ
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mpq
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hellfire Music MPQ
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mpq
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hellfire Voice MPQ
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mpq
+  updaters:
+  info:
+  requires_license: false
 funding:
