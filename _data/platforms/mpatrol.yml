@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Moon Patrol
+manufacturer: Irem
+year: 1982
