@@ -1,0 +1,44 @@
+--- !ruby/object:Inventory::Core
+id: HarpMudd.Mpatrol
+repository: !ruby/object:GitHub::Repository
+  name: HarpMudd.mpatrol
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: harpmudd
+  html_url: https://github.com/harpmudd/HarpMudd.mpatrol
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-07-06 20:44:06.000000000 Z
+  download_url: https://github.com/harpmudd/HarpMudd.mpatrol/releases/download/v1.0.0/HarpMudd.Mpatrol_v1.0.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - mpatrol
+      shortname: Mpatrol
+      description: Moon Patrol (Irem, 1982)
+      author: HarpMudd
+      url: ''
+      version: 1.0.0
+      date_release: '2026-06-10'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Moon Patrol (Irem, 1982) ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: mpatrol.rom
+      extensions:
+  updaters:
+  info:
+  requires_license: false
+funding: !ruby/object:GitHub::Funding {}
