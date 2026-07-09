@@ -414,4 +414,6 @@ releases:
     to the MiSTer repo.
     Licensed under GPLv3.
   requires_license: false
-funding:
+funding: !ruby/object:GitHub::Funding
+  github:
+  - https://github.com/sponsors/drizzt
