@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Popeye
+manufacturer: Nintendo
+year: 1982
