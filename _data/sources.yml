@@ -252,3 +252,4 @@
 - repository: openfpgaos/scummvm
 - repository: harpmudd/harpmudd.zaxxon
 - repository: harpmudd/harpmudd.mpatrol
+- repository: harpmudd/harpmudd.popeye
