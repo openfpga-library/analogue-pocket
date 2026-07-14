@@ -90,6 +90,9 @@ The [Analogue Pocket](https://www.analogue.co/pocket) is a multi-video-game-syst
                 <div class="btn-group">
                   <a href="#" class="btn btn-sm btn-outline-secondary dropdown-toggle" role="button" id="{{ sponsor_id }}" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-heart-fill" role="img" aria-label="Sponsor"></i></a>
                   <ul class="dropdown-menu" aria-labelledby="{{ sponsor_id }}">
+                  {%- if core.funding.buy_me_a_coffee -%}
+                    <li><a class="dropdown-item" href="{{ core.funding.buy_me_a_coffee }}">Buy Me a Coffee</a></li>
+                  {%- endif -%}
                   {%- for funding_url in core.funding.github -%}
                     <li><a class="dropdown-item" href="{{ funding_url }}">GitHub Sponsors</a></li>
                   {%- endfor -%}
