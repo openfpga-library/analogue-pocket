@@ -241,4 +241,5 @@ releases:
   updaters:
   info:
   requires_license: false
-funding: !ruby/object:GitHub::Funding {}
+funding: !ruby/object:GitHub::Funding
+  buy_me_a_coffee: https://buymeacoffee.com/harpmudd

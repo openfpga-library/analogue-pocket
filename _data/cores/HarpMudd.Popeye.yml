@@ -1,24 +1,25 @@
 --- !ruby/object:Inventory::Core
-id: HarpMudd.Mpatrol
+id: HarpMudd.Popeye
 repository: !ruby/object:GitHub::Repository
-  name: HarpMudd.mpatrol
+  name: HarpMudd.popeye
   owner: !ruby/object:GitHub::Repository::Owner
     login: harpmudd
-  html_url: https://github.com/harpmudd/HarpMudd.mpatrol
+  html_url: https://github.com/harpmudd/HarpMudd.popeye
 releases:
 - !ruby/object:Inventory::Release
-  date: 2026-07-06 20:44:06.000000000 Z
-  download_url: https://github.com/harpmudd/HarpMudd.mpatrol/releases/download/v1.0.0/HarpMudd.Mpatrol_v1.0.0.zip
+  date: 2026-07-10 11:10:12.000000000 Z
+  download_url: https://github.com/harpmudd/HarpMudd.popeye/releases/download/v1.1.1/HarpMudd.Popeye_v1.1.1.zip
   core: !ruby/object:Analogue::Core
     metadata: !ruby/object:Analogue::Core::Metadata
       platform_ids:
-      - mpatrol
-      shortname: Mpatrol
-      description: Moon Patrol (Irem, 1982)
+      - popeye
+      shortname: Popeye
+      description: Popeye (rev D / rev F / unprotected / bootleg) and Sky Skipper
+        - Nintendo Popeye arcade hardware (Z80, AY-3-8910).
       author: HarpMudd
       url: ''
-      version: 1.0.0
-      date_release: '2026-06-10'
+      version: 1.1.1
+      date_release: '2026-07-10'
     framework: !ruby/object:Analogue::Core::Framework
       version_required: '1.1'
       sleep_supported: false
@@ -30,14 +31,25 @@ releases:
   data: !ruby/object:Analogue::Data
     data_slots:
     - !ruby/object:Analogue::Data::DataSlot
-      name: Moon Patrol (Irem, 1982) ROM
+      name: Game Definition
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
       required: true
       parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
         core_specific_file: false
         instance_json: false
         platform_index: 0
-      filename: mpatrol.rom
+      filename:
       extensions:
+      - rom
   updaters:
   info:
   requires_license: false
