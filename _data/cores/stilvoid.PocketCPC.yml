@@ -168,4 +168,6 @@ releases:
   updaters:
   info:
   requires_license: false
-funding:
+funding: !ruby/object:GitHub::Funding
+  github:
+  - https://github.com/sponsors/stilvoid
