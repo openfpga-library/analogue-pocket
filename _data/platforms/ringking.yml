@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Ring King
+manufacturer: Woodplace / Data East
+year: 1985
