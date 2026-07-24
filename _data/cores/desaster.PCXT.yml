@@ -1,0 +1,327 @@
+--- !ruby/object:Inventory::Core
+id: desaster.PCXT
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-PCXT
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: desaster
+  html_url: https://github.com/desaster/openfpga-PCXT
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-07-12 19:28:24.000000000 Z
+  download_url: https://github.com/desaster/openfpga-PCXT/releases/download/v0.9.8/desaster.PCXT_0.9.8_2026-07-12.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - pcxt
+      shortname: PCXT
+      description: IBM PC/XT for Analogue Pocket
+      author: desaster
+      url: ''
+      version: 0.9.8
+      date_release: '2026-07-12'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PCXT BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: boot.bin
+      extensions:
+      - rom
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: EC00 BIOS
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - img
+      - ima
+      - dsk
+      - vfd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - img
+      - ima
+      - dsk
+      - vfd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: IDE 0-0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - vhd
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: IDE 0-1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - vhd
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: settings.dat
+      extensions:
+      - dat
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-07-19 20:24:53.000000000 Z
+  download_url: https://github.com/desaster/openfpga-PCXT/releases/download/v1.0.0/desaster.PCXT_1.0.0_2026-07-19.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - pcxt
+      shortname: PCXT
+      description: IBM PC/XT for Analogue Pocket
+      author: desaster
+      url: ''
+      version: 1.0.0
+      date_release: '2026-07-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PCXT BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: boot.bin
+      extensions:
+      - rom
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: EC00 BIOS
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - img
+      - ima
+      - dsk
+      - vfd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - img
+      - ima
+      - dsk
+      - vfd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: IDE 0-0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - vhd
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: IDE 0-1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - vhd
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: settings.dat
+      extensions:
+      - dat
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-07-24 10:49:35.000000000 Z
+  download_url: https://github.com/desaster/openfpga-PCXT/releases/download/v1.0.1/desaster.PCXT_1.0.1_2026-07-24.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - pcxt
+      shortname: PCXT
+      description: IBM PC/XT for Analogue Pocket
+      author: desaster
+      url: ''
+      version: 1.0.1
+      date_release: '2026-07-24'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PCXT BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: boot.bin
+      extensions:
+      - rom
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: EC00 BIOS
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - img
+      - ima
+      - dsk
+      - vfd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - img
+      - ima
+      - dsk
+      - vfd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: IDE 0-0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - vhd
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: IDE 0-1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - vhd
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: settings.dat
+      extensions:
+      - dat
+  updaters:
+  info:
+  requires_license: false
+funding:
