@@ -258,3 +258,4 @@
 - repository: stilvoid/pocketcpc
 - repository: harpmudd/harpmudd.ringking
 - repository: desaster/openfpga-pcxt
+- repository: neutralinsomniac/openfpga-megacd
