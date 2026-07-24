@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: IBM PC/XT
+manufacturer: IBM
+year: 1981
