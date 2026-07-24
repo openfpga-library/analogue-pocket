@@ -1,0 +1,78 @@
+--- !ruby/object:Inventory::Core
+id: jeremy.MegaCD
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-megacd
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: neutralinsomniac
+  html_url: https://github.com/neutralinsomniac/openfpga-megacd
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-07-24 18:47:28.000000000 Z
+  download_url: https://github.com/neutralinsomniac/openfpga-megacd/releases/download/0.0.1/openfpga-megacd-0.0.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - megacd
+      shortname: MegaCD
+      description: Sega CD / Mega CD, the CD-ROM add-on for the Sega Genesis / Mega
+        Drive. Adds a second 68000, CD-ROM drive, scaling/rotation ASIC and PCM audio.
+      author: jeremy
+      url: https://github.com/jeremy/openFPGA-Genesis
+      version: 0.0.1
+      date_release: '2026-07-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD Image
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - cue
+      - bin
+      - iso
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD Data
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+  updaters:
+  info:
+  requires_license: false
+funding:
