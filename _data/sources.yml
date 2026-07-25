@@ -259,3 +259,4 @@
 - repository: harpmudd/harpmudd.ringking
 - repository: desaster/openfpga-pcxt
 - repository: neutralinsomniac/openfpga-megacd
+- repository: morgan-vieira/openfpga-rallyx
