@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Satan's Hollow
+manufacturer: Bally Midway
+year: 1982
