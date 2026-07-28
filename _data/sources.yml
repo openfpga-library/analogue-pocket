@@ -260,3 +260,4 @@
 - repository: desaster/openfpga-pcxt
 - repository: neutralinsomniac/openfpga-megacd
 - repository: morgan-vieira/openfpga-rallyx
+- repository: harpmudd/harpmudd.shollow
