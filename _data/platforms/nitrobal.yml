@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Nitro Ball
+manufacturer: Coin-Op Collection
+year: 2026
