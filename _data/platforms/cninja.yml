@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Caveman Ninja
+manufacturer: Coin-Op Collection
+year: 2026
