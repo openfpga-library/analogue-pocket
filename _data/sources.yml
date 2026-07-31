@@ -49,6 +49,7 @@
     - Releases/coc.oscar.zip
     - Releases/coc.gijoe.zip
     - Releases/coc.captaven.zip
+    - Releases/coc.cninja.zip
 - repository: dave18/memtest_pocket
 - repository: dave18/openfpga_zx-spectrum
 - repository: ericlewis/openfpga-asteroids
