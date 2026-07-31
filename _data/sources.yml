@@ -54,6 +54,8 @@
     - Releases/coc.vaportra.zip
     - Releases/coc.robocop2.zip
     - Releases/coc.cninja.zip
+    - Releases/coc.darkseal.zip
+    - Releases/coc.edrandy.zip
 - repository: dave18/memtest_pocket
 - repository: dave18/openfpga_zx-spectrum
 - repository: ericlewis/openfpga-asteroids
