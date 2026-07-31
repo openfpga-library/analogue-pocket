@@ -49,6 +49,10 @@
     - Releases/coc.oscar.zip
     - Releases/coc.gijoe.zip
     - Releases/coc.captaven.zip
+    - Releases/coc.cbuster.zip
+    - Releases/coc.dblewing.zip
+    - Releases/coc.vaportra.zip
+    - Releases/coc.robocop2.zip
     - Releases/coc.cninja.zip
 - repository: dave18/memtest_pocket
 - repository: dave18/openfpga_zx-spectrum
