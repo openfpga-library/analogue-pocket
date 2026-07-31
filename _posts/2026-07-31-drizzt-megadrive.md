@@ -1,7 +1,7 @@
 ---
 layout: post
 author: drizzt
-title: drizzt.MegaDrive - 0.2.0
+title: drizzt.MegaDrive - 0.2.1
 date: 2026-07-31
 categories: [Console, Genesis]
 tags: [drizzt.MegaDrive]
