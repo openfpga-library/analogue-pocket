@@ -271,3 +271,6 @@
 - repository: morgan-vieira/openfpga-rallyx
 - repository: harpmudd/harpmudd.shollow
 - repository: drizzt/openfpga-megadrive
+- repository: opengateware/openfpga-vault
+  contents:
+    - releases/opengateware.system_c.zip
