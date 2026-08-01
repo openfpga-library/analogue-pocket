@@ -274,3 +274,4 @@
 - repository: opengateware/openfpga-vault
   contents:
     - releases/opengateware.system_c.zip
+    - releases/opengateware.segasystem1.zip
