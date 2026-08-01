@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade Multi
+name: Sega System C/C2
+manufacturer: Sega
+year: 1990
