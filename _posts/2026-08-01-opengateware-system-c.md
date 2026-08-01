@@ -1,7 +1,7 @@
 ---
 layout: post
 author: opengateware
-title: opengateware.system_c - 0.9.0
+title: opengateware.system_c - 0.9.1
 date: 2026-08-01
 categories: [Arcade Multi, Sega System C/C2]
 tags: [opengateware.system_c]
