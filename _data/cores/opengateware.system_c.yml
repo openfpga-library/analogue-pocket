@@ -64,4 +64,120 @@ releases:
     game market. The platform was
     also known as "System 14."
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-01 11:51:46.000000000 Z
+  download_url: https://raw.githubusercontent.com/opengateware/openFPGA-vault/9055eb9bb97c3cfc3e40e799be74247f9d2934c2/releases/opengateware.system_c.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - system_c
+      shortname: system_c
+      description: Sega System C/C2 Compatible Gateware IP Core
+      author: opengateware
+      url: https://github.com/opengateware/arcade-system-c
+      version: 0.9.0
+      date_release: '2026-08-01'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+  updaters:
+  info: |
+    Sega System C / C-2
+    FPGA Compatible Gateware Core
+
+    Sega's System C (1989) and its
+    successor C-2 (1990) are 16-bit
+    JAMMA arcade boards built on
+    the Mega Drive architecture.
+    Designed as a cost-effective
+    arcade solution, they targeted
+    the puzzle, party, and casual
+    game market. The platform was
+    also known as "System 14."
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-01 12:00:59.000000000 Z
+  download_url: https://raw.githubusercontent.com/opengateware/openFPGA-vault/521e8b66de2e098840bb159ab138f6a3856a05f4/releases/opengateware.system_c.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - system_c
+      shortname: system_c
+      description: Sega System C/C2 Compatible Gateware IP Core
+      author: opengateware
+      url: https://github.com/opengateware/arcade-system-c
+      version: 0.9.1
+      date_release: '2026-08-01'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+  updaters:
+  info: |
+    Sega System C / C-2
+    FPGA Compatible Gateware Core
+
+    Sega's System C (1989) and its
+    successor C-2 (1990) are 16-bit
+    JAMMA arcade boards built on
+    the Mega Drive architecture.
+    Designed as a cost-effective
+    arcade solution, they targeted
+    the puzzle, party, and casual
+    game market. The platform was
+    also known as "System 14."
+  requires_license: false
 funding:
