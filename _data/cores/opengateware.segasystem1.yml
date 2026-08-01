@@ -1,0 +1,63 @@
+--- !ruby/object:Inventory::Core
+id: opengateware.segasystem1
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-vault
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: opengateware
+  html_url: https://github.com/opengateware/openFPGA-vault
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-08-01 17:50:39.000000000 Z
+  download_url: https://raw.githubusercontent.com/opengateware/openFPGA-vault/6d2f1352259444d6bbc7f7bf2a710cdfddf3fa1b/releases/opengateware.segasystem1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - segasystem1
+      shortname: segasystem1
+      description: Sega System 1/2 Compatible Gateware IP Core
+      author: opengateware
+      url: https://github.com/opengateware/arcade-segasystem1
+      version: 0.9.0
+      date_release: '2026-08-01'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+  updaters:
+  info: |-
+    Sega System 1 / 2
+
+    The Sega System 1 is an arcade platform officially debuted by Sega in 1983, based on earlier 1982 prototype hardware.
+    It is a Z80-based platform and the first in the decade-long "System" series of arcade boards.
+
+    The Sega System 2 is an arcade platform introduced by Sega in 1985.
+    It is a successor to the Sega System 1, though largely an upgrade, utilizing the same Zilog Z80 CPU, sound chips, and Sega graphics chipset.
+    The major upgrades of the System 2 are the addition of a ROM board, faster RAM, and a larger 512×512 background scrolling plane.
+  requires_license: false
+funding:
