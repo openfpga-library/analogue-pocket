@@ -1,0 +1,67 @@
+--- !ruby/object:Inventory::Core
+id: neoge.MP3Player
+repository: !ruby/object:GitHub::Repository
+  name: pocket-mp3
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: neoge
+  html_url: https://github.com/neoge/pocket-mp3
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-08-09 13:47:05.000000000 Z
+  download_url: https://github.com/neoge/pocket-mp3/releases/download/v0.3.2/neoge.MP3Player_0.3.2_2026-07-19.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - pocketmp3
+      shortname: MP3Player
+      description: Pure-HDL MP3 player. Playback with seek, repeat and ID3 tag display.
+      author: neoge
+      url: https://github.com/neoge/pocket-mp3
+      version: 0.3.2
+      date_release: '2026-07-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: false
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MP3 File
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - mp3
+  updaters:
+  info: |
+    A pure hardware MP3 player for the Analogue Pocket. The FPGA does all of the decoding. There is no soft CPU and no firmware.
+
+    Put your MP3 files in /Assets/pocketmp3/common/ on the SD card. Then start the core and select a file. Playback starts automatically.
+
+    Controls:
+    * A - play or pause
+    * B - stop
+    * Left or Right - seek 10 seconds
+    * Up or Down - seek 20 seconds
+    * Select and D-pad - seek 1 second
+    * Start - repeat on or off
+
+    Press a seek button again quickly to make the step two times larger, up to 32 times.
+
+    The screen shows the title, the artist and the album from the ID3 tag. It also shows the bit rate, the sample rate and the stereo mode.
+
+    Limits:
+    * MPEG-1 Layer III only, 32 to 320 kbps, 44.1 or 48 kHz
+    * A file with a variable bit rate plays, but the length and the seek position are not correct
+    * File size up to 64 MB
+
+    Source code: github.com/neoge/pocket-mp3
+  requires_license: false
+funding:
