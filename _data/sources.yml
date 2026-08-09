@@ -280,3 +280,4 @@
     - releases/opengateware.system_c.zip
     - releases/opengateware.segasystem1.zip
 - repository: kathoc/brickboy-dmg-fpgacore
+- repository: finner/openfpga-segasys1
