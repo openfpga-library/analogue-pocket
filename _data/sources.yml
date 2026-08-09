@@ -281,3 +281,4 @@
     - releases/opengateware.segasystem1.zip
 - repository: kathoc/brickboy-dmg-fpgacore
 - repository: finner/openfpga-segasys1
+- repository: neoge/pocket-mp3
