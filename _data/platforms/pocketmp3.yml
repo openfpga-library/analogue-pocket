@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Media
+name: MP3 Player
+manufacturer: neoge
+year: 2026
