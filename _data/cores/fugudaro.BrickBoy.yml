@@ -76,6 +76,77 @@ releases:
     Adds DMG panel crosstalk, pixel ghosting and dead segment lines.
     Based on openfpga-GBC by budude2, ported from Gameboy_MiSTer.
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-09 01:28:11.000000000 Z
+  download_url: https://github.com/kathoc/brickboy-dmg-fpgacore/releases/download/v0.2.0/brickboy-dmg-pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gb
+      shortname: BrickBoy
+      description: Game Boy (BrickBoy DMG)
+      author: fugudaro
+      url: https://github.com/kathoc/openfpga-GBC-brick
+      version: 0.2.0
+      date_release: '2026-08-09'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - gb
+      - gbc
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Palette
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - gbp
+    - !ruby/object:Analogue::Data::DataSlot
+      name: DMG BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: gb_bios.bin
+      extensions:
+      - bin
+  updaters:
+  info: |
+    BrickBoy LCD simulation build.
+    Adds DMG panel crosstalk, pixel ghosting and dead segment lines.
+    Based on openfpga-GBC by budude2, ported from Gameboy_MiSTer.
+  requires_license: false
 funding: !ruby/object:GitHub::Funding
   github:
   - https://github.com/sponsors/kathoc
