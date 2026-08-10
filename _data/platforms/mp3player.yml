@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Others
+name: MP3 Player
+manufacturer: HarpMudd
+year: 2026
