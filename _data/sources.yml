@@ -283,3 +283,4 @@
 - repository: finner/openfpga-segasys1
 - repository: neoge/pocket-mp3
 - repository: finner/openfpga-segasysc
+- repository: harpmudd/harpmudd.mp3player
