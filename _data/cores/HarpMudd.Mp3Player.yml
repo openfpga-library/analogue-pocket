@@ -116,5 +116,60 @@ releases:
   updaters:
   info:
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-13 20:47:53.000000000 Z
+  download_url: https://github.com/harpmudd/HarpMudd.mp3player/releases/download/v1.2.0/HarpMudd.Mp3Player_v1.2.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - mp3player
+      shortname: Mp3Player
+      description: MP3 Player
+      author: HarpMudd
+      url: https://github.com/harpmudd/HarpMudd.mp3player
+      version: 1.2.0
+      date_release: '2026-08-12'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Firmware
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: mp3player.rom
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MP3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mp3
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Playlist
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: playlist.m3u
+      extensions:
+      - m3u
+  updaters:
+  info:
+  requires_license: false
 funding: !ruby/object:GitHub::Funding
   buy_me_a_coffee: https://buymeacoffee.com/harpmudd
