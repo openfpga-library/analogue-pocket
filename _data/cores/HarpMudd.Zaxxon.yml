@@ -121,4 +121,5 @@ releases:
   info:
   requires_license: false
 funding: !ruby/object:GitHub::Funding
-  buy_me_a_coffee: https://buymeacoffee.com/harpmudd
+  custom:
+  - https://www.paypal.com/donate/?hosted_button_id=S22WV924XU2ME
