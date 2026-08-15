@@ -371,4 +371,83 @@ releases:
     Third-party components retain their original licenses and notices. See LICENSE
     and NOTICE in the source repository.
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-15 00:03:16.000000000 Z
+  download_url: https://github.com/K3v-68/k3v-gba/releases/download/v0.1.5/K3V.GBA_0.1.5.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gba
+      shortname: GBA
+      description: GBA with RTC, save states and fast-forward
+      author: K3V
+      url: https://github.com/K3v-68/k3v-gba
+      version: 0.1.5
+      date_release: '2026-08-14'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - gba
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: gba_bios.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: RTC
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rtc
+  updaters:
+  info: |
+    K3V GBA
+
+    Open-source Game Boy Advance FPGA core for Analogue Pocket.
+
+    Features include RTC, save states, fast-forward, button turbo, display filters,
+    rumble, and partial two-player link-cable support.
+
+    Source and issue tracker:
+    https://github.com/K3v-68/k3v-gba
+
+    Third-party components retain their original licenses and notices. See LICENSE
+    and NOTICE in the source repository.
+  requires_license: false
 funding:
