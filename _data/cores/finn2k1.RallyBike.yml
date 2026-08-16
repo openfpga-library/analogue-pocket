@@ -1,0 +1,55 @@
+--- !ruby/object:Inventory::Core
+id: finn2k1.RallyBike
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-RallyBike
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: finner
+  html_url: https://github.com/finner/openFPGA-RallyBike
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-08-16 05:49:58.000000000 Z
+  download_url: https://github.com/finner/openFPGA-RallyBike/releases/download/v0.2.1/finn2k1.RallyBike_0.2.1_2026-08-16.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - rallybike
+      shortname: RallyBike
+      description: Toaplan Rally Bike (TP-012) arcade core ported from MiSTer.
+      author: finn2k1
+      url: https://github.com/finner/openFPGA-RallyBike
+      version: 0.2.1
+      date_release: '2026-08-16'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+  updaters:
+  info:
+  requires_license: false
+funding:
