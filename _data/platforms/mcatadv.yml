@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Magical Cat Adventure
+manufacturer: Wintechno
+year: 1993

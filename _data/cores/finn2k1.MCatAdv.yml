@@ -1,0 +1,56 @@
+--- !ruby/object:Inventory::Core
+id: finn2k1.MCatAdv
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-Wintechno
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: finner
+  html_url: https://github.com/finner/openFPGA-Wintechno
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-08-16 05:13:41.000000000 Z
+  download_url: https://github.com/finner/openFPGA-Wintechno/releases/download/v0.3.0-beta.26/finn2k1.MCatAdv_0.3.0-beta.26_20260814.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - mcatadv
+      shortname: MCatAdv
+      description: Magical Cat Adventure / Catt (Wintechno LINDA). Three ROM sets;
+        FM music OK; ADPCM SFX TBD.
+      author: finn2k1
+      url: https://github.com/finner/openFPGA-Wintechno
+      version: 0.3.0-beta.26
+      date_release: '2026-08-14'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+  updaters:
+  info:
+  requires_license: false
+funding:
