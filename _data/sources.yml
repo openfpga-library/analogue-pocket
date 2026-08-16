@@ -288,3 +288,6 @@
 - repository: k3v-68/k3v-gba
 - repository: finner/openfpga-wintechno
 - repository: danifunker/maclc_pocket
+- repository: finner/openfpga-rallybike
+  assets:
+    - finn2k1.RallyBike_
