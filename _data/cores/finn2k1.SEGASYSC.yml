@@ -53,4 +53,52 @@ releases:
   updaters:
   info:
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-16 05:47:04.000000000 Z
+  download_url: https://github.com/finner/openFPGA-SEGASYSC/releases/download/v0.20/finn2k1.SEGASYSC_0.20_2026-08-16.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - segasysc
+      shortname: SEGASYSC
+      description: Sega System C / C2 arcade (Genesis-derived). PROT-ready game library
+        expanded.
+      author: finn2k1
+      url: https://github.com/finner/openFPGA-SEGASYSC
+      version: '0.20'
+      date_release: '2026-08-16'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - c2
+      - bin
+  updaters:
+  info:
+  requires_license: false
 funding:

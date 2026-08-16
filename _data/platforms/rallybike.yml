@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Rally Bike
+manufacturer: Toaplan / Taito
+year: 1988
