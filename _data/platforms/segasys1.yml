@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Sega System 1/2
+manufacturer: Sega
+year: 1983
