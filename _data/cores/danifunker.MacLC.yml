@@ -1,0 +1,100 @@
+--- !ruby/object:Inventory::Core
+id: danifunker.MacLC
+repository: !ruby/object:GitHub::Repository
+  name: MacLC_pocket
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: danifunker
+  html_url: https://github.com/danifunker/MacLC_pocket
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-08-16 01:25:15.000000000 Z
+  download_url: https://github.com/danifunker/MacLC_pocket/releases/download/v1.0.0/danifunker.MacLC_1.0.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - maclc
+      shortname: MacLC
+      description: Apple Macintosh LC. 68020, 512x384, 256 colours.
+      author: danifunker
+      url: https://github.com/danifunker/MacLC_pocket
+      version: 1.0.0
+      date_release: '2026-08-14'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: boot0.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - dsk
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: maclc.hda
+      extensions:
+      - hda
+      - img
+      - vhd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: maclc2.hda
+      extensions:
+      - hda
+      - img
+      - vhd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD-ROM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: maclc.iso
+      extensions:
+      - iso
+  updaters:
+  info: "Macintosh LC for Analogue Pocket\r\n\r\nA port of the MacLC MiSTer core.
+    Emulates a Motorola 68020 with Apple's V8\r\nASIC, the Egret system controller
+    (a real 68HC05 running Apple firmware),\r\nSWIM floppy, NCR5380 SCSI and ADB input.\r\n\r\nAnalogue
+    OS firmware 2.1 required.\r\n\r\nDifferences from the MiSTer core, made to fit
+    the Pocket's smaller FPGA:\r\n* Video is 512x384 at up to 256 colours (the 12\"
+    RGB monitor). No 640x480,\r\n  no 16bpp -- a 16bpp framebuffer alone needed more
+    block RAM than the\r\n  Pocket has in total.\r\n* One floppy drive instead of
+    two.\r\n* No CD-ROM and no BlueSCSI Toolbox.\r\n\r\nWORK IN PROGRESS. SCSI hard
+    disks are not implemented yet, so the machine\r\ncan only boot from a floppy image.\r\n\r\nCredits\r\n*
+    Based on the MacLC MiSTer core, which derives from MacPlus by Sorgelig\r\n  and
+    originally from the Plus Too project.\r\n"
+  requires_license: false
+funding:
