@@ -291,3 +291,4 @@
 - repository: finner/openfpga-rallybike
   assets:
     - finn2k1.RallyBike_
+- repository: nlhomme/arcade-bosconian_analogue-pocket
