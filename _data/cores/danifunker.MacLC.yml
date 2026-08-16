@@ -97,4 +97,96 @@ releases:
     Based on the MacLC MiSTer core, which derives from MacPlus by Sorgelig\r\n  and
     originally from the Plus Too project.\r\n"
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-16 13:19:10.000000000 Z
+  download_url: https://github.com/danifunker/MacLC_pocket/releases/download/v1.0.1/danifunker.MacLC_1.0.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - maclc
+      shortname: MacLC
+      description: Apple Macintosh LC. 68020, 512x384, 256 colours.
+      author: danifunker
+      url: https://github.com/danifunker/MacLC_pocket
+      version: 1.0.1
+      date_release: '2026-08-14'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: boot0.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - dsk
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: maclc.hda
+      extensions:
+      - hda
+      - img
+      - vhd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: maclc2.hda
+      extensions:
+      - hda
+      - img
+      - vhd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD-ROM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: maclc.iso
+      extensions:
+      - iso
+  updaters:
+  info: "Macintosh LC for Analogue Pocket\r\n\r\nA port of the MacLC MiSTer core.
+    Emulates a Motorola 68020 with Apple's V8\r\nASIC, the Egret system controller
+    (a real 68HC05 running Apple firmware),\r\nSWIM floppy, NCR5380 SCSI and ADB input.\r\n\r\nBoots
+    System 6.0.8, 7.1 and 7.5.5 to a 256-colour desktop. Requires a Mac\r\nLC ROM
+    as boot0.rom and a bootable disk image as maclc.hda (auto-mounts at\r\nlaunch,
+    along with maclc2.hda and maclc.iso if present).\r\n\r\nFeatures: 2/10 MB RAM,
+    512x384 at up to 256 colours, two read/write SCSI\r\nhard disks, ISO CD-ROM, 1.44
+    MB MFM floppy images, remappable controls\r\nwith mouse mode on the D-Pad.\r\n\r\nKnown
+    limitations: 800K GCR floppy images can crash the system; PRAM does\r\nnot persist
+    across power cycles; floppies are read-only.\r\n\r\nAnalogue OS firmware 2.1 required.\r\n\r\nCredits\r\n*
+    Based on the MacLC MiSTer core, which derives from MacPlus by Sorgelig\r\n  and
+    originally from the Plus Too project.\r\n"
+  requires_license: false
 funding:
