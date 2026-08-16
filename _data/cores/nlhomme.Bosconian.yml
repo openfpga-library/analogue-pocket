@@ -114,4 +114,40 @@ releases:
   updaters:
   info:
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-16 20:19:23.000000000 Z
+  download_url: https://github.com/nlhomme/Arcade-Bosconian_Analogue-Pocket/releases/download/v0.1.3/nlhomme.Bosconian.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - bosconian
+      shortname: Bosconian
+      description: Namco Bosconian - Star Destroyer (1981). GPLv2.
+      author: nlhomme
+      url: https://github.com/nlhomme/Arcade-Bosconian_Analogue-Pocket
+      version: 0.1.3
+      date_release: '2026-08-16'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: bosco.rom
+      extensions:
+      - rom
+  updaters:
+  info:
+  requires_license: false
 funding:
