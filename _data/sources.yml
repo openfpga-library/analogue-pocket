@@ -294,3 +294,6 @@
   assets:
     - finn2k1.RallyBike_
 - repository: nlhomme/arcade-bosconian_analogue-pocket
+- repository: picocomputer/rp6502
+  assets:
+    - rp6502-.*-pocket\.zip
