@@ -21,18 +21,8 @@ Then navigate to `http://localhost:4000/`
 openFPGA Library provides a read-only API for developers. More information can be found in the [documentation](https://openfpga-library.github.io/analogue-pocket/api/swagger/).
 
 ## Adding a new core
-To add a new core, you will need to edit the `_data/repos.yml` file. You must add the following fields:
 
-```yaml
-- username: ericlewis
-  cores:
-    - display_name: Asteroids for Analogue Pocket
-      repository: openfpga-asteroids
-```
-
-- `username` is the core author's GitHub username. It can be found after the first `/` in the core's URL (e.g. `https://github.com/ericlewis/openfpga-asteroids` -> `ericlewis`).
-- `display_name` is used in the `Name` column of the [cores table](https://openfpga-library.github.io/analogue-pocket/). A good value for this is usually the name used at the top of the core's `README.md` file.
-- `repository` is the core's GitHub repository name. It can be found after the last `/` in the core's URL (e.g. `https://github.com/ericlewis/openfpga-asteroids` -> `openfpga-asteroids`).
+To add a new core, go to [Issues](https://github.com/openfpga-library/analogue-pocket/issues), select the `New Issue` button, choose `Add Core`, then fill in the fields.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
