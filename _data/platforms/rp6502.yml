@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: Picocomputer 6502
+manufacturer: Rumbledethumps
+year: 2023
