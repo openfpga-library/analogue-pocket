@@ -297,3 +297,4 @@
 - repository: picocomputer/rp6502
   assets:
     - rp6502-.*-pocket\.zip
+- repository: plasticbugs/analogue-pocket-xenophobe
