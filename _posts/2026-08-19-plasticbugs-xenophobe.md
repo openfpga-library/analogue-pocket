@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.xenophobe - 1.1.0
+title: plasticbugs.xenophobe - 1.1.1
 date: 2026-08-19
 categories: [Arcade, Xenophobe]
 tags: [plasticbugs.xenophobe]
