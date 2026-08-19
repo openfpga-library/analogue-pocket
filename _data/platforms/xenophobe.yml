@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Xenophobe
+manufacturer: Bally Midway
+year: 1987
