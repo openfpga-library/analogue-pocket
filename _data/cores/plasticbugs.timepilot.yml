@@ -1,0 +1,211 @@
+--- !ruby/object:Inventory::Core
+id: plasticbugs.timepilot
+repository: !ruby/object:GitHub::Repository
+  name: analogue-pocket-time-pilot
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: plasticbugs
+  html_url: https://github.com/plasticbugs/analogue-pocket-time-pilot
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-08-20 06:30:28.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-time-pilot/releases/download/v0.1.0/timepilot-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - timepilot
+      shortname: timepilot
+      description: Time Pilot (Konami, 1982) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-time-pilot
+      version: 0.1.0
+      date_release: '2026-08-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: timeplt.rom
+      extensions:
+      - rom
+  updaters:
+  info: |
+    Time Pilot (Konami, 1982)
+
+    Konami's vertical shooter, on two
+    Z80s with a pair of AY-3-8910s. The
+    whole romset fits in block RAM, so
+    every access is single cycle.
+
+    ROMs are not included. The core reads
+    one file, built from your own MAME
+    timeplt romset:
+
+    Assets/timepilot/common/timeplt.rom
+
+    A core is FPGA gateware and cannot
+    build that itself. The download has a
+    builder needing only Python 3:
+
+    python3 mra_build.py timeplt.mra
+            timeplt.zip
+
+    It reads the MAME zip directly and
+    checks every ROM, so a bad romset is
+    reported rather than quietly built.
+    Copy the timeplt.rom it writes to the
+    folder above. Using pupdate or the
+    mra tool? Point it at timeplt.mra.
+
+    Controls
+    * Fire: B or A
+    * Insert coin: Select
+    * Start: Start
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-20 06:45:10.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-time-pilot/releases/download/v0.1.1/timepilot-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - timepilot
+      shortname: timepilot
+      description: Time Pilot (Konami, 1982) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-time-pilot
+      version: 0.1.1
+      date_release: '2026-08-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: timeplt.rom
+      extensions:
+      - rom
+  updaters:
+  info: |
+    Time Pilot (Konami, 1982)
+
+    Konami's vertical shooter, on two
+    Z80s with a pair of AY-3-8910s. The
+    whole romset fits in block RAM, so
+    every access is single cycle.
+
+    ROMs are not included. The core reads
+    one file, built from your own MAME
+    timeplt romset:
+
+    Assets/timepilot/common/timeplt.rom
+
+    A core is FPGA gateware and cannot
+    build that itself. The download has a
+    builder needing only Python 3:
+
+    python3 mra_build.py timeplt.mra
+            timeplt.zip
+
+    It reads the MAME zip directly and
+    checks every ROM, so a bad romset is
+    reported rather than quietly built.
+    Copy the timeplt.rom it writes to the
+    folder above. Using pupdate or the
+    mra tool? Point it at timeplt.mra.
+
+    Controls
+    * Fire: B or A
+    * Insert coin: Select
+    * Start: Start
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-20 07:20:43.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-time-pilot/releases/download/v0.1.2/timepilot-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - timepilot
+      shortname: timepilot
+      description: Time Pilot (Konami, 1982) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-time-pilot
+      version: 0.1.2
+      date_release: '2026-08-20'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: timeplt.rom
+      extensions:
+      - rom
+  updaters:
+  info: |
+    Time Pilot (Konami, 1982)
+
+    Konami's vertical shooter, on two
+    Z80s with a pair of AY-3-8910s. The
+    whole romset fits in block RAM, so
+    every access is single cycle.
+
+    ROMs are not included. The core reads
+    one file, built from your own MAME
+    timeplt romset:
+
+    Assets/timepilot/common/timeplt.rom
+
+    A core is FPGA gateware and cannot
+    build that itself. The download has a
+    builder needing only Python 3:
+
+    python3 mra_build.py timeplt.mra
+            timeplt.zip
+
+    It reads the MAME zip directly and
+    checks every ROM, so a bad romset is
+    reported rather than quietly built.
+    Copy the timeplt.rom it writes to the
+    folder above. Using pupdate or the
+    mra tool? Point it at timeplt.mra.
+
+    Controls
+    * Fire: B or A
+    * Insert coin: Select
+    * 1 player start: Start
+    * 2 player start: Y
+  requires_license: false
+funding:
