@@ -298,3 +298,4 @@
   assets:
     - rp6502-.*-pocket\.zip
 - repository: plasticbugs/analogue-pocket-xenophobe
+- repository: plasticbugs/analogue-pocket-time-pilot
