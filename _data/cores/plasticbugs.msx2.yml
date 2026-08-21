@@ -1,0 +1,227 @@
+--- !ruby/object:Inventory::Core
+id: plasticbugs.msx2
+repository: !ruby/object:GitHub::Repository
+  name: analogue-pocket-msx2
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: plasticbugs
+  html_url: https://github.com/plasticbugs/analogue-pocket-msx2
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-08-16 19:18:59.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-msx2/releases/download/v0.4.0/msx2-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - msx2
+      shortname: msx2
+      description: MSX2 core by plasticbugs, based on boogermann's MSX core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-msx2
+      version: 0.4.0
+      date_release: '2026-08-15'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Slot A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Slot B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Main BIOS
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sub (ext) ROM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Mapper DB
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: mapperdb.bin
+      extensions:
+      - bin
+  updaters:
+  info: |
+    MSX2 for Analogue Pocket.
+    V9938 VDP, 128kB VRAM, 256kB RAM,
+    SCC audio, 13 cartridge mappers
+    with automatic detection.
+
+    Mapper: leave on Auto. Known dumps
+    are identified by a database;
+    unknown ones by signature analysis.
+
+    Real machine BIOS (optional, else
+    C-BIOS is used):
+    * Main BIOS: 32kB main+BASIC
+      dump (msx2.rom, bios)
+    * Sub (ext) ROM: matching 16kB
+      ext/sub dump
+    * Load BOTH from the SAME
+      machine or it will hang
+    * Quit and relaunch the core
+      to restore C-BIOS
+
+    Joy2Key (enable in Core Settings):
+    * D-pad types the cursor keys
+    * Map Y/X/L/R/Select/Start to
+      keys in the menus
+
+    MSX2 core by plasticbugs (Scott
+    Moschella), based on the MSX core
+    by boogermann (Marcus Andrade)
+    and Molekula. V9938 from the ESE
+    MSX-System (t.hara) via MiSTer.
+    Mapper database from the openMSX
+    Software Database.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-17 06:43:34.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-msx2/releases/download/v0.5.0/msx2-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - msx2
+      shortname: msx2
+      description: MSX2 core by plasticbugs, based on boogermann's MSX core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-msx2
+      version: 0.5.0
+      date_release: '2026-08-17'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Slot A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Slot B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Main BIOS
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sub (ext) ROM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Mapper DB
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: mapperdb.bin
+      extensions:
+      - bin
+  updaters:
+  info: |
+    MSX2 for Analogue Pocket.
+    V9938 VDP, 128kB VRAM, 256kB RAM,
+    SCC audio, 13 cartridge mappers
+    with automatic detection.
+
+    Mapper: leave on Auto. Known dumps
+    are identified by a database;
+    unknown ones by signature analysis.
+
+    Real machine BIOS (optional, else
+    C-BIOS is used):
+    * Main BIOS: 32kB main+BASIC
+      dump (msx2.rom, bios)
+    * Sub (ext) ROM: matching 16kB
+      ext/sub dump
+    * Quit and relaunch the core
+      to restore C-BIOS
+
+    On-screen keyboard:
+    * L+R+Select shows/hides it
+    * L+R+Start: intl layout
+
+    Joy2Key (enable in Core Settings):
+    * D-pad types the cursor keys
+    * Map Y/X/L/R/Select/Start to
+      keys in the menus
+
+    MSX2 core by plasticbugs (Scott
+    Moschella), based on the MSX core
+    by boogermann (Marcus Andrade)
+    and Molekula. V9938 from the ESE
+    MSX-System (t.hara) via MiSTer.
+    Mapper database from the openMSX
+    Software Database.
+  requires_license: false
+funding:

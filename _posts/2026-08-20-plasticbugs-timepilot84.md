@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.timepilot84 - 0.1.3
+title: plasticbugs.timepilot84 - 0.1.4
 date: 2026-08-20
 categories: [Arcade, Time Pilot '84]
 tags: [plasticbugs.timepilot84]
