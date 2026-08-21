@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: MSX2
+manufacturer: ASCII
+year: 1985
