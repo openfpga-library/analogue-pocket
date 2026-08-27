@@ -1,0 +1,449 @@
+--- !ruby/object:Inventory::Core
+id: plasticbugs.punchout
+repository: !ruby/object:GitHub::Repository
+  name: analogue-pocket-punchout
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: plasticbugs
+  html_url: https://github.com/plasticbugs/analogue-pocket-punchout
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-08-26 08:45:46.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-punchout/releases/download/v0.1.0-alpha.1/punchout-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - punchout
+      shortname: punchout
+      description: Punch-Out!! (Nintendo, 1984) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-punchout
+      version: 0.1.0-alpha.1
+      date_release: '2026-08-26'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: punchout.rom
+      extensions:
+      - rom
+  updaters:
+  info: |
+    Punch-Out!! (Nintendo, 1984)
+
+    The two-monitor boxing cabinet, both
+    screens on one Pocket display: the
+    info screen at native size across the
+    top third, the fight below it at 2x.
+    Neither loses a pixel.
+
+    Hardware
+    * Z80 at 4 MHz, main board
+    * RP2A03 (6502 + NES APU) at 1.79 MHz
+    * Two 256x224 monitors
+    * Zooming "big sprite" tilemaps
+
+    Controls
+      D-pad     dodge / duck / block
+      Y or L    left punch
+      X or R    right punch
+      B or A    KO punch
+      Select    coin (a coin starts play;
+                Start also inserts one)
+
+    ROMs are not included. Build the
+    image from your own MAME punchout
+    romset:
+
+      python3 mra_build.py punchout.mra
+          punchout.zip
+
+    and copy punchout.rom into
+    Assets/punchout/common/.
+
+    Speech (the ring announcer) is not
+    implemented yet.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-27 00:00:33.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-punchout/releases/download/v0.1.0-alpha.2/punchout-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - punchout
+      shortname: punchout
+      description: Punch-Out!! (Nintendo, 1984) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-punchout
+      version: 0.1.0-alpha.2
+      date_release: '2026-08-26'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: punchout.rom
+      extensions:
+      - rom
+  updaters:
+  info: |
+    Punch-Out!! (Nintendo, 1984)
+
+    The two-monitor boxing cabinet, both
+    screens on one Pocket display: the
+    info screen at native size across the
+    top third, the fight below it at 2x.
+    Neither loses a pixel.
+
+    Hardware
+    * Z80 at 4 MHz, main board
+    * RP2A03 (6502 + NES APU) at 1.79 MHz
+    * Two 256x224 monitors
+    * Zooming "big sprite" tilemaps
+
+    Controls
+      D-pad     dodge / duck / block
+      Y or L    left punch
+      X or R    right punch
+      B or A    KO punch
+      Select    coin (a coin starts play;
+                Start also inserts one)
+
+    ROMs are not included. Build the
+    image from your own MAME punchout
+    romset:
+
+      python3 mra_build.py punchout.mra
+          punchout.zip
+
+    and copy punchout.rom into
+    Assets/punchout/common/.
+
+    Speech (the ring announcer) is not
+    implemented yet.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-27 01:50:43.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-punchout/releases/download/v0.1.0-alpha.3/punchout-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - punchout
+      shortname: punchout
+      description: Punch-Out!! (Nintendo, 1984) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-punchout
+      version: 0.1.0-alpha.3
+      date_release: '2026-08-26'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: punchout.rom
+      extensions:
+      - rom
+  updaters:
+  info: |
+    Punch-Out!! (Nintendo, 1984)
+
+    The two-monitor boxing cabinet, both
+    screens on one Pocket display: the
+    info screen at native size across the
+    top third, the fight below it at 2x.
+    Neither loses a pixel.
+
+    Hardware
+    * Z80 at 4 MHz, main board
+    * RP2A03 (6502 + NES APU) at 1.79 MHz
+    * Two 256x224 monitors
+    * Zooming "big sprite" tilemaps
+
+    Controls
+      D-pad     dodge / duck / block
+      Y or L    left punch
+      X or R    right punch
+      B or A    KO punch
+      Select    coin (a coin starts play;
+                Start also inserts one)
+
+    ROMs are not included. Build the
+    image from your own MAME punchout
+    romset:
+
+      python3 mra_build.py punchout.mra
+          punchout.zip
+
+    and copy punchout.rom into
+    Assets/punchout/common/.
+
+    Speech (the ring announcer) is not
+    implemented yet.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-27 02:20:28.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-punchout/releases/download/v0.1.0/punchout-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - punchout
+      shortname: punchout
+      description: Punch-Out!! (Nintendo, 1984) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-punchout
+      version: 0.1.0
+      date_release: '2026-08-26'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: punchout.rom
+      extensions:
+      - rom
+  updaters:
+  info: |
+    Punch-Out!! (Nintendo, 1984)
+
+    The two-monitor boxing cabinet, both
+    screens on one Pocket display: the
+    info screen at native size across the
+    top third, the fight below it at 2x.
+    Neither loses a pixel.
+
+    Hardware
+    * Z80 at 4 MHz, main board
+    * RP2A03 (6502 + NES APU) at 1.79 MHz
+    * Two 256x224 monitors
+    * Zooming "big sprite" tilemaps
+
+    Controls
+      D-pad     dodge / duck / block
+      Y or L    left punch
+      X or R    right punch
+      B or A    KO punch
+      Select    coin (a coin starts play;
+                Start also inserts one)
+
+    ROMs are not included. Build the
+    image from your own MAME punchout
+    romset:
+
+      python3 mra_build.py punchout.mra
+          punchout.zip
+
+    and copy punchout.rom into
+    Assets/punchout/common/.
+
+    Speech (the ring announcer) is not
+    implemented yet.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-27 06:37:38.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-punchout/releases/download/v0.1.1/punchout-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - punchout
+      shortname: punchout
+      description: Punch-Out!! (Nintendo, 1984) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-punchout
+      version: 0.1.1
+      date_release: '2026-08-26'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: punchout.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Records
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: punchout.sav
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Punch-Out!! (Nintendo, 1984)
+
+    The two-monitor boxing cabinet, both
+    screens on one Pocket display: the
+    info screen at native size across the
+    top third, the fight below it at 2x.
+    Neither loses a pixel.
+
+    Hardware
+    * Z80 at 4 MHz, main board
+    * RP2A03 (6502 + NES APU) at 1.79 MHz
+    * Two 256x224 monitors
+    * Zooming "big sprite" tilemaps
+
+    Controls
+      D-pad     dodge / duck / block
+      Y or L    left punch
+      X or R    right punch
+      B or A    KO punch
+      Select    coin (a coin starts play;
+                Start also inserts one)
+
+    ROMs are not included. Build the
+    image from your own MAME punchout
+    romset:
+
+      python3 mra_build.py punchout.mra
+          punchout.zip
+
+    and copy punchout.rom into
+    Assets/punchout/common/.
+
+    Speech (the ring announcer) is not
+    implemented yet.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-27 07:33:09.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-punchout/releases/download/v0.1.2/punchout-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - punchout
+      shortname: punchout
+      description: Punch-Out!! (Nintendo, 1984) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-punchout
+      version: 0.1.2
+      date_release: '2026-08-26'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: punchout.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Records
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: punchout.sav
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Punch-Out!! (Nintendo, 1984)
+
+    The two-monitor boxing cabinet, both
+    screens on one Pocket display: the
+    info screen at native size across the
+    top third, the fight below it at 2x.
+    Neither loses a pixel.
+
+    Hardware
+    * Z80 at 4 MHz, main board
+    * RP2A03 (6502 + NES APU) at 1.79 MHz
+    * Two 256x224 monitors
+    * Zooming "big sprite" tilemaps
+
+    Controls
+      D-pad     dodge / duck / block
+      Y or L    left punch
+      X or R    right punch
+      B or A    KO punch
+      Select    coin (a coin starts play;
+                Start also inserts one)
+
+    ROMs are not included. Build the
+    image from your own MAME punchout
+    romset:
+
+      python3 mra_build.py punchout.mra
+          punchout.zip
+
+    and copy punchout.rom into
+    Assets/punchout/common/.
+
+    Speech (the ring announcer) is not
+    implemented yet.
+  requires_license: false
+funding:
