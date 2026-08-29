@@ -310,3 +310,4 @@
 - repository: spoonelli/atari-dual-68k
   assets:
     - AtariDual68k-pocket-
+- repository: cjchand/openfpga-mattel-football
