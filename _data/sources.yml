@@ -302,3 +302,8 @@
 - repository: plasticbugs/analogue-pocket-time-pilot-84
 - repository: plasticbugs/analogue-pocket-msx2
 - repository: plasticbugs/analogue-pocket-punchout
+- repository: janisc/openfpga-ngpc
+  assets:
+    - _No response — releases ship a single zip asset._
+  contents:
+    - _No response — distributed via GitHub releases._
