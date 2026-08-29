@@ -311,3 +311,4 @@
   assets:
     - AtariDual68k-pocket-
 - repository: cjchand/openfpga-mattel-football
+- repository: cjchand/openfpga-mattel-football-ii
