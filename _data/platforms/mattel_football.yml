@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Handheld
+name: Mattel Football
+manufacturer: Mattel Electronics
+year: 1977
