@@ -307,3 +307,6 @@
     - _No response — releases ship a single zip asset._
   contents:
     - _No response — distributed via GitHub releases._
+- repository: spoonelli/atari-dual-68k
+  assets:
+    - AtariDual68k-pocket-
