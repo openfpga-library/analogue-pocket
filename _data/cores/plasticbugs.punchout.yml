@@ -446,4 +446,84 @@ releases:
     Speech (the ring announcer) is not
     implemented yet.
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-31 03:18:55.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-punchout/releases/download/v0.2.0/punchout-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - punchout
+      shortname: punchout
+      description: Punch-Out!! and Super Punch-Out!! (Nintendo, 1984)
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-punchout
+      version: 0.2.0
+      date_release: '2026-08-30'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: punchout.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Records
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: punchout.sav
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Punch-Out!! / Super Punch-Out!!
+    (Nintendo, 1984)
+
+    Both two-monitor boxing cabinets on
+    one Pocket display: the info screen
+    at native size across the top third,
+    the fight below it at 2x. Neither
+    loses a pixel. One core plays both;
+    pick the image in ROM Set.
+
+    Hardware
+    * Z80 4 MHz, main board
+    * RP2A03 (6502 + APU) 1.79 MHz
+    * VLM5030 speech synthesiser
+    * Two 256x224 monitors
+    * Zooming "big sprite" tilemaps
+    * RP5C01 + RP5H01 protection
+
+    Controls
+      D-pad   dodge / duck / block
+      Y or L  left punch
+      X or R  right punch
+      B or A  KO punch
+      Start   4th button, Super only
+      Select  coin; a coin starts play
+
+    ROMs are not included. Build from
+    your own MAME romset:
+
+      python3 mra_build.py punchout.mra
+          punchout.zip
+
+    and copy into Assets/punchout/common.
+    Records are saved to the SD card.
+  requires_license: false
 funding:
