@@ -3,7 +3,7 @@ layout: post
 author: plasticbugs
 title: plasticbugs.punchout - 0.1.2
 date: 2026-08-26
-categories: [Arcade, Punch-Out!!]
+categories: [Arcade, Punch-Out!!/Super Punch-Out!!]
 tags: [plasticbugs.punchout]
 ---
 Punch-Out!! (Nintendo, 1984)
