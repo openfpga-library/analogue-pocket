@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Others
+name: Paprium
+manufacturer: WaterMelon
+year: 2020
