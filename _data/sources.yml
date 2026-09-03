@@ -309,3 +309,6 @@
 - repository: cjchand/openfpga-mattel-football
 - repository: cjchand/openfpga-mattel-football-ii
 - repository: mhlin6402/pocketplayer
+- repository: thekoalakoa/paprium-pocket
+  assets:
+    - openfpga-Paprium_
