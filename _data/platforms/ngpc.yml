@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Handheld
+name: Neo Geo Pocket Color
+manufacturer: SNK
+year: 1999
