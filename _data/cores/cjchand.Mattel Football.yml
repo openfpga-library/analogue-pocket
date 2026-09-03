@@ -1,0 +1,123 @@
+--- !ruby/object:Inventory::Core
+id: cjchand.Mattel Football
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-mattel-football
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: cjchand
+  html_url: https://github.com/cjchand/openfpga-mattel-football
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-07-31 22:22:32.000000000 Z
+  download_url: https://github.com/cjchand/openfpga-mattel-football/releases/download/v1.0.0/mattel-football-v1.0.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - mattel_football
+      shortname: Mattel Football
+      description: Mattel Electronic Football (1977) for the Analogue Pocket.
+      author: cjchand
+      url: https://github.com/cjchand/openfpga-mattel-football
+      version: 1.0.0
+      date_release: '2026-07-31'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: mfootb.bin
+      extensions:
+  updaters:
+  info: "Mattel Football\r\n\r\nAn openFPGA core for the Analogue Pocket, reimplementing
+    Mattel Electronic\r\nFootball (1977) from a B6100 CPU core built and verified
+    against MAME.\r\n\r\nRequires the game's ROM file, supplied by the user, at\r\nAssets/mattel_football/common/mfootb.bin
+    on the SD card.\r\n"
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-28 14:58:43.000000000 Z
+  download_url: https://github.com/cjchand/openfpga-mattel-football/releases/download/v1.0.1/mattel-football-v1.0.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - mattel_football
+      shortname: Mattel Football
+      description: Mattel Electronic Football (1977) for the Analogue Pocket.
+      author: cjchand
+      url: https://github.com/cjchand/openfpga-mattel-football
+      version: 1.0.1
+      date_release: '2026-08-28'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: mfootb.bin
+      extensions:
+  updaters:
+  info: "Mattel Football\r\n\r\nAn openFPGA core for the Analogue Pocket, reimplementing
+    Mattel Electronic\r\nFootball (1977) from a B6100 CPU core built and verified
+    against MAME.\r\n\r\nRequires the game's ROM file, supplied by the user, at\r\nAssets/mattel_football/common/mfootb.bin
+    on the SD card.\r\n"
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-08-29 19:55:47.000000000 Z
+  download_url: https://github.com/cjchand/openfpga-mattel-football/releases/download/v1.0.2/mattel-football-v1.0.2.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - mattel_football
+      shortname: Mattel Football
+      description: Mattel Electronic Football (1977) for the Analogue Pocket.
+      author: cjchand
+      url: https://github.com/cjchand/openfpga-mattel-football
+      version: 1.0.2
+      date_release: '2026-08-29'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: mfootb.bin
+      extensions:
+  updaters:
+  info: "Mattel Football\r\n\r\nAn openFPGA core for the Analogue Pocket, reimplementing
+    Mattel Electronic\r\nFootball (1977) from a B6100 CPU core built and verified
+    against MAME.\r\n\r\nRequires the game's ROM file, supplied by the user, at\r\nAssets/mattel_football/common/mfootb.bin
+    on the SD card.\r\n"
+  requires_license: false
+funding:

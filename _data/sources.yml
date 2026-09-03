@@ -303,3 +303,9 @@
 - repository: plasticbugs/analogue-pocket-msx2
 - repository: plasticbugs/analogue-pocket-punchout
 - repository: janisc/openfpga-ngpc
+- repository: spoonelli/atari-dual-68k
+  assets:
+    - AtariDual68k-pocket-
+- repository: cjchand/openfpga-mattel-football
+- repository: cjchand/openfpga-mattel-football-ii
+- repository: mhlin6402/pocketplayer
