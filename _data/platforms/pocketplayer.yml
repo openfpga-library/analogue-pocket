@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Music Players
+name: PocketPlayer
+manufacturer: mhlin
+year: 2026
