@@ -1,0 +1,99 @@
+--- !ruby/object:Inventory::Core
+id: mhlin.PocketPlayer
+repository: !ruby/object:GitHub::Repository
+  name: PocketPlayer
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: MHLin6402
+  html_url: https://github.com/MHLin6402/PocketPlayer
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-09-03 18:57:19.000000000 Z
+  download_url: https://github.com/MHLin6402/PocketPlayer/releases/download/v1.0.0/PocketPlayer-v1.0.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - pocketplayer
+      shortname: PocketPlayer
+      description: 'Music player: browse and play a library of up to 512 tracks from
+        the Library tab, with per-track album art, three Now Playing views (Still
+        Thumbnail, Spinning Vinyl, Full Art), shuffle/repeat, a screensaver, and a
+        button lock.'
+      author: mhlin
+      url: https://github.com/open-fpga/core-template
+      version: 1.0.0
+      date_release: '2026-08-28'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Playlist
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: playlist.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track Thumbs
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: track_thumbs.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Audio Bank 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: test_audio_bank0.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Audio Bank 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: test_audio_bank1.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Audio Bank 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: test_audio_bank2.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Audio Bank 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: test_audio_bank3.bin
+      extensions:
+      - bin
+  updaters:
+  info:
+  requires_license: false
+funding: !ruby/object:GitHub::Funding
+  buy_me_a_coffee: https://buymeacoffee.com/mhlin6402
