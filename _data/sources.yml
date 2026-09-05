@@ -313,3 +313,4 @@
 - repository: thekoalakoa/paprium-pocket
   assets:
     - openfpga-Paprium_
+- repository: plasticbugs/analogue-pocket-stunrunner
