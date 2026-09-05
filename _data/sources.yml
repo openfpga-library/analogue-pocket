@@ -314,3 +314,4 @@
   assets:
     - openfpga-Paprium_
 - repository: plasticbugs/analogue-pocket-stunrunner
+- repository: kroy-the-rabbit/openfpga-carttools
