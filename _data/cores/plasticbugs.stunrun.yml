@@ -1,0 +1,313 @@
+--- !ruby/object:Inventory::Core
+id: plasticbugs.stunrun
+repository: !ruby/object:GitHub::Repository
+  name: analogue-pocket-stunrunner
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: plasticbugs
+  html_url: https://github.com/plasticbugs/analogue-pocket-stunrunner
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-09-04 06:03:52.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-stunrunner/releases/download/v0.1.0/stunrun-pocket-v0.1.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - stunrun
+      shortname: stunrun
+      description: S.T.U.N. Runner (Atari Games, 1989) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-stunrunner
+      version: 0.1.0
+      date_release: '2026-09-03'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: stunrun.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings & Records
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: stunrun.sav
+      extensions:
+      - sav
+  updaters:
+  info: |
+    S.T.U.N. Runner (Atari Games, 1989)
+
+    Atari's 3D polygon racer on the Hard
+    Drivin' "multisync" hardware, all of
+    it in gateware:
+
+    * 68010 at 8 MHz, game logic
+    * TMS34010 at 48 MHz, polygon
+      rasteriser and video timing
+    * ADSP-2100 at 8 MHz, 3D maths
+    * JSA II sound: 6502, YM2151,
+      OKI6295 ADPCM
+    * 512x240 8-bit frame buffer
+
+    Controls
+      D-pad / stick   steer, pitch
+      A or X or R     fire
+      B or Y or L     boost
+      Select          coin
+      Start           start
+
+    ROMs are not included. Build the
+    image from your own MAME stunrun
+    romset:
+
+      python3 mra_build.py stunrun.mra
+          stunrun.zip
+
+    and copy stunrun.rom into
+    Assets/stunrun/common/.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-09-04 06:29:40.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-stunrunner/releases/download/v0.1.1/stunrun-pocket-v0.1.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - stunrun
+      shortname: stunrun
+      description: S.T.U.N. Runner (Atari Games, 1989) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-stunrunner
+      version: 0.1.1
+      date_release: '2026-09-03'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: stunrun.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings & Records
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: stunrun.sav
+      extensions:
+      - sav
+  updaters:
+  info: |
+    S.T.U.N. Runner (Atari Games, 1989)
+
+    Atari's 3D polygon racer on the Hard
+    Drivin' "multisync" hardware, all of
+    it in gateware:
+
+    * 68010 at 8 MHz, game logic
+    * TMS34010 at 48 MHz, polygon
+      rasteriser and video timing
+    * ADSP-2100 at 8 MHz, 3D maths
+    * JSA II sound: 6502, YM2151,
+      OKI6295 ADPCM
+    * 512x240 8-bit frame buffer
+
+    Controls
+      D-pad / stick   steer, pitch
+      A or X or R     fire
+      B or Y or L     boost
+      Select          coin
+      Start           start
+
+    ROMs are not included. Build the
+    image from your own MAME stunrun
+    romset:
+
+      python3 mra_build.py stunrun.mra
+          stunrun.zip
+
+    and copy stunrun.rom into
+    Assets/stunrun/common/.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-09-04 17:40:29.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-stunrunner/releases/download/v0.2.0/stunrun-pocket-v0.2.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - stunrun
+      shortname: stunrun
+      description: S.T.U.N. Runner (Atari Games, 1989) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-stunrunner
+      version: 0.2.0
+      date_release: '2026-09-04'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: stunrun.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings & Records
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: stunrun.sav
+      extensions:
+      - sav
+  updaters:
+  info: |
+    S.T.U.N. Runner (Atari Games, 1989)
+
+    Atari's 3D polygon racer on the Hard
+    Drivin' "multisync" hardware, all of
+    it in gateware:
+
+    * 68010 at 8 MHz, game logic
+    * TMS34010 at 48 MHz, polygon
+      rasteriser and video timing
+    * ADSP-2100 at 8 MHz, 3D maths
+    * JSA II sound: 6502, YM2151,
+      OKI6295 ADPCM
+    * 512x240 8-bit frame buffer
+
+    Controls
+      D-pad / stick   steer, pitch
+      A or X or R     fire
+      B or Y or L     boost
+      Select          coin
+      Start           start
+
+    ROMs are not included. Build the
+    image from your own MAME stunrun
+    romset:
+
+      python3 mra_build.py stunrun.mra
+          stunrun.zip
+
+    and copy stunrun.rom into
+    Assets/stunrun/common/.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-09-05 00:51:12.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-stunrunner/releases/download/v0.2.1/stunrun-pocket-v0.2.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - stunrun
+      shortname: stunrun
+      description: S.T.U.N. Runner (Atari Games, 1989) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-stunrunner
+      version: 0.2.1
+      date_release: '2026-09-04'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: stunrun.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings & Records
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: stunrun.sav
+      extensions:
+      - sav
+  updaters:
+  info: |
+    S.T.U.N. Runner (Atari Games, 1989)
+
+    Atari's 3D polygon racer on the Hard
+    Drivin' "multisync" hardware, all of
+    it in gateware:
+
+    * 68010 at 8 MHz, game logic
+    * TMS34010 at 48 MHz, polygon
+      rasteriser and video timing
+    * ADSP-2100 at 8 MHz, 3D maths
+    * JSA II sound: 6502, YM2151,
+      OKI6295 ADPCM
+    * 512x240 8-bit frame buffer
+
+    Controls
+      D-pad / stick   steer, pitch
+      A or X or R     fire
+      B or Y or L     boost
+      Select          coin
+      Start           start
+
+    ROMs are not included. Build the
+    image from your own MAME stunrun
+    romset:
+
+      python3 mra_build.py stunrun.mra
+          stunrun.zip
+
+    and copy stunrun.rom into
+    Assets/stunrun/common/.
+  requires_license: false
+funding:
