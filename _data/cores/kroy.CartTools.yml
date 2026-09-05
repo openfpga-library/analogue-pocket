@@ -1,0 +1,306 @@
+--- !ruby/object:Inventory::Core
+id: kroy.CartTools
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-carttools
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: kroy-the-rabbit
+  html_url: https://github.com/kroy-the-rabbit/openfpga-carttools
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-08-30 05:34:15.000000000 Z
+  download_url: https://github.com/kroy-the-rabbit/openfpga-carttools/releases/download/v0.9999/kroy.CartTools_0.9999.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - carttools
+      shortname: CartTools
+      description: Cartridge Tools
+      author: kroy
+      url: https://github.com/kroy-the-rabbit/openfpga-carttools
+      version: '0.9999'
+      date_release: '2026-08-30'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - gba
+      - gb
+      - gbc
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Dump
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: CARTDUMP.gb
+      extensions:
+      - gb
+      - gbc
+      - gba
+      - bin
+  updaters:
+  info: |
+    openFPGA-CartTools
+
+    A cartridge utility core: identify, dump and back up Game Boy, Game Boy Color
+    and Game Boy Advance cartridges through the Pocket's cartridge slot.
+
+    Derived from the Pocket GBA core by mincer_ray, itself a port of GBA_MiSTer.
+    Licensed under GPL-2.0.
+
+    This core reads cartridges. It never writes save data to one, and there is
+    no restore operation in it.
+
+    It does write to mapper registers, in ROM space, because that is the only way
+    the hardware allows a read:
+
+      X  dump ROM   bank registers, which is how a Game Boy cartridge is banked
+                    and the only way to read past bank 0
+      Y  dump save  the same, plus 0x0A and 0x00 to 0x0000, which open and close
+                    the cartridge's save RAM gate. Closed again on every exit
+
+    Nothing it does puts a byte into cartridge RAM or into GBA ROM space.
+
+    Saves are read once, with no second pass to check them against, so treat a
+    .sav as a copy and not yet as a backup. See docs/HANDOFF.md.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-09-02 02:33:42.000000000 Z
+  download_url: https://github.com/kroy-the-rabbit/openfpga-carttools/releases/download/v0.9999.ed18b9b/kroy.CartTools_0.9999.ed18b9b.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - carttools
+      shortname: CartTools
+      description: Cartridge Tools
+      author: kroy
+      url: https://github.com/kroy-the-rabbit/openfpga-carttools
+      version: 0.9999.ed18b9b
+      date_release: '2026-09-02'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - gba
+      - gb
+      - gbc
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Dump
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: CARTDUMP.gb
+      extensions:
+      - gb
+      - gbc
+      - gba
+      - bin
+  updaters:
+  info: |
+    openFPGA-CartTools
+
+    A cartridge utility core: identify, dump and back up Game Boy, Game Boy Color
+    and Game Boy Advance cartridges through the Pocket's cartridge slot.
+
+    Derived from the Pocket GBA core by mincer_ray, itself a port of GBA_MiSTer.
+    Licensed under GPL-2.0.
+
+    This core reads cartridges. It never writes save data to one, and there is
+    no restore operation in it.
+
+    It does write to mapper registers, in ROM space, because that is the only way
+    the hardware allows a read:
+
+      X  dump ROM   bank registers, which is how a Game Boy cartridge is banked
+                    and the only way to read past bank 0
+      Y  dump save  the same, plus 0x0A and 0x00 to 0x0000, which open and close
+                    the cartridge's save RAM gate. Closed again on every exit
+
+    Nothing it does puts a byte into cartridge RAM or into GBA ROM space.
+
+    Saves are read once, with no second pass to check them against, so treat a
+    .sav as a copy and not yet as a backup. See docs/HANDOFF.md.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-09-03 01:50:17.000000000 Z
+  download_url: https://github.com/kroy-the-rabbit/openfpga-carttools/releases/download/v0.9999.52305c7/kroy.CartTools_0.9999.52305c7.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - carttools
+      shortname: CartTools
+      description: Cartridge Tools
+      author: kroy
+      url: https://github.com/kroy-the-rabbit/openfpga-carttools
+      version: 0.9999.52305c7
+      date_release: '2026-09-03'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - gba
+      - gb
+      - gbc
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Dump
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: CARTDUMP.gb
+      extensions:
+      - gb
+      - gbc
+      - gba
+      - bin
+  updaters:
+  info: |
+    openFPGA-CartTools
+
+    A cartridge utility core: identify, dump and back up Game Boy, Game Boy Color
+    and Game Boy Advance cartridges through the Pocket's cartridge slot.
+
+    Derived from the Pocket GBA core by mincer_ray, itself a port of GBA_MiSTer.
+    Licensed under GPL-2.0.
+
+    This core reads cartridges. It never writes save data to one, and there is
+    no restore operation in it.
+
+    It does write to mapper registers, in ROM space, because that is the only way
+    the hardware allows a read:
+
+      X  dump ROM   bank registers, which is how a Game Boy cartridge is banked
+                    and the only way to read past bank 0
+      Y  dump save  the same, plus 0x0A and 0x00 to 0x0000, which open and close
+                    the cartridge's save RAM gate. Closed again on every exit
+
+    Nothing it does puts a byte into cartridge RAM or into GBA ROM space.
+
+    Saves are read once, with no second pass to check them against, so treat a
+    .sav as a copy and not yet as a backup. See docs/HANDOFF.md.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-09-05 03:35:04.000000000 Z
+  download_url: https://github.com/kroy-the-rabbit/openfpga-carttools/releases/download/v0.9999.250d6a0/kroy.CartTools_0.9999.250d6a0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - carttools
+      shortname: CartTools
+      description: Cartridge Tools
+      author: kroy
+      url: https://github.com/kroy-the-rabbit/openfpga-carttools
+      version: 0.9999.250d6a0
+      date_release: '2026-09-04'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - gba
+      - gb
+      - gbc
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Dump
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: CARTDUMP.gb
+      extensions:
+      - gb
+      - gbc
+      - gba
+      - bin
+  updaters:
+  info: |
+    openFPGA-CartTools
+
+    A cartridge utility core: identify, dump and back up Game Boy, Game Boy Color
+    and Game Boy Advance cartridges through the Pocket's cartridge slot.
+
+    Derived from the Pocket GBA core by mincer_ray, itself a port of GBA_MiSTer.
+    Licensed under GPL-2.0.
+
+    This core reads cartridges. It never writes save data to one, and there is
+    no restore operation in it.
+
+    It does write to mapper registers, in ROM space, because that is the only way
+    the hardware allows a read:
+
+      X  dump ROM   bank registers, which is how a Game Boy cartridge is banked
+                    and the only way to read past bank 0
+      Y  dump save  the same, plus 0x0A and 0x00 to 0x0000, which open and close
+                    the cartridge's save RAM gate. Closed again on every exit
+
+    Nothing it does puts a byte into cartridge RAM or into GBA ROM space.
+
+    Saves are read once, with no second pass to check them against, so treat a
+    .sav as a copy and not yet as a backup. See docs/HANDOFF.md.
+  requires_license: false
+funding: !ruby/object:GitHub::Funding
+  ko_fi: https://ko-fi.com/mincer_ray
