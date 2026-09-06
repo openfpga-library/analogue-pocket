@@ -168,4 +168,88 @@ releases:
 
     Licensed under GPLv3.
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-09-06 16:15:40.000000000 Z
+  download_url: https://github.com/thekoalakoa/paprium-pocket/releases/download/0.2.1/openfpga-Paprium_0.2.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - paprium
+      shortname: Paprium
+      description: Paprium (WaterMelon) - single-game core
+      author: Koala_Koa
+      url: https://github.com/thekoalakoa
+      version: 0.2.1
+      date_release: '2026-09-06'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.3'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Paprium ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Paprium.md
+      extensions:
+      - md
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Paprium.sav
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Paprium music
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: paprium.pcm
+      extensions:
+      - pcm
+  updaters:
+  info: |
+    Paprium (WaterMelon) for Analogue Pocket.
+
+    A single-game core, not a Mega Drive emulator: the general cartridge
+    hardware is stripped out to make room for Paprium's own. Do not load
+    other ROMs into it.
+
+    Not a faithful reproduction of the cartridge. Paprium's DATENMEISTER
+    chipset is not reproduced; this takes the EverDrive Pro approach, running
+    krikzz's mega-ppm replacement MCU firmware, with the music streamed from
+    SD card instead of the original wave ROM.
+
+    Lineage:
+      Nuked-MD-FPGA .................... nukeykt
+      MegaDrive_MiSTer ................. MiSTer-devel
+      openFPGA-MegaDrive (Pocket port).. drizzt
+      Paprium_MegaDrive_MiSTer ......... MisterPezz82
+      mega-ppm firmware ................ krikzz
+
+    Assets go in /Assets/paprium/common/ :
+      Paprium.md      the 8 MiB cartridge dump (GM T-574120-00), required
+      paprium.pcm     the music blob, optional. Build it from your own rip of
+                      the soundtrack: scripts/build_cdda.sh converts the tracks,
+                      then scripts/build_cdda_adpcm.py packs them into one
+                      ~543 MB file. See the README, section "Music".
+
+    Licensed under GPLv3.
+  requires_license: false
 funding:
