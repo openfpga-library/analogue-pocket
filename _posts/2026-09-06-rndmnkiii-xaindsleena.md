@@ -1,8 +1,8 @@
 ---
 layout: post
 author: RndMnkIII
-title: RndMnkIII.XaindSleena - 0.1.7
-date: 2026-09-05
+title: RndMnkIII.XaindSleena - 0.1.9
+date: 2026-09-06
 categories: [Arcade, Xain'd Sleena]
 tags: [RndMnkIII.XaindSleena]
 ---
