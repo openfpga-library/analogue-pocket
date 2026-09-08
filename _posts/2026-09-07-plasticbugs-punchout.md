@@ -1,9 +1,9 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.punchout - 0.3.4
+title: plasticbugs.punchout - 0.4.2
 date: 2026-09-07
-categories: [Arcade, Punch-Out!! & Arm Wrestling]
+categories: [Arcade, Punch-Out!!]
 tags: [plasticbugs.punchout]
 ---
 Punch-Out!! / Super Punch-Out!! /
@@ -14,7 +14,7 @@ monitor board, on one Pocket display:
 info screen at native size across the
 top third, the action below it at 2x.
 Neither loses a pixel. One core plays
-all three; switch in the ROM menu.
+all three; pick one when you Run.
 
 Hardware
 * Z80 4 MHz, main board
