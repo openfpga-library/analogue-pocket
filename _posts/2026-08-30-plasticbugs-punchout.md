@@ -3,7 +3,7 @@ layout: post
 author: plasticbugs
 title: plasticbugs.punchout - 0.2.0
 date: 2026-08-30
-categories: [Arcade, Punch-Out!! & Arm Wrestling]
+categories: [Arcade, Punch-Out!!]
 tags: [plasticbugs.punchout]
 ---
 Punch-Out!! / Super Punch-Out!!
