@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.punchout - 0.4.3
+title: plasticbugs.punchout - 0.4.4
 date: 2026-09-08
 categories: [Arcade, Punch-Out!!]
 tags: [plasticbugs.punchout]
