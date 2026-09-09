@@ -194,4 +194,98 @@ releases:
     720) and copy the .rom files into
     Assets/atarisy2/common/.
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-09-09 08:31:40.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-atarisy2/releases/download/v0.3.2/atarisy2-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - atarisy2
+      shortname: atarisy2
+      description: 'Atari System 2 arcade core: Super Sprint, Championship Sprint,
+        APB, Paperboy, 720 Degrees'
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-atarisy2
+      version: 0.3.2
+      date_release: '2026-09-05'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Image
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings & High Scores
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Atari System 2 (Atari Games, 1984-87)
+
+    Five games on one board, all of it
+    in gateware:
+
+      Super Sprint          1986
+      Championship Sprint   1986
+      APB                   1987
+      Paperboy              1984
+      720 Degrees           1986
+
+    * DEC T-11 at 10 MHz with the
+      game's slapstic (105-110)
+    * playfield, alphanumerics and
+      motion objects at 512x384
+    * sound board: 6502, two POKEYs,
+      YM2151 stereo, TMS5220 speech
+
+    Controls
+      D-pad / stick   steer, handle-
+                      bars, or point
+                      the 720 stick
+      A, B, X, Y      gas / buttons
+      L, R            720: spin
+      Select          coin
+      Start           start
+      Dock pads 2, 3  Sprint players
+
+    ROMs are not included. Build each
+    image from your own MAME romset:
+
+      python3 mra_build.py 720.mra
+          720.zip
+
+    (ssprint, apb, csprint, paperboy,
+    720) and copy the .rom files into
+    Assets/atarisy2/common/.
+  requires_license: false
 funding:
