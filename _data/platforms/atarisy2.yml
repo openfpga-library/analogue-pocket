@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade Multi
+name: Atari System 2
+manufacturer: Atari Games
+year: 1984
