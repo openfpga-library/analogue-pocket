@@ -698,4 +698,350 @@ releases:
   updaters:
   info:
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-09-10 19:38:20.000000000 Z
+  download_url: https://github.com/BananaWiFi/openFPGA-Game-Boy-Printer/releases/download/v1.0.2/openFPGA-Game-Boy-Printer-v1.0.2.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gbprinter
+      shortname: GBPrinter
+      description: Digital Game Boy Printer for Analogue Pocket.
+      author: BananaWiFi
+      url: ''
+      version: 1.0.2
+      date_release: '2026-09-10'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: false
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 01
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_01.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 02
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_02.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 03
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_03.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 04
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_04.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 05
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_05.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 06
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_06.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 07
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_07.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 08
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_08.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 09
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_09.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 10
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_10.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 11
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_11.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 12
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_12.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 13
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_13.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 14
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_14.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 15
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_15.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 16
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_16.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 17
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_17.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 18
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_18.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 19
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_19.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 20
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_20.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 21
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_21.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 22
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_22.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 23
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_23.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 24
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_24.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 25
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_25.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 26
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_26.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 27
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_27.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 28
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_28.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 29
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_29.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 30
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_30.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 31
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_31.png
+      extensions:
+      - png
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PNG Export 32
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Prints/GBPrinter_32.png
+      extensions:
+      - png
+  updaters:
+  info:
+  requires_license: false
 funding:
