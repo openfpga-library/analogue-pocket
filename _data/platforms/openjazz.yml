@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: OpenJazz
+manufacturer: negenii
+year: 2026
