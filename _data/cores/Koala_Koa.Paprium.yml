@@ -468,6 +468,78 @@ releases:
     (complete corresponding\r\nsource, at the tag above). GPLv3 or later; full text
     in LICENSE here.\r\n"
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-09-11 13:14:09.000000000 Z
+  download_url: https://github.com/thekoalakoa/paprium-pocket/releases/download/0.2.5/openfpga-Paprium_0.2.5.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - paprium
+      shortname: Paprium
+      description: Paprium (WaterMelon) - single-game core
+      author: Koala_Koa
+      url: https://github.com/thekoalakoa
+      version: 0.2.5
+      date_release: '2026-09-11'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.3'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Paprium ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Paprium.md
+      extensions:
+      - md
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: Paprium.sav
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Paprium music
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: paprium.pcm
+      extensions:
+      - pcm
+  updaters:
+  info: "Paprium (WaterMelon) for Analogue Pocket.\r\n\r\nA single-game core, not
+    a Mega Drive emulator: the general cartridge\r\nhardware is stripped out to make
+    room for Paprium's own. Do not load\r\nother ROMs into it.\r\n\r\nNot a faithful
+    reproduction of the cartridge. Paprium's DATENMEISTER\r\nchipset is not reproduced;
+    this takes the EverDrive Pro approach, running\r\nkrikzz's mega-ppm replacement
+    MCU firmware, with the music streamed from\r\nSD card instead of the original
+    wave ROM.\r\n\r\nLineage, all GPL:\r\n  Nuked-MD-FPGA ......... (C) 2022-2023
+    nukeykt\r\n  FX68K, the 68000 ...... (c) 2018, 2021 Jorge Cwik (ijor)\r\n  MegaDrive_MiSTer
+    ...... MiSTer-devel\r\n  openFPGA-MegaDrive .... drizzt\r\n  Paprium_MD_MiSTer
+    ..... MisterPezz82\r\n  mega-ppm firmware ..... krikzz\r\n\r\nAssets go in /Assets/paprium/common/
+    :\r\n  Paprium.md    the 8 MiB cartridge dump (GM T-574120-00), required\r\n  paprium.pcm
+    \  the music blob, optional - build it from your own rip\r\n                of
+    the soundtrack; see the README, section \"Music\".\r\n\r\nSource: github.com/thekoalakoa/paprium-pocket
+    (complete corresponding\r\nsource, at the tag above). GPLv3 or later; full text
+    in LICENSE here.\r\n"
+  requires_license: false
 funding: !ruby/object:GitHub::Funding
   github:
   - https://github.com/sponsors/thekoalakoa
