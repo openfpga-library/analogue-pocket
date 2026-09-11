@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Koala_Koa
-title: Koala_Koa.Paprium - 0.2.3
+title: Koala_Koa.Paprium - 0.2.4
 date: 2026-09-10
 categories: [Others, Paprium]
 tags: [Koala_Koa.Paprium]
