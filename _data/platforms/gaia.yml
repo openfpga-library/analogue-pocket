@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Gaiapolis
+manufacturer: Konami
+year: 1993
