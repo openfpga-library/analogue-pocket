@@ -1,0 +1,252 @@
+--- !ruby/object:Inventory::Core
+id: plasticbugs.gaia
+repository: !ruby/object:GitHub::Repository
+  name: analogue-pocket-gaiapolis
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: plasticbugs
+  html_url: https://github.com/plasticbugs/analogue-pocket-gaiapolis
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-09-12 05:41:51.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-gaiapolis/releases/download/v0.1.0/gaia-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gaia
+      shortname: gaia
+      description: Gaiapolis (Konami, 1993) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-gaiapolis
+      version: 0.1.0
+      date_release: '2026-09-11'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: gaiapols.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings & Records
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: gaiapols.sav
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Gaiapolis (Konami, 1993)
+
+    Konami's vertical fantasy shooter on
+    the pre-GX hardware, all of it in
+    gateware:
+
+    * 68000 at 16 MHz, game logic
+    * Z80 at 8 MHz sound board with two
+      K054539 PCM chips
+    * K056832 tilemaps, K053247 sprites,
+      K053936 rotating ground plane,
+      K055555 priority mixer
+    * 376x224 at 59.19 Hz, rotated
+
+    Controls
+      D-pad / stick   move
+      A or Y          button 1
+      B or X          button 2
+      R               button 3
+      Select          coin
+      Start           start
+      (a second pad plays player 2)
+
+    Settings and records are kept in the
+    EEPROM and saved to gaiapols.sav.
+
+    ROMs are not included. Build the
+    image from your own MAME gaiapols
+    romset:
+
+      python3 mra_build.py gaiapolis.mra
+          gaiapols.zip
+
+    and copy gaiapols.rom into
+    Assets/gaia/common/.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-09-12 16:40:20.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-gaiapolis/releases/download/v0.2.0/gaia-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gaia
+      shortname: gaia
+      description: Gaiapolis (Konami, 1993) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-gaiapolis
+      version: 0.2.0
+      date_release: '2026-09-12'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: gaiapols.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings & Records
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: gaiapols.sav
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Gaiapolis (Konami, 1993)
+
+    Konami's vertical fantasy shooter on
+    the pre-GX hardware, all of it in
+    gateware:
+
+    * 68000 at 16 MHz, game logic
+    * Z80 at 8 MHz sound board with two
+      K054539 PCM chips
+    * K056832 tilemaps, K053247 sprites,
+      K053936 rotating ground plane,
+      K055555 priority mixer
+    * 376x224 at 59.19 Hz, rotated
+
+    Controls
+      D-pad / stick   move
+      A or Y          button 1
+      B or X          button 2
+      R               button 3
+      Select          coin
+      Start           start
+      (a second pad plays player 2)
+
+    Settings and records are kept in the
+    EEPROM and saved to gaiapols.sav.
+
+    ROMs are not included. Build the
+    image from your own MAME gaiapols
+    romset:
+
+      python3 mra_build.py gaiapolis.mra
+          gaiapols.zip
+
+    and copy gaiapols.rom into
+    Assets/gaia/common/.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-09-13 01:43:30.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-gaiapolis/releases/download/v0.2.1/gaia-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gaia
+      shortname: gaia
+      description: Gaiapolis (Konami, 1993) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-gaiapolis
+      version: 0.2.1
+      date_release: '2026-09-12'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: gaiapols.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings & Records
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: gaiapols.sav
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Gaiapolis (Konami, 1993)
+
+    Konami's vertical fantasy shooter on
+    the pre-GX hardware, all of it in
+    gateware:
+
+    * 68000 at 16 MHz, game logic
+    * Z80 at 8 MHz sound board with two
+      K054539 PCM chips
+    * K056832 tilemaps, K053247 sprites,
+      K053936 rotating ground plane,
+      K055555 priority mixer
+    * 376x224 at 59.19 Hz, rotated
+
+    Controls
+      D-pad / stick   move
+      A or Y          button 1
+      B or X          button 2
+      R               button 3
+      Select          coin
+      Start           start
+      (a second pad plays player 2)
+
+    Settings and records are kept in the
+    EEPROM and saved to gaiapols.sav.
+
+    ROMs are not included. Build the
+    image from your own MAME gaiapols
+    romset:
+
+      python3 mra_build.py gaiapolis.mra
+          gaiapols.zip
+
+    and copy gaiapols.rom into
+    Assets/gaia/common/.
+  requires_license: false
+funding:
