@@ -1,0 +1,11 @@
+--- !ruby/object:Inventory::Core
+id: HarpMudd.Berzerk
+repository: !ruby/object:GitHub::Repository
+  name: HarpMudd.berzerk
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: harpmudd
+  html_url: https://github.com/harpmudd/HarpMudd.berzerk
+releases: []
+funding: !ruby/object:GitHub::Funding
+  custom:
+  - https://www.paypal.com/donate/?hosted_button_id=S22WV924XU2ME
