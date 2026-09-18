@@ -1,0 +1,168 @@
+--- !ruby/object:Inventory::Core
+id: plasticbugs.cloak
+repository: !ruby/object:GitHub::Repository
+  name: analogue-pocket-cloak-dagger
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: plasticbugs
+  html_url: https://github.com/plasticbugs/analogue-pocket-cloak-dagger
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-09-18 17:35:09.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-cloak-dagger/releases/download/v0.1.0/cloak-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - cloak
+      shortname: cloak
+      description: Cloak & Dagger (Atari, 1983) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-cloak-dagger
+      version: 0.1.0
+      date_release: '2026-09-18'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: cloak.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings & High Scores
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Cloak & Dagger (Atari, 1983)
+
+    Agent X raids Dr. Boom's underground
+    bomb factory. Walk with one hand,
+    fire with the other.
+
+    * two 6502s: one runs the game, one
+      does nothing but draw into a
+      256x256 bitmap through an auto-
+      incrementing address generator
+    * two POKEYs into op-amp summing
+      stages, modelled from the ladder
+      up rather than as a linear mixer
+    * 256x232 at 61.04 Hz, the board's
+      own rate, off its timing PROM
+    * settings and high scores are kept
+      in the machine's real 512-byte
+      NVRAM and saved to cloak.sav
+
+    Controls
+      D-pad     walk
+      X A B Y   fire up right down left
+                (two at once = diagonal)
+      L or R    igniter
+      Select    coin
+      Start     start
+
+    ROMs are not included. Build the
+    image from your own MAME romset:
+
+      python3 mra_build.py cloak.mra
+          cloak.zip
+
+    and copy cloak.rom into
+    Assets/cloak/common/.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-09-18 18:01:39.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-cloak-dagger/releases/download/v0.1.1/cloak-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - cloak
+      shortname: cloak
+      description: Cloak & Dagger (Atari, 1983) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-cloak-dagger
+      version: 0.1.1
+      date_release: '2026-09-18'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: cloak.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings & High Scores
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Cloak & Dagger (Atari, 1983)
+
+    Agent X raids Dr. Boom's underground
+    bomb factory. Walk with one hand,
+    fire with the other.
+
+    * two 6502s: one runs the game, one
+      does nothing but draw into a
+      256x256 bitmap
+    * two POKEYs into op-amp summing
+      stages, from the ladder up
+    * 256x232 at 61.04 Hz, the board's
+      own rate, off its timing PROM
+    * settings and scores in the real
+      512-byte NVRAM, saved to cloak.sav
+
+    Controls
+      D-pad     walk
+      X A B Y   fire up right down left
+                (two at once = diagonal)
+      L or R    igniter
+      Select    coin    Start    start
+
+    Menu: DIP switches, self-test, and
+    Cabinet Reverb -- a room around the
+    mix, an option, not the board.
+
+    ROMs are not included. Build it
+    from your own MAME romset:
+
+      python3 mra_build.py cloak.mra
+          cloak.zip
+  requires_license: false
+funding:

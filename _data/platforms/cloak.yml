@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Cloak & Dagger
+manufacturer: Atari
+year: 1983
