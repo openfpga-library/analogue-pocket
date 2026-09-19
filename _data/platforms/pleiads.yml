@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Pleiads
+manufacturer: Tehkan
+year: 1981
