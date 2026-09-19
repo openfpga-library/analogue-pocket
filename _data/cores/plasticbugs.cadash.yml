@@ -210,4 +210,72 @@ releases:
     The menu carries both DIP banks, the
     screen shape, scanlines and a mask.
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-09-19 20:04:16.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-cadash/releases/download/v0.1.3/cadash-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - cadash
+      shortname: cadash
+      description: Cadash (Taito, 1989) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-cadash
+      version: 0.1.3
+      date_release: '2026-09-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: cadash.rom
+      extensions:
+      - rom
+  updaters:
+  info: |
+    Cadash
+    Taito, 1989
+
+    A side-scrolling action RPG on Taito's
+    Asuka board, reimplemented in gateware:
+    the 68000, the Z80 sound board with its
+    YM2151, the TC0100SCN tilemaps, the
+    PC090OJ sprites and the TC0110PCR
+    palette.
+
+    ROMs are not included. Build the image
+    from your own MAME cadash romset with
+    the builder in the release, and put
+    cadash.rom in Assets/cadash/common/.
+
+    The video was written against MAME and
+    is pixel-identical to it on every state
+    the frozen-state bench checks, and the
+    whole machine reaches MAME's title
+    screen pixel for pixel from reset.
+
+    Link play is not implemented;
+    Communication Mode is Stand alone.
+
+    Controls
+    * A / Y   attack
+    * B / X   jump
+    * Select  insert coin
+    * Start   start
+
+    The menu carries both DIP banks, the
+    screen shape, scanlines and a mask.
+  requires_license: false
 funding:
