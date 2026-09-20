@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Master of Weapon
+manufacturer: Taito
+year: 1989
