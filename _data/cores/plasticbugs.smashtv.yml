@@ -1,0 +1,72 @@
+--- !ruby/object:Inventory::Core
+id: plasticbugs.smashtv
+repository: !ruby/object:GitHub::Repository
+  name: smashtv
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: plasticbugs
+  html_url: https://github.com/plasticbugs/smashtv
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-09-20 18:47:48.000000000 Z
+  download_url: https://github.com/plasticbugs/smashtv/releases/download/v0.1.0/smashtv-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - smashtv
+      shortname: smashtv
+      description: Smash T.V. (Williams, 1990) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/smashtv
+      version: 0.1.0
+      date_release: '2026-09-20'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: smashtv.rom
+      extensions:
+      - rom
+  updaters:
+  info: |
+    Smash T.V.
+    Williams, 1990
+
+    The twin-stick arena shooter on the
+    Midway Y-unit board: a TMS34010
+    graphics processor, a DMA blitter
+    drawing into a 512x512 frame buffer,
+    and the Williams CVSD sound board
+    (6809, YM2151, DAC and CVSD speech).
+    All of it is in the gateware, written
+    against MAME and checked against it
+    instruction by instruction and pixel
+    by pixel.
+
+    ROMs are not included. Build the image
+    from your own MAME smashtv romset with
+    mra_build.py and smashtv.mra, and copy
+    it to Assets/smashtv/common/smashtv.rom
+
+    * D-pad moves
+    * X B Y A fire up, down, left, right
+    * Select coin, Start start
+
+    The first boot says FAILURE IN CMOS
+    RAM and restores its defaults. That is
+    the game finding a blank memory, as a
+    cabinet with a flat battery would.
+  requires_license: false
+funding:
