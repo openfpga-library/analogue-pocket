@@ -96,4 +96,94 @@ releases:
       modifiers latch. SHIFT swaps the
       legends to the punctuation it types
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-09-21 17:27:49.000000000 Z
+  download_url: https://github.com/plasticbugs/bbcmicro/releases/download/v0.1.1/bbcmicro-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - bbcmicro
+      shortname: bbcmicro
+      description: BBC Microcomputer Model B (Acorn, 1980)
+      author: plasticbugs
+      url: https://github.com/plasticbugs/bbcmicro
+      version: 0.1.1
+      date_release: '2026-09-21'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: bbcmicro.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Drive 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - ssd
+      - dsd
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Drive 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - ssd
+      - dsd
+  updaters:
+  info: |
+    BBC Micro
+    Acorn, 1980
+
+    The BBC Micro Model B: a 6502 at 2MHz,
+    32K, MODE 0 to 7, four-channel sound,
+    and an 8271 disc controller reading
+    .ssd and .dsd images.
+
+    ROMs are not included: build one from
+    your own MAME bbcb romset with
+    mra_build.py and bbcmicro.mra.
+
+    LOADING A DISC
+    * Core Settings, Load Drive 0
+    * Auto-boot disc: BREAK boots it, as
+      SHIFT+BREAK does on a real machine
+    * No !BOOT gives File not found: type
+      *CAT to list it, then *RUN name
+      or CHAIN "name" for a BASIC loader
+
+    CONTROLS
+    * L+R+Select  on-screen keyboard
+    * L+R+Start   BREAK
+    * D-pad and A B X Y press keys; pick
+      which in Core Settings. Eight d-pad
+      sets, including CAPS and CTRL
+    * Joystick: the pad drives the
+      analogue port, A and B fire
+    * On the keyboard the d-pad moves a
+      whole key, A or B presses, and the
+      modifiers latch. SHIFT swaps the
+      legends to the punctuation it types
+  requires_license: false
 funding:
