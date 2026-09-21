@@ -194,4 +194,117 @@ releases:
     ncv1.rom / ncv2.rom into
     Assets/namcocollection/common/.
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-09-20 22:28:48.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-namco-volume-1/releases/download/v0.3.0-alpha.1/namcocollection-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - namcocollection
+      - analogizer
+      shortname: namcocollection
+      description: Namco Classic Collection Vol.1 and Vol.2 (Namco ND-1, 1995-96)
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-namco-volume-1
+      version: 0.3.0-a1
+      date_release: '2026-09-20'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Collection
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings & Records
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Analogizer config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 1
+      filename: analogizer.bin
+      extensions:
+      - bin
+  updaters:
+  info: |
+    Namco Classic Collection
+    Vol.1 (1995) and Vol.2 (1996)
+
+      Vol.1  Galaga, Xevious, Mappy
+      Vol.2  Pac-Man, Rally-X, Dig Dug
+    each in Original and Arrangement,
+    on Namco's ND-1 board in gateware:
+    68000, H8/3002, C352 PCM, YGV608.
+
+    Thanks to Global_Bid_8341 on Reddit
+    for suggesting this core!
+
+    Controls
+      D-pad / stick   move
+      A               button 1
+      B               button 2
+      X               button 3
+      Select          coin
+      Start           1 player start
+      R               2 player start
+      A second pad plays player 2, or
+      turn on Pass-and-Play to play
+      both players on this one.
+
+    Settings and records are saved per
+    collection (ncv1.sav, ncv2.sav).
+
+    ROMs are not included. Build each
+    image from your own MAME romset with
+    the included mra_build.py and copy
+    ncv1.rom / ncv2.rom into
+    Assets/namcocollection/common/.
+
+    Analogizer
+      Analog video out of the cart port
+      and SNAC pads in, set up through
+      Assets/analogizer/common/
+      analogizer.bin (Pupdate or
+      Analogizer Configurator). The
+      board's own 288x224 raster goes
+      out at 15.46 kHz: turn the CRT,
+      as the cabinet did. Untested --
+      nobody here owns the adapter.
+      The cart slot is powered for
+      everyone; do not leave a
+      cartridge in it.
+  requires_license: false
 funding:
