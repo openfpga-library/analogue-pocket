@@ -331,3 +331,6 @@
 - repository: plasticbugs/analogue-pocket-masterw
 - repository: plasticbugs/smashtv
 - repository: plasticbugs/bbcmicro
+- repository: maxhoov/virtualboypocket
+  assets:
+    - VirtualBoyPocket_
