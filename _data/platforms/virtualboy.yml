@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: Virtual Boy
+manufacturer: Nintendo
+year: 1995
