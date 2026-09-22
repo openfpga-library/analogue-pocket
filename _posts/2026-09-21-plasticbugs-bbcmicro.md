@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.bbcmicro - 0.1.1
+title: plasticbugs.bbcmicro - 0.1.2
 date: 2026-09-21
 categories: [Computer, BBC Micro]
 tags: [plasticbugs.bbcmicro]
