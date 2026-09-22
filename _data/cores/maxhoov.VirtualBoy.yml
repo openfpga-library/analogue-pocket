@@ -1,0 +1,64 @@
+--- !ruby/object:Inventory::Core
+id: maxhoov.VirtualBoy
+repository: !ruby/object:GitHub::Repository
+  name: VirtualBoyPocket
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: maxhoov
+  html_url: https://github.com/maxhoov/VirtualBoyPocket
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-09-22 11:58:21.000000000 Z
+  download_url: https://github.com/maxhoov/VirtualBoyPocket/releases/download/v0.1.0/VirtualBoyPocket_0.1.0_2026-09-22.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - virtualboy
+      shortname: VirtualBoy
+      description: Experimental Virtual Boy port; tested on Pocket firmware 2.7.
+      author: maxhoov
+      url: https://github.com/maxhoov/VirtualBoyPocket
+      version: 0.1.0
+      date_release: '2026-09-22'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - vb
+      - vboy
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save RAM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Virtual Boy - experimental Pocket port
+    Original Virtual Boy RTL: Jamie Blanks.
+    384x224 native-rate video; selectable eye/anaglyph display.
+    8 KiB cartridge SRAM via openFPGA data slot 1.
+    Use a dock controller for complete dual-pad controls.
+    Tested on Pocket firmware 2.7; menu pauses game and audio.
+    No savestates, sleep, cheats or link support.
+  requires_license: false
+funding:
