@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.nbajam - 0.2.0
+title: plasticbugs.nbajam - 0.2.1
 date: 2026-09-24
 categories: [Arcade, NBA Jam]
 tags: [plasticbugs.nbajam]
