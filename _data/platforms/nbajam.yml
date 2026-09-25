@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: NBA Jam
+manufacturer: Midway
+year: 1993
