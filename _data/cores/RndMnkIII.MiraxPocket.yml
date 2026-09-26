@@ -1,0 +1,77 @@
+--- !ruby/object:Inventory::Core
+id: RndMnkIII.MiraxPocket
+repository: !ruby/object:GitHub::Repository
+  name: MiraxPocket
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: RndMnkIII
+  html_url: https://github.com/RndMnkIII/MiraxPocket
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-09-26 18:04:42.000000000 Z
+  download_url: https://github.com/RndMnkIII/MiraxPocket/releases/download/0.2/RndMnkIII.MiraxPocket_0.2.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - mirax
+      - analogizer
+      shortname: MiraxPocket
+      description: Mirax Arcade core for the Pocket
+      author: RndMnkIII
+      url: https://github.com/RndMnkIII
+      version: '0.2'
+      date_release: '2026-09-26'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Mirax ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Analogizer config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 1
+      filename: analogizer.bin
+      extensions:
+      - bin
+  updaters:
+  info: "Mirax Pocket Core\n=================\n\nThis core is a completely experimental
+    project employing a hybrid method for \nFPGA implementation. Given the game's
+    rarity, obtaining an original PCB is \nvirtually impossible, so alternative sources
+    must be sought to infer its \noperation. \nWe are starting with the MAME driver's
+    C++ code and existing HDL implementations \nof both the Z80 processor and the
+    two GI AY-3-8912 sound chips. High-resolution \nimages of both sides of the PCB
+    are available to help trace the circuit paths \nbetween the ICs and infer the
+    system's functionality. This process will be \niterative and AI-assisted."
+  requires_license: false
+funding: !ruby/object:GitHub::Funding
+  patreon: https://www.patreon.com/RndMnkIII
+  custom:
+  - https://analogizer-fpga.com
+  - https://paypal.me/analogizer
