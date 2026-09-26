@@ -1,9 +1,9 @@
 ---
 layout: post
 author: RndMnkIII
-title: RndMnkIII.MiraxPocket - 0.2
+title: RndMnkIII.MiraxPocket - 0.3
 date: 2026-09-26
-categories: [Arcade, mirax]
+categories: [Arcade, Mirax]
 tags: [RndMnkIII.MiraxPocket]
 ---
 Mirax Pocket Core
