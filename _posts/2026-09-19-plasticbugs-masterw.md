@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.masterw - 0.1.1
+title: plasticbugs.masterw - 0.1.2
 date: 2026-09-19
 categories: [Arcade, Master of Weapon]
 tags: [plasticbugs.masterw]

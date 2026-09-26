@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Wild West C.O.W.-Boys of Moo Mesa
+manufacturer: Konami
+year: 1992
