@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.stunrun - 0.2.1
+title: plasticbugs.stunrun - 0.2.2
 date: 2026-09-04
 categories: [Arcade, S.T.U.N. Runner]
 tags: [plasticbugs.stunrun]

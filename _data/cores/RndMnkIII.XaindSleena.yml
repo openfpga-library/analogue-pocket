@@ -9,7 +9,7 @@ funding: !ruby/object:GitHub::Funding
   patreon: https://www.patreon.com/RndMnkIII
   custom:
   - https://analogizer-fpga.com
-  - https://paypal.me/analogizer
+  - https://www.patreon.com/cw/RndMnkIII
 releases:
 - !ruby/object:Inventory::Release
   date: 2025-06-22 19:03:00.000000000 Z

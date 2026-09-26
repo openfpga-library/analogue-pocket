@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.gaia - 0.2.1
+title: plasticbugs.gaia - 0.2.2
 date: 2026-09-12
 categories: [Arcade, Gaiapolis]
 tags: [plasticbugs.gaia]

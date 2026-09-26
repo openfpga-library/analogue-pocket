@@ -142,5 +142,73 @@ releases:
     shadow mask.
 
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-09-26 06:02:37.000000000 Z
+  download_url: https://github.com/plasticbugs/analogue-pocket-masterw/releases/download/v0.1.2/masterw-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - masterw
+      shortname: masterw
+      description: Master of Weapon (Taito, 1989) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-masterw
+      version: 0.1.2
+      date_release: '2026-09-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: masterw.rom
+      extensions:
+      - rom
+  updaters:
+  info: |+
+    Master of Weapon
+    Taito, 1989
+
+    A vertically scrolling shooter on
+    Taito's B System board, reimplemented
+    in gateware: the 68000, the Z80 sound
+    board with its YM2203, and the
+    TC0180VCU that draws the two tilemaps,
+    the text layer and the sprites.
+
+    ROMs are not included. Build the image
+    from your own MAME masterw romset with
+    the builder in the release, and put
+    masterw.rom in Assets/masterw/common/.
+
+    The video was written against MAME and
+    is pixel-identical to it on every frame
+    the frozen-state bench checks, the
+    title screen included, where the
+    signature is drawn by a framebuffer the
+    chip never clears.
+
+    Controls
+    * A / Y   shot
+    * B / X   bomb
+    * Select  insert coin
+    * Start   start
+
+    The core menu carries both DIP banks,
+    the screen shape, scanlines and a
+    shadow mask.
+
+  requires_license: false
 funding:
 ...
