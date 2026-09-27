@@ -337,3 +337,6 @@
 - repository: plasticbugs/analogue-pocket-nbajam
 - repository: plasticbugs/moomesa
 - repository: rndmnkiii/miraxpocket
+- repository: miasmark/openfpga-7800
+  assets:
+    - M_Atari7800
