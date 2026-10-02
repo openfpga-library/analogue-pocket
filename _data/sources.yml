@@ -342,3 +342,4 @@
 - repository: miasmark/openfpga-7800
   assets:
     - M_Atari7800
+- repository: armyofgnomes/analogue-pocket-32x
