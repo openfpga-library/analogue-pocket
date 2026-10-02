@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.atarisy2 - 0.3.3
+title: plasticbugs.atarisy2 - 0.3.4
 date: 2026-09-05
 categories: [Arcade Multi, Atari System 2]
 tags: [plasticbugs.atarisy2]
