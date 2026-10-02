@@ -1,0 +1,101 @@
+--- !ruby/object:Inventory::Core
+id: armyofgnomes.32X
+repository: !ruby/object:GitHub::Repository
+  name: analogue-pocket-32x
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: armyofgnomes
+  html_url: https://github.com/armyofgnomes/analogue-pocket-32x
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-02 12:33:09.000000000 Z
+  download_url: https://github.com/armyofgnomes/analogue-pocket-32x/releases/download/v0.4.3/32x-core-v0.4.3.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - 32x
+      shortname: 32X
+      description: 'Sega 32X (Genesis + 32X). Work in progress: Genesis and most tested
+        32X games play, with saves.'
+      author: armyofgnomes
+      url: https://github.com/armyofgnomes/analogue-pocket-32x
+      version: 0.4.3
+      date_release: '2026-10-02'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - 32x
+      - md
+      - bin
+      - gen
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 68K BIOS
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 32X_G_BIOS.BIN
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Master SH-2 BIOS
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 32X_M_BIOS.BIN
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Slave SH-2 BIOS
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 32X_S_BIOS.BIN
+      extensions:
+      - bin
+  updaters:
+  info: |
+    Sega 32X and Genesis / Mega Drive core for Analogue Pocket (work in progress).
+
+    Put your 32X BIOS files in Assets/32x/common: 32X_G_BIOS.BIN, 32X_M_BIOS.BIN,
+    32X_S_BIOS.BIN. Cartridge saves (SRAM/EEPROM) are kept. Settings: region,
+    6-button pad, audio filter, FM chip, composite blend and more.
+
+    Based on S32X_MiSTer by srg320 and the MiSTer team (Sorgelig, Kitrinx and
+    others), with Gregory Estrade's Genesis core, fx68k (Jorge Cwik), JT12/JT89
+    (Jose Tejada), T80 (Daniel Wallner), filters by Soltan_G42 and agg23's
+    openFPGA utilities. Licenses: LICENSE.txt and NOTICE.txt.
+    Written with Claude Code; tested on real Pockets.
+    https://github.com/armyofgnomes/analogue-pocket-32x
+  requires_license: false
+funding:
