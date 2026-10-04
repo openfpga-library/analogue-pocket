@@ -1,0 +1,83 @@
+--- !ruby/object:Inventory::Core
+id: maxhoov.CDi
+repository: !ruby/object:GitHub::Repository
+  name: CDiPocket
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: maxhoov
+  html_url: https://github.com/maxhoov/CDiPocket
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-04 11:33:36.000000000 Z
+  download_url: https://github.com/maxhoov/CDiPocket/releases/download/v0.1.0/CDiPocket_0.1.0_2026-10-04.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - cdi
+      shortname: CDi
+      description: Philips CD-i Mono I base hardware
+      author: maxhoov
+      url: https://github.com/Slamy/CDi_MiSTer
+      version: 0.1.0
+      date_release: '2026-10-04'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD-ROM CUE
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - cue
+    - !ruby/object:Analogue::Data::DataSlot
+      name: System BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: cdi200.rom
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Slave MCU ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: slave.rom
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: NVRAM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: nvram.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIN stream
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+  updaters:
+  info:
+  requires_license: false
+funding:
