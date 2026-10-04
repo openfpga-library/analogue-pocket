@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: CD-i
+manufacturer: Philips
+year: 1991
