@@ -1,0 +1,112 @@
+--- !ruby/object:Inventory::Core
+id: McNast13.Dragon32
+repository: !ruby/object:GitHub::Repository
+  name: OpenFPGA_Dragon32
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: McNast13
+  html_url: https://github.com/McNast13/OpenFPGA_Dragon32
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-03 18:22:24.000000000 Z
+  download_url: https://github.com/McNast13/OpenFPGA_Dragon32/releases/download/v0.9.0/Dragon32-pocket-core-v0.9.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - dragon32
+      shortname: Dragon32
+      description: Dragon 32 (UK, 50 Hz), from the MiSTer CoCo2/Dragon core
+      author: McNast13
+      url: https://github.com/McNast13/OpenFPGA_Dragon32
+      version: 0.9.0
+      date_release: '2026-10-03'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Boot ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: boot.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cassette
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - cas
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-03 20:45:33.000000000 Z
+  download_url: https://github.com/McNast13/OpenFPGA_Dragon32/releases/download/v1.0.0/Dragon32-pocket-core-v1.0.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - dragon32
+      shortname: Dragon32
+      description: Dragon 32 (UK, 50 Hz), from the MiSTer CoCo2/Dragon core
+      author: McNast13
+      url: https://github.com/McNast13/OpenFPGA_Dragon32
+      version: 1.0.0
+      date_release: '2026-10-03'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Boot ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: boot.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cassette
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - cas
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - rom
+      - ccc
+  updaters:
+  info:
+  requires_license: false
+funding:
