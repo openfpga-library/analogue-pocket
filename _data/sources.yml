@@ -344,5 +344,5 @@
   assets:
     - M_Atari7800
 - repository: armyofgnomes/analogue-pocket-32x
-- repository: mcnast13/openfpga_dragon32.git
+- repository: mcnast13/openfpga_dragon32
 - repository: silverspork/openfpga-pong-2player
