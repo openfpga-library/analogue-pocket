@@ -349,3 +349,4 @@
 - repository: maxhoov/cdipocket
   assets:
     - CDiPocket_
+- repository: augustinwinter/openfpga-nmk16
