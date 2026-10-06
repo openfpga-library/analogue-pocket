@@ -1,0 +1,78 @@
+--- !ruby/object:Inventory::Core
+id: mmnbass.Jaguar
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-Jaguar
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: mmnbass
+  html_url: https://github.com/mmnbass/openfpga-Jaguar
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-06 02:30:00.000000000 Z
+  download_url: https://github.com/mmnbass/openfpga-Jaguar/releases/download/v0.1.1/mmnbass.Jaguar_0.1.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - jaguar
+      shortname: Jaguar
+      description: Atari Jaguar. Ported from Jaguar_MiSTer (Torlus / ElectronAsh /
+        Kitrinx / GreyRogue).
+      author: mmnbass
+      url: https://github.com/mmnbass/openfpga-Jaguar
+      version: 0.1.1
+      date_release: '2026-10-05'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - j64
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Jaguar BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: jagboot.rom
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Atari Jaguar (cartridge games) for Analogue Pocket.
+
+    Requires the Jaguar boot ROM, not included:
+      Assets/jaguar/common/jagboot.rom
+
+    Hold Select for the number pad:
+      Y=1 Up=2 X=3 / Left=4 Start=5 Right=6 / B=7 Down=8 A=9 / L=* L+R=0 R=#
+    Tap Select for Option. X, L and R keys: Core Settings.
+
+    Ported from Jaguar_MiSTer (Torlus, ElectronAsh, Kitrinx, GreyRogue);
+    68000 by Nuked; Pocket modules by agg23; platform art by Spiritualized1997.
+    Pocket port by mmnbass (Michael Merida-Nicolich).
+    GPL-2.0-or-later. Source: github.com/mmnbass/openfpga-Jaguar
+  requires_license: false
+funding:
