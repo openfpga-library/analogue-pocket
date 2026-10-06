@@ -1,0 +1,74 @@
+--- !ruby/object:Inventory::Core
+id: August.Macross
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-nmk16
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: augustinwinter
+  html_url: https://github.com/augustinwinter/openfpga-nmk16
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-06 16:31:56.000000000 Z
+  download_url: https://github.com/augustinwinter/openfpga-nmk16/releases/download/0.26.0/Macross-Ver26-Pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - nmk16
+      shortname: Macross
+      description: August Wong / Doctor Lucy van Pelt / Codex Jordan
+      author: August
+      url: https://github.com/augustinwinter/openfpga-nmk16
+      version: 0.26.0
+      date_release: '2026-10-03'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: macross.rom
+      extensions:
+      - rom
+  updaters:
+  info: |
+    Macross Ver.26
+    Super Spacefortress Macross
+    Banpresto / NMK, 1992
+
+    Credits
+    * August Wong
+    * Doctor Lucy van Pelt
+    * Codex Jordan
+
+    Stage26 engineering candidate.
+    Native graphics and audio.
+    Rotation: 270 degrees.
+
+    Controls
+    * A / Y: button 1
+    * B / X: button 2
+    * Select: coin
+    * Start: start
+    Menu pauses the machine.
+    Reset Core restarts the machine.
+
+    Assembled ROM location:
+    Assets/nmk16/common/macross.rom
+    The existing assembled ROM is preserved byte-for-byte in this package.
+
+    Template: plasticbugs (inherited Pocket template).
+    Core folder: August.Macross
+    Pocket identity: author=August; shortname=Macross; platform ID=nmk16.
+    Full project credits are listed above and in core.metadata.description.
+  requires_license: false
+funding:

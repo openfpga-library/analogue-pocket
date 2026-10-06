@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: Atari Jaguar
+manufacturer: Atari
+year: 1993
