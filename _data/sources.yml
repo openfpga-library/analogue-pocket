@@ -351,3 +351,4 @@
   assets:
     - CDiPocket_
 - repository: augustinwinter/openfpga-nmk16
+- repository: mmnbass/openfpga-jaguar
