@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.nbajam - 0.2.1
+title: plasticbugs.nbajam - 0.3.0
 date: 2026-09-24
 categories: [Arcade, NBA Jam]
 tags: [plasticbugs.nbajam]
@@ -32,4 +32,10 @@ Laid out like the arcade panel:
 
 Two credits start a game. A new board
 shows CMOS INVALID: press any button.
+
+Analogizer: CRT video and SNAC pads,
+set in this core's menu (Analogizer:
+On; H and V Position centre the
+picture). The slot is powered: remove
+any cartridge first.
 
