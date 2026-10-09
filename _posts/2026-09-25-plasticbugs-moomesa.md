@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.moomesa - 0.2.0
+title: plasticbugs.moomesa - 0.3.0
 date: 2026-09-25
 categories: [Arcade, Wild West C.O.W.-Boys of Moo Mesa]
 tags: [plasticbugs.moomesa]
@@ -28,6 +28,12 @@ it to Assets/moomesa/common/moomesa.rom
   Switch in the core menu); they are
   saved on the SD card.
 
+Analogizer: CRT video and SNAC pads,
+set in this core's menu (Analogizer:
+On; H and V Position centre the
+picture). The slot is powered: remove
+any cartridge first.
+
 Not modelled: flip screen. If it is set
 in the service menu the backgrounds
 disappear; set it back to off.
@@ -37,6 +43,7 @@ Acho A. Tang, after Olivier Galibert)
 and its Konami device models; fx68k
 (Jorge Cwik); tv80 (Guy Hutchison);
 jt51 and jt5911 (Jose Tejada); the
+Analogizer module (RndMnkIII); the
 Pocket platform and build (Marcus
 Andrade, OpenGateware).
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.namcocollection - 0.3.0-a1
+title: plasticbugs.namcocollection - 0.3.0
 date: 2026-09-20
 categories: [Arcade Multi, Namco Classic Collection]
 tags: [plasticbugs.namcocollection]
@@ -41,15 +41,13 @@ Assets/namcocollection/common/.
 
 Analogizer
   Analog video out of the cart port
-  and SNAC pads in, set up through
-  Assets/analogizer/common/
-  analogizer.bin (Pupdate or
-  Analogizer Configurator). The
-  board's own 288x224 raster goes
-  out at 15.46 kHz: turn the CRT,
-  as the cabinet did. Untested --
-  nobody here owns the adapter.
-  The cart slot is powered for
-  everyone; do not leave a
-  cartridge in it.
+  and SNAC pads in, set in this
+  core's menu (Analogizer: On; H and
+  V Position centre the picture).
+  The board's own 288x224 raster
+  goes out at 15.46 kHz: turn the
+  CRT, as the cabinet did. Not yet
+  tried on an adapter. The cart
+  slot is powered for everyone; do
+  not leave a cartridge in it.
 
