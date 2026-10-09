@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.timepilot - 0.1.3
+title: plasticbugs.timepilot - 0.2.0
 date: 2026-09-03
 categories: [Arcade, Time Pilot]
 tags: [plasticbugs.timepilot]
@@ -32,6 +32,16 @@ reported rather than quietly built.
 Copy the timeplt.rom it writes to the
 folder above. Using pupdate or the
 mra tool? Point it at timeplt.mra.
+
+Analogizer: CRT video and SNAC pads,
+set in this core's menu (Analogizer:
+On; H and V Position centre the
+picture, H Size sets its width: the
+game's height with the set on its
+side). The CRT gets the vertical
+monitor's raster: stand the set on its
+side. The slot is powered: remove any
+cartridge first.
 
 Controls
 * Fire: B or A

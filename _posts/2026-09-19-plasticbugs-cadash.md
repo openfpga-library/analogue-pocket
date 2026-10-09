@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.cadash - 0.1.4
+title: plasticbugs.cadash - 0.2.0
 date: 2026-09-19
 categories: [Arcade, Cadash]
 tags: [plasticbugs.cadash]
@@ -36,6 +36,12 @@ Controls
 * Select  insert coin
 * Start   start
 
-The menu carries both DIP banks, the
-screen shape, scanlines and a mask.
+The menu carries both DIP banks and
+the screen shape.
+
+Analogizer: CRT video and SNAC pads,
+set in this core's menu (Analogizer:
+On; H and V Position centre the
+picture). The slot is powered: remove
+any cartridge first.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.punchout - 0.4.4
+title: plasticbugs.punchout - 0.5.0
 date: 2026-09-08
 categories: [Arcade, Punch-Out!!]
 tags: [plasticbugs.punchout]
@@ -40,4 +40,11 @@ included mra_build.py. Records save
 per game. The DIP menu is
 labelled for Punch-Out!!; Arm
 Wrestling's switches differ.
+
+Analogizer: the fight screen alone to
+a CRT at 15 kHz; "On, Pocket: top
+screen" makes the Pocket the upper
+monitor. Set in this core's menu. The
+slot is powered: remove any cartridge
+first.
 
