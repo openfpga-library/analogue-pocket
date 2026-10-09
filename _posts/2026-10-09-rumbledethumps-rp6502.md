@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Rumbledethumps
-title: Rumbledethumps.RP6502 - 0.39
+title: Rumbledethumps.RP6502 - 0.40
 date: 2026-10-09
 categories: [Computer, Picocomputer 6502]
 tags: [Rumbledethumps.RP6502]
