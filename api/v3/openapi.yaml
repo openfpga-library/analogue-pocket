@@ -215,6 +215,12 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/Previous'
+        declare_ai:
+          type: array
+          description: AI tools the core's author declares they used to build it.
+          items:
+            type: string
+            example: Claude
     License:
       type: object
       properties:

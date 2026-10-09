@@ -32,17 +32,26 @@ module Analogue
               }
             }
           }
+        },
+        'declare_ai' => {
+          'type' => 'array',
+          'items' => {
+            'type' => 'string'
+          }
         }
       }
     }.freeze
 
-    attr_reader :license, :previous
+    attr_reader :license, :previous, :declare_ai
 
     def initialize(updaters)
-      @license = License.new(updaters.license)
+      @license = License.new(updaters.license) unless updaters.license.nil?
       @previous = (updaters.previous || []).map do |previous|
         Previous.new(previous)
       end
+
+      # Names of the AI tools the author used to build the core, if any.
+      @declare_ai = updaters.declare_ai || []
     end
 
     # Describes a license.

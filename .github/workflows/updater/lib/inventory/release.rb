@@ -20,7 +20,7 @@ module Inventory
     private
 
     def requires_license?
-      return !@updaters.license.nil? unless @updaters.nil?
+      return true if @updaters&.license
 
       # Fallback to checking with the data slots
       @data.data_slots.any? { |data_slot| LICENSE_DATA_SLOTS.include?(data_slot.name) }
