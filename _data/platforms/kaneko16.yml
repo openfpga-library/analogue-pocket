@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Great 1000 Miles Rally
+manufacturer: Kaneko
+year: 1994

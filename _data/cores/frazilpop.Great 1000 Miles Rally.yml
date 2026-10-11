@@ -1,0 +1,69 @@
+--- !ruby/object:Inventory::Core
+id: frazilpop.Great 1000 Miles Rally
+repository: !ruby/object:GitHub::Repository
+  name: Great-1000-Miles-Rally-Pocket
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: Frazilpop
+  html_url: https://github.com/Frazilpop/Great-1000-Miles-Rally-Pocket
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-11 16:02:36.000000000 Z
+  download_url: https://github.com/Frazilpop/Great-1000-Miles-Rally-Pocket/releases/download/v1.0.0/Great-1000-Miles-Rally-Pocket-1.0.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - kaneko16
+      shortname: Great 1000 Miles Rally
+      description: Great 1000 Miles Rally and Mille Miglia 2 (Kaneko gtmr board)
+      author: frazilpop
+      url: https://github.com/Frazilpop/Great-1000-Miles-Rally-Pocket
+      version: 1.0.0
+      date_release: '2026-10-11'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Kaneko 16-bit arcade hardware (Great 1000 Miles Rally board)
+
+    Based on the Kaneko16 MiSTer core by alphanu1 (GPL-3.0).
+    Analogue Pocket port by Frazilpop.
+  requires_license: false
+funding:
