@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Utility
+name: PocketIR
+manufacturer: interface2037
+year: 2026
