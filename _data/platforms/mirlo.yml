@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: Mirlo
+manufacturer: tortuga
+year: 2026

@@ -1,0 +1,92 @@
+--- !ruby/object:Inventory::Core
+id: tortuga.Mirlo64
+repository: !ruby/object:GitHub::Repository
+  name: MIRLO64
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: tortugaveloz
+  html_url: https://github.com/tortugaveloz/MIRLO64
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-10 21:14:15.000000000 Z
+  download_url: https://github.com/tortugaveloz/MIRLO64/releases/download/v0.1/tortuga.Mirlo64_0.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - mirlo
+      shortname: Mirlo64
+      description: 'MIRLO64: Nintendo 64 games on the Analogue Pocket, on an original
+        SoC with its own MIPS CPU, RSP and RDP'
+      author: tortuga
+      url: https://github.com/tortugaveloz/MIRLO64
+      version: '0.1'
+      date_release: '2026-10-10'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - z64
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Controller Pak
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mpk
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Runtime
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: n64rt.sys
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save-type database
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: n64savedb.txt
+      extensions:
+  updaters:
+  info: |
+    MIRLO64: Nintendo 64 games on the Analogue Pocket.
+
+    An original system-on-chip written in SystemVerilog, with a VR4300-class MIPS CPU and an RSP and RDP of its own. It runs the games' own code from their .z64 ROMs; a small runtime, n64rt.sys, loads them in place of the console's boot.
+
+    Put the ROMs (.z64, big-endian) in Assets/mirlo/common/ and launch the core. Version 0.1, experimental: not every game works yet.
+
+    https://github.com/tortugaveloz/MIRLO64
+  requires_license: false
+funding:
