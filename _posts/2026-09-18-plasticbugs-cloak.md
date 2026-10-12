@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.cloak - 0.1.1
+title: plasticbugs.cloak - 0.2.0
 date: 2026-09-18
 categories: [Arcade, Cloak & Dagger]
 tags: [plasticbugs.cloak]
@@ -32,6 +32,12 @@ Controls
 Menu: DIP switches, self-test, and
 Cabinet Reverb -- a room around the
 mix, an option, not the board.
+
+Analogizer: CRT video and SNAC pads,
+set in this core's menu (Analogizer:
+On; H and V Position centre the
+picture, H Size sets its width). The slot is powered: remove
+any cartridge first.
 
 ROMs are not included. Build it
 from your own MAME romset:

@@ -1,7 +1,7 @@
 ---
 layout: post
 author: interface2037
-title: interface2037.PocketIR - 0.11.1
+title: interface2037.PocketIR - 0.12.0
 date: 2026-10-11
 categories: [Utility, PocketIR]
 tags: [interface2037.PocketIR]

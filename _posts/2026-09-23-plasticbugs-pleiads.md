@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.pleiads - 0.1.3
+title: plasticbugs.pleiads - 0.2.0
 date: 2026-09-23
 categories: [Arcade, Pleiads]
 tags: [plasticbugs.pleiads]
@@ -34,6 +34,16 @@ The stick is two way: no up or down.
 Pleiads' melody chip is an Epson 7910E
 whose ROM has never been dumped. MAME
 substitutes a TMS3615, and so does this.
+
+Analogizer: CRT video and SNAC pads,
+set in this core's menu (Analogizer:
+On; H and V Position centre the
+picture, H Size sets its width: the
+game's height with the set on its
+side). The CRT gets the vertical
+monitor's raster: stand the set on its
+side. The slot is powered: remove any
+cartridge first.
 
 No ROMs included. Put pleiads.rom and
 phoenix.rom in Assets/pleiads/common.

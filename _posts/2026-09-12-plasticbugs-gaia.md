@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.gaia - 0.2.2
+title: plasticbugs.gaia - 0.3.0
 date: 2026-09-12
 categories: [Arcade, Gaiapolis]
 tags: [plasticbugs.gaia]
@@ -31,6 +31,18 @@ Controls
 
 Settings and records are kept in the
 EEPROM and saved to gaiapols.sav.
+
+Analogizer: 15 kHz CRT video (RGBS,
+RGsB, YPbPr, Y/C; no VGA mode) and
+SNAC pads,
+set in this core's menu (Analogizer:
+On; H and V Position centre the
+picture, H Size sets its width: the
+game's height with the CRT on its
+side). The CRT gets the board's own
+raster: stand the set on its side,
+turned clockwise. The slot is
+powered: remove any cartridge first.
 
 ROMs are not included. Build the
 image from your own MAME gaiapols

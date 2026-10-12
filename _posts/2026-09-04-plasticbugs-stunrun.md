@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.stunrun - 0.2.2
+title: plasticbugs.stunrun - 0.3.0
 date: 2026-09-04
 categories: [Arcade, S.T.U.N. Runner]
 tags: [plasticbugs.stunrun]
@@ -26,6 +26,15 @@ Controls
   B or Y or L     boost
   Select          coin
   Start           start
+
+Analogizer: CRT video and SNAC pads,
+set in this core's menu (Analogizer:
+On; H and V Position centre the
+picture). RGBS, RGsB or YPbPr at
+15 kHz; no Y/C and no VGA
+scandoubler in this core. The slot
+is powered: remove any cartridge
+first.
 
 ROMs are not included. Build the
 image from your own MAME stunrun

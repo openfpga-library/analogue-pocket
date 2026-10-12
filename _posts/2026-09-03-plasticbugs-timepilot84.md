@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.timepilot84 - 0.1.5
+title: plasticbugs.timepilot84 - 0.2.0
 date: 2026-09-03
 categories: [Arcade, Time Pilot '84]
 tags: [plasticbugs.timepilot84]
@@ -38,4 +38,14 @@ Controls
 * Insert coin: Select
 * 1 player start: Start
 * 2 player start: Y
+
+Analogizer: CRT video and SNAC pads,
+set in this core's menu (Analogizer:
+On; H and V Position centre the
+picture, H Size sets its width: the
+game's height with the set on its
+side). The picture is not rotated:
+turn the CRT on its side, as the
+cabinet's was. The slot is powered:
+remove any cartridge first.
 

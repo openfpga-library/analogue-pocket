@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.smashtv - 0.1.0
+title: plasticbugs.smashtv - 0.2.0
 date: 2026-09-20
 categories: [Arcade, Smash T.V.]
 tags: [plasticbugs.smashtv]
@@ -33,4 +33,10 @@ The first boot says FAILURE IN CMOS
 RAM and restores its defaults. That is
 the game finding a blank memory, as a
 cabinet with a flat battery would.
+
+Analogizer: CRT video and SNAC pads,
+set in this core's menu (Analogizer:
+On; H and V Position centre the
+picture). The slot is powered: remove
+any cartridge first.
 

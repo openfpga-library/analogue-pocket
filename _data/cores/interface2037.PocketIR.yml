@@ -46,4 +46,44 @@ releases:
     Turns the Analogue Pocket's infrared LED into a universal TV/AV remote.
     Based on the openFPGA core template (https://github.com/open-fpga/core-template).
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-12 00:37:26.000000000 Z
+  download_url: https://github.com/interface-2037/PocketIR/releases/download/v0.12.0/interface2037.PocketIR_0.12.0_2026-10-11.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - pocketir
+      shortname: PocketIR
+      description: 'PocketIR: universal TV/AV IR remote using the Pocket IR LED.'
+      author: interface2037
+      url: https://github.com/interface-2037/PocketIR
+      version: 0.12.0
+      date_release: '2026-10-11'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Device
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: pocketir.sav
+      extensions:
+      - sav
+  updaters:
+  info: |
+    PocketIR
+
+    Turns the Analogue Pocket's infrared LED into a universal TV/AV remote.
+    Based on the openFPGA core template (https://github.com/open-fpga/core-template).
+  requires_license: false
 funding:
