@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.bbcmicro - 0.3.0
+title: plasticbugs.bbcmicro - 0.4.0
 date: 2026-09-22
 categories: [Computer, BBC Micro]
 tags: [plasticbugs.bbcmicro]
@@ -38,6 +38,14 @@ CONTROLS
   whole key, A or B presses, and the
   modifiers latch. SHIFT swaps the
   legends to the punctuation it types
+
+ANALOGIZER
+* CRT video (RGBS, RGsB, YPbPr, Y/C)
+  and a PS/2 keyboard or SNAC pad,
+  set in this core's menu
+* H and V Position centre the picture
+* The slot is powered: remove any
+  cartridge first
 
 SIDEWAYS RAM
 * Fits a 64K board: banks 4 to 7,

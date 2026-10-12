@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.xenophobe - 1.1.3
+title: plasticbugs.xenophobe - 1.2.0
 date: 2026-09-09
 categories: [Arcade, Xenophobe]
 tags: [plasticbugs.xenophobe]
@@ -38,4 +38,13 @@ Controls
 * Insert coin: Select
 
 Select adds a coin, then Fire starts.
+
+Analogizer: video and SNAC pads, set
+in this core's menu (Analogizer: On).
+The CRT gets 15 kHz 240p, progressive,
+for a PVM or arcade monitor: each line
+is a pair of the game's 480, blended
+(Analogizer Lines: Blend) or the even
+one (Sharp). The slot is powered:
+remove any cartridge first.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.masterw - 0.1.2
+title: plasticbugs.masterw - 0.2.0
 date: 2026-09-19
 categories: [Arcade, Master of Weapon]
 tags: [plasticbugs.masterw]
@@ -34,8 +34,22 @@ Controls
 * Select  insert coin
 * Start   start
 
-The core menu carries both DIP banks,
-the screen shape, scanlines and a
-shadow mask.
+The core menu carries the DIP switches
+and the screen shape.
+
+Analogizer: 15 kHz CRT video (RGBS,
+RGsB, YPbPr, Y/C; no VGA-monitor
+modes) and SNAC pads, set in this
+core's menu (Analogizer:
+On; H and V Position centre the
+picture, H Size sets its width: the
+game's height with the set on its
+side). The picture is not rotated:
+stand the CRT on its side, a quarter
+turn anticlockwise, top to the left.
+The slot is powered: remove any
+cartridge first. Scanlines, Shadow
+Mask, Coin B and Demo Sounds left the
+menu for it (factory settings).
 
 
