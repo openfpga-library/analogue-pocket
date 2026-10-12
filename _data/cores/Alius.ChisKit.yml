@@ -1,0 +1,9 @@
+--- !ruby/object:Inventory::Core
+id: Alius.ChisKit
+repository: !ruby/object:GitHub::Repository
+  name: ChisKit
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: gpzi994
+  html_url: https://github.com/gpzi994/ChisKit
+releases: []
+funding:
