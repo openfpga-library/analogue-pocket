@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Utility
+name: ChisKit
+manufacturer: Alius
+year: 2026
