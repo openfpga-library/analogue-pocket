@@ -1,0 +1,111 @@
+--- !ruby/object:Inventory::Core
+id: HtheB.Dstroy
+repository: !ruby/object:GitHub::Repository
+  name: Dstroy-AnaloguePocket
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: HtheB
+  html_url: https://github.com/HtheB/Dstroy-AnaloguePocket
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-12 22:16:01.000000000 Z
+  download_url: https://github.com/HtheB/Dstroy-AnaloguePocket/releases/download/v1.0.0/HtheB.Dstroy_1.0.0_2026-10-12.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - dstroy
+      shortname: Dstroy
+      description: Dstroy on VexRiscv RISC-V CPU
+      author: HtheB
+      url: https://github.com/HtheB/Dstroy-AnaloguePocket
+      version: 1.0.0
+      date_release: '2026-10-13'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Dstroy Data
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - data
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Dstroy Default Config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - cfg
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Dstroy Save Data
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Dstroy Config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - cfg
+  updaters:
+  info: |-
+    Dstroy is a fast maze-battle game about bombs, power-ups, monsters, and beautifully bad decisions. Break soft walls, collect bonuses, avoid your own explosions, and try to survive the chaos.
+
+    Dstroy was originally released for DOS by
+    Fully Bugged Software in 1995:
+    Nicolas Riviere
+    Andre Rieussec
+    Jerome Angelot
+    David Gallo
+
+    Modern Dstroy source port/remake by
+    Michael Doguet
+
+    Analogue Pocket port/remake by
+    HtheB
+
+    How To Play:
+    Adventure: Defeat the monsters and clear levels.
+    Battle: Be the last standing player.
+
+    Handheld mode supports 1 player normally.
+
+    2 Player handheld mode is also supported:
+    P1 moves with the D-Pad
+    and drops bombs with L.
+    P2 moves with A/B/X/Y
+    and drops bombs with R.
+    Select goes back.
+
+    Docked mode supports up to 4 players with external controllers.
+
+    Cheats:
+    Yes.
+    No.
+    Maybe.
+    I don't know.
+    Can you repeat the question?
+  requires_license: false
+funding:
