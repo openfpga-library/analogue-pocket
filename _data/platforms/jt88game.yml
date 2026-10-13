@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: jt88game
+manufacturer: JT FPGA
+year: 2026
