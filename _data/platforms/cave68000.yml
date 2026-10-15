@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade Multi
+name: Cave 68000
+manufacturer: Cave
+year: 1997
