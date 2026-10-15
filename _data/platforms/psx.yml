@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: PlayStation
+manufacturer: Sony
+year: 1994
