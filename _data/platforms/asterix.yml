@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Asterix
+manufacturer: Konami
+year: 1992
