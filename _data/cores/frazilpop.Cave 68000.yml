@@ -1,0 +1,69 @@
+--- !ruby/object:Inventory::Core
+id: frazilpop.Cave 68000
+repository: !ruby/object:GitHub::Repository
+  name: Cave-68000-Pocket
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: Frazilpop
+  html_url: https://github.com/Frazilpop/Cave-68000-Pocket
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-15 14:48:31.000000000 Z
+  download_url: https://github.com/Frazilpop/Cave-68000-Pocket/releases/download/v1.0.0/cave68000-1.0.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - cave68000
+      shortname: Cave 68000
+      description: Eight Cave 68000 arcade games, DonPachi to Guwange
+      author: frazilpop
+      url: https://github.com/Frazilpop/Cave-68000-Pocket
+      version: 1.0.0
+      date_release: '2026-10-15'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Cave first-generation 68000 board: 68000 @ 16 MHz, Yamaha YMZ280B (DonPachi: two OKI M6295s and an NMK112), Cave tilemap and 013 sprite chips
+
+    Based on MiSTer-devel/Arcade-Cave_MiSTer (GPL-3.0), nullobject's Cave 68000 core.
+    Analogue Pocket port by Frazilpop.
+  requires_license: false
+funding:
