@@ -1,0 +1,940 @@
+--- !ruby/object:Inventory::Core
+id: PSXPort.PSX
+repository: !ruby/object:GitHub::Repository
+  name: pocket_psx_core
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: akoaysigod
+  html_url: https://github.com/akoaysigod/pocket_psx_core
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-14 20:07:53.000000000 Z
+  download_url: https://github.com/akoaysigod/pocket_psx_core/releases/download/v0.1/sotn_psx.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - psx
+      shortname: PSX
+      description: 'PlayStation (PSX_MiSTer core, trimmed for the Pocket). Test build:
+        CD games from instance JSONs, memory card 1 saved per game.'
+      author: PSXPort
+      url: https://github.com/MiSTer-devel/PSX_MiSTer
+      version: 0.1.0
+      date_release: '2026-10-12'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: scph1001.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Memory Card
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 4
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 5
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 6
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 7
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 8
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 9
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 10
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 11
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 12
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 13
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 14
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 15
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 16
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 17
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 18
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 19
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 20
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 21
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 22
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 23
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 24
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+  updaters:
+  info: |
+    PlayStation for the Analogue Pocket, based on the PSX_MiSTer core (GPL-2), trimmed to fit the Pocket's FPGA:
+    no save states, no CD audio tracks (CD-DA), one memory card slot.
+    BIOS: put your own scph1001.bin in Assets/psx/common.
+    Games: one .bin file per track (Redump style cue). Make an instance JSON with tools/cue2instance.py and put it,
+    with the folder holding the .bin files, in Assets/psx/PSXPort.PSX. Memory card 1 is saved per game.
+    Test build.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-15 20:13:19.000000000 Z
+  download_url: https://github.com/akoaysigod/pocket_psx_core/releases/download/v0.1.2/PSXPort.PSX_0.1.2_cc_s1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - psx
+      shortname: PSX
+      description: 'PlayStation (PSX_MiSTer core, trimmed for the Pocket). Test build:
+        CD games from instance JSONs, memory card 1 saved per game.'
+      author: PSXPort
+      url: https://github.com/MiSTer-devel/PSX_MiSTer
+      version: 0.1.2
+      date_release: '2026-10-15'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: scph1001.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Memory Card
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 1 (audio CD)
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 4
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 5
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 6
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 7
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 8
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 9
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 10
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 11
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 12
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 13
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 14
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 15
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 16
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 17
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 18
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 19
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 20
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 21
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 22
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 23
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 24
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+  updaters:
+  info: |
+    PlayStation for the Analogue Pocket, based on the PSX_MiSTer core (GPL-2), trimmed to fit the Pocket's FPGA:
+    no save states, one memory card slot.
+    BIOS: put your own scph1001.bin in Assets/psx/common.
+    Games: one .bin file per track (Redump style cue). Make an instance JSON with tools/cue2instance.py and put it,
+    with the folder holding the .bin files, in Assets/psx/PSXPort.PSX. Memory card 1 is saved per game.
+    L2 / R2 on the handheld: button combos, chosen in Core Settings ("R2 button", "L2 button").
+    Test build.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-15 21:54:15.000000000 Z
+  download_url: https://github.com/akoaysigod/pocket_psx_core/releases/download/v0.1.3/pocket_sotn.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - psx
+      shortname: PSX
+      description: 'PlayStation (PSX_MiSTer core, trimmed for the Pocket). Test build:
+        CD games from instance JSONs, memory card 1 saved per game.'
+      author: PSXPort
+      url: https://github.com/MiSTer-devel/PSX_MiSTer
+      version: 0.1.2
+      date_release: '2026-10-15'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: scph1001.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Memory Card
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 1 (audio CD)
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 4
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 5
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 6
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 7
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 8
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 9
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 10
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 11
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 12
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 13
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 14
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 15
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 16
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 17
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 18
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 19
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 20
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 21
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 22
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 23
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 24
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+  updaters:
+  info: |
+    PlayStation for the Analogue Pocket, based on the PSX_MiSTer core (GPL-2), trimmed to fit the Pocket's FPGA:
+    no save states, one memory card slot.
+    BIOS: put your own scph1001.bin in Assets/psx/common.
+    Games: one .bin file per track (Redump style cue). Make an instance JSON with tools/cue2instance.py and put it,
+    with the folder holding the .bin files, in Assets/psx/PSXPort.PSX. Memory card 1 is saved per game.
+    L2 / R2 on the handheld: button combos, chosen in Core Settings ("R2 button", "L2 button").
+    Test build.
+  requires_license: false
+funding:
