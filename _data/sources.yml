@@ -366,3 +366,4 @@
 - repository: mcbeefy34/openfpga-tempest
 - repository: frazilpop/cave-68000-pocket
 - repository: akoaysigod/pocket_psx_core
+- repository: guardiansoul/openfpga-playstation
