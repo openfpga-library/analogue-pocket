@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Macross II
+manufacturer: Banpresto / NMK
+year: 1993
