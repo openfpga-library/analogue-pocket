@@ -1,0 +1,221 @@
+--- !ruby/object:Inventory::Core
+id: mmmax4.moobucky
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-MooBucky
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: mmmax4
+  html_url: https://github.com/mmmax4/openFPGA-MooBucky
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-14 11:12:13.000000000 Z
+  download_url: https://github.com/mmmax4/openFPGA-MooBucky/releases/download/v0.3.0/mmmax4.moobucky-v0.3.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - moobucky
+      shortname: moobucky
+      description: Moo Mesa / Bucky O'Hare World EAB
+      author: mmmax4
+      url: https://github.com/mmmax4/openFPGA-MooBucky
+      version: 0.3.0
+      date_release: '2026-10-14'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    MooBucky 0.3.0 by mmmax4
+    Moo Mesa / Bucky O'Hare, World EAB
+
+    D-pad: move; A/Y: jump; B: shoot.
+    X: Bucky button 3 / Moo alternate shoot.
+    Select: coin; Start: start.
+    DIP: Sound, Coins and Players in Core Settings.
+    Test Switch (hold): manual Test menu entry.
+    EEPROM saves cabinet settings; RAM high scores are not saved.
+    No ROMs or saves included.
+
+    Based on plasticbugs/Scott, Jotego, Marcus Andrade/OpenGateware,
+    FX68K, tv80, MAME, Analogue and all original contributors.
+    See CREDITS.md.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-14 11:12:15.000000000 Z
+  download_url: https://github.com/mmmax4/openFPGA-MooBucky/releases/download/v0.4.0/mmmax4.moobucky-v0.4.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - moobucky
+      shortname: moobucky
+      description: Moo Mesa / Bucky O'Hare World EAB
+      author: mmmax4
+      url: https://github.com/mmmax4/openFPGA-MooBucky
+      version: 0.4.0
+      date_release: '2026-10-14'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    MooBucky 0.4.0 by mmmax4
+    Moo Mesa / Bucky O'Hare, World EAB
+
+    D-pad: move; A/Y: jump; B: shoot.
+    X: Bucky button 3 / Moo alternate shoot.
+    Select: coin; Start: start.
+    DIP: Sound, Coins and Players in Core Settings.
+    Test/Service buttons: assign P1 keys in Core Settings.
+    Test Switch (hold): manual Test menu entry.
+    EEPROM saves cabinet settings; RAM high scores are not saved.
+    No ROMs or saves included.
+
+    Based on plasticbugs/Scott, Jotego, Marcus Andrade/OpenGateware,
+    FX68K, tv80, MAME, Analogue and all original contributors.
+    See CREDITS.md.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-14 11:12:17.000000000 Z
+  download_url: https://github.com/mmmax4/openFPGA-MooBucky/releases/download/v0.4.1/mmmax4.moobucky-v0.4.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - moobucky
+      shortname: moobucky
+      description: Moo Mesa / Bucky O'Hare World EAB
+      author: mmmax4
+      url: https://github.com/mmmax4/openFPGA-MooBucky
+      version: 0.4.1
+      date_release: '2026-10-14'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    MooBucky 0.4.1 by mmmax4
+    Moo Mesa / Bucky O'Hare, World EAB
+
+    D-pad: move; A/Y: jump; B: shoot.
+    X: Bucky button 3 / Moo alternate shoot.
+    Select: coin; Start: start.
+    DIP: Sound, Coins and Players in Core Settings.
+    Test/Service buttons: assign P1 keys in Core Settings.
+    Test Switch (hold): manual Test menu entry.
+    EEPROM saves cabinet settings; RAM high scores are not saved.
+    No ROMs or saves included.
+
+    Based on plasticbugs/Scott, Jotego, Marcus Andrade/OpenGateware,
+    FX68K, tv80, MAME, Analogue and all original contributors.
+    See CREDITS.md.
+  requires_license: false
+funding:

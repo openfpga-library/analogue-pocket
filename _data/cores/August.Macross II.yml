@@ -1,0 +1,59 @@
+--- !ruby/object:Inventory::Core
+id: August.Macross II
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-macross2
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: augustinwinter
+  html_url: https://github.com/augustinwinter/openfpga-macross2
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-17 03:16:15.000000000 Z
+  download_url: https://github.com/augustinwinter/openfpga-macross2/releases/download/v0.14.0-beta.1/August.Macross-II_0.14.0-beta.1_2026-10-15.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - nmk16_m2
+      shortname: Macross II
+      description: Super Spacefortress Macross II arcade core
+      author: August
+      url: https://github.com/augustinwinter/openfpga-macross2
+      version: 0.14.0-beta.1
+      date_release: '2026-10-15'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Macross II ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: macross2.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: V Timing PROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: macross2_vprom.bin
+      extensions:
+      - bin
+  updaters:
+  info: |
+    Macross II
+    Analogue Pocket openFPGA arcade core.
+    Beta 1 - community testing requested.
+    Hardware-tested FPGA implementation.
+  requires_license: false
+funding:

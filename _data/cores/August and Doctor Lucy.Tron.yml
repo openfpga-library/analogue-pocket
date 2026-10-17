@@ -1,0 +1,57 @@
+--- !ruby/object:Inventory::Core
+id: August and Doctor Lucy.Tron
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-tron
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: augustinwinter
+  html_url: https://github.com/augustinwinter/openfpga-tron
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-17 04:13:39.000000000 Z
+  download_url: https://github.com/augustinwinter/openfpga-tron/releases/download/v0.2.0/Tron-V02-0.2.0-PRIVATE-Pocket-install.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - midway_mcr2
+      shortname: Tron
+      description: Tron - Analogue Pocket FPGA Adaptation
+      author: August and Doctor Lucy
+      url: https://github.com/harpmudd/HarpMudd.shollow
+      version: 0.2.0
+      date_release: '2026-10-14'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Tron ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tron.rom
+      extensions:
+      - rom
+  updaters:
+  info: |
+    TRON - Version 0.2.0
+    Analogue Pocket FPGA adaptation
+    Authors: August and Doctor Lucy (ChatGPT)
+    Original arcade game: Bally Midway, 1982
+    FPGA heritage: MiSTer MCR2 contributors
+    Pocket reference: HarpMudd
+    Left stick: eight-direction movement
+    Right stick: rotary aiming
+    A / L2 / R2: fire or accelerate
+    Controller diagnostic removed
+    Original ROM assets not included
+    Experimental release; hardware test pending
+  requires_license: false
+funding:
