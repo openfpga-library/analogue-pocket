@@ -1,0 +1,80 @@
+--- !ruby/object:Inventory::Core
+id: plasticbugs.toobin
+repository: !ruby/object:GitHub::Repository
+  name: toobin
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: plasticbugs
+  html_url: https://github.com/plasticbugs/toobin
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-17 19:54:44.000000000 Z
+  download_url: https://github.com/plasticbugs/toobin/releases/download/v1.0.0/toobin-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - toobin
+      shortname: toobin
+      description: Toobin' (Atari Games, 1988) arcade core
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-toobin
+      version: 1.0.0
+      date_release: '2026-10-17'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Set
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: toobin.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Settings & High Scores
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: toobin.sav
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Toobin'
+    Atari Games, 1988
+
+    Ride an inner tube down the river,
+    dodging branches, alligators and
+    whirlpools. The whole board in
+    gateware: the 68010, the Toobin'
+    video, and the JSA I sound board
+    (6502, YM2151, POKEY).
+
+    ROMs are not included. Build the image
+    from your own MAME toobin romset with
+    mra_build.py and toobin.mra, and copy
+    it to Assets/toobin/common/toobin.rom
+
+    * D-pad: steer (paddles together)
+    * Y / X: left / right paddle forward
+    * L / R: left / right paddle back
+    * A / B / Start: throw (and start)
+    * Select: coin (two per player)
+    Settings and high scores save to
+    toobin.sav. Service mode: tick Service
+    Switch in the menu, then Reset Core.
+    Analogizer: in the menu; take any
+    cartridge out first.
+  requires_license: false
+funding:
