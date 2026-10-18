@@ -372,5 +372,4 @@
 - repository: augustinwinter/openfpga-tron
 - repository: alfatreze/tau-alpha
 - repository: plasticbugs/toobin
-- repository: plasticbugs/geometrywars
 - repository: danmorelle/openfpga-atari5200
