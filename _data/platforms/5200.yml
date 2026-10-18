@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: Atari 5200
+manufacturer: Atari
+year: 1982

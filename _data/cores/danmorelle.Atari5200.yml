@@ -1,0 +1,81 @@
+--- !ruby/object:Inventory::Core
+id: danmorelle.Atari5200
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-Atari5200
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: danmorelle
+  html_url: https://github.com/danmorelle/openfpga-Atari5200
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-18 15:57:20.000000000 Z
+  download_url: https://github.com/danmorelle/openfpga-Atari5200/releases/download/v0.1.0/danmorelle.Atari5200_0.1.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - '5200'
+      shortname: Atari5200
+      description: Atari 5200 SuperSystem. Port of the MiSTer Atari 5200 core.
+      author: danmorelle
+      url: https://github.com/danmorelle/openfpga-Atari5200
+      version: 0.1.0
+      date_release: '2026-10-18'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - a52
+      - bin
+      - car
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 5200.rom
+      extensions:
+  updaters:
+  info: |
+    Atari 5200 SuperSystem for Analogue Pocket.
+
+    Port of the MiSTer Atari 5200 core. Original FPGA core by Mark Watson;
+    MiSTer port by Sorgelig and Wojciech Mostowski.
+
+    Needs the 5200 BIOS: Assets/5200/common/5200.rom (2048 bytes).
+    Cartridges: .a52 .bin .rom .car (4K to 128K, incl. Bounty Bob).
+
+    Controls
+      A Fire 1 (top)    B Fire 2 (bottom)   Start Start
+      X Keypad 1        Y Keypad 2
+      L Keypad *        R Keypad #
+      Select tap        Pause
+      Hold Select:  X=3 Y=4 A=5 B=6
+                    Up=7 Right=8 Down=9 Left=0
+                    Start=Reset key
+      Dock L2/R2        Pause / Reset key
+
+    16K carts come in one-chip and two-chip versions. Auto usually picks
+    correctly; if a 16K game shows garbage, try the other layout in the
+    core settings.
+
+    Twin Stick mode (Robotron 2084, Space Dungeon): X/Y/A/B or a Dock
+    controller's right stick act as the second joystick.
+  requires_license: false
+funding:
