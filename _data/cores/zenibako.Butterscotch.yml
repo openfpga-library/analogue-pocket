@@ -1,0 +1,1397 @@
+--- !ruby/object:Inventory::Core
+id: zenibako.Butterscotch
+repository: !ruby/object:GitHub::Repository
+  name: butterscotch-pocket
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: zenibako
+  html_url: https://github.com/zenibako/butterscotch-pocket
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-18 20:37:13.000000000 Z
+  download_url: https://github.com/zenibako/butterscotch-pocket/releases/download/v0.7.0/butterscotch-pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - butterscotch
+      shortname: Butterscotch
+      description: 'GameMaker runner: Undertale, Deltarune ch. 1 (own data needed)'
+      author: zenibako
+      url: https://github.com/zenibako/butterscotch-pocket
+      version: 0.7.0
+      date_release: '2026-10-18'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: OS Binary
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: OS Config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - ini
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Application
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - elf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game data
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - win
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mid
+      - mod
+      - dat
+      - iso
+      - png
+      - bin
+      - grp
+      - pak
+      - wad
+      - rom
+      - nes
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mid
+      - mod
+      - dat
+      - iso
+      - png
+      - bin
+      - grp
+      - pak
+      - wad
+      - rom
+      - nes
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sound Bank
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - ofsf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Shared Config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - cfg
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 4
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 5
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 6
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 7
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 8
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 9
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Butterscotch Pocket (unofficial)
+
+    Butterscotch, an open-source GameMaker
+    runner by MrPowerGamerBR, on openfpgaOS.
+    It runs Undertale v1.08 and, as an
+    experiment, Deltarune Chapter 1. You
+    need to provide your own game files.
+
+    Put in Assets/butterscotch/common:
+      data.win      from your game
+      textures.bin  built from data.win
+      music.bin     built from data.win
+    Deltarune: deltarune.win,
+      dr_textures.bin, dr_music.bin
+
+    Controls
+      D-pad    Move
+      A/Start  Confirm
+      B        Cancel
+      X or Y   Game menu
+      Select   Butterscotch menu
+      L        Toggle speed/accuracy
+               (starts in speed)
+
+    Select > Debug:
+      Save log to SD card comes first.
+      Save-state status checks whether
+      the current scene can be saved.
+      Enable debug buttons for:
+      R           Log overlay
+      Hold Select and press:
+      Right/Left  Next/previous room
+      Start       Pause on/off
+      A           Step a frame (paused)
+      B           Unstick (interact = 0)
+      X           Script times in the log
+      Y           Save the log to the card
+
+    Starting takes about 20 seconds.
+    After saving the log, quit through the
+    Analogue menu to keep the log.
+
+    github.com/zenibako/butterscotch-pocket
+    No association with or endorsement by
+    any software it runs.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-19 02:13:24.000000000 Z
+  download_url: https://github.com/zenibako/butterscotch-pocket/releases/download/v0.7.1/butterscotch-pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - butterscotch
+      shortname: Butterscotch
+      description: 'GameMaker runner: Undertale, Deltarune ch. 1 (own data needed)'
+      author: zenibako
+      url: https://github.com/zenibako/butterscotch-pocket
+      version: 0.7.1
+      date_release: '2026-10-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: OS Binary
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: OS Config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - ini
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Application
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - elf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game data
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - win
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mid
+      - mod
+      - dat
+      - iso
+      - png
+      - bin
+      - grp
+      - pak
+      - wad
+      - rom
+      - nes
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mid
+      - mod
+      - dat
+      - iso
+      - png
+      - bin
+      - grp
+      - pak
+      - wad
+      - rom
+      - nes
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sound Bank
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - ofsf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Shared Config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - cfg
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 4
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 5
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 6
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 7
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 8
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 9
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Butterscotch Pocket (unofficial)
+
+    Butterscotch, an open-source GameMaker
+    runner by MrPowerGamerBR, on openfpgaOS.
+    It runs Undertale v1.08 and, as an
+    experiment, Deltarune Chapter 1. You
+    need to provide your own game files.
+
+    Put in Assets/butterscotch/common:
+      data.win      from your game
+      textures.bin  built from data.win
+      music.bin     built from data.win
+    Deltarune: deltarune.win,
+      dr_textures.bin, dr_music.bin
+
+    Controls
+      D-pad    Move
+      A/Start  Confirm
+      B        Cancel
+      X or Y   Game menu
+      Select   Butterscotch menu
+      L        Toggle speed/accuracy
+               (starts in speed)
+
+    Select > Debug:
+      Save log to SD card comes first.
+      Save-state status checks whether
+      the current scene can be saved.
+      Enable debug buttons for:
+      R           Log overlay
+      Hold Select and press:
+      Right/Left  Next/previous room
+      Start       Pause on/off
+      A           Step a frame (paused)
+      B           Unstick (interact = 0)
+      X           Script times in the log
+      Y           Save the log to the card
+
+    Starting takes about 20 seconds.
+    After saving the log, quit through the
+    Analogue menu to keep the log.
+
+    github.com/zenibako/butterscotch-pocket
+    No association with or endorsement by
+    any software it runs.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-19 02:27:07.000000000 Z
+  download_url: https://github.com/zenibako/butterscotch-pocket/releases/download/v0.7.2/butterscotch-pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - butterscotch
+      shortname: Butterscotch
+      description: 'GameMaker runner: Undertale, Deltarune ch. 1 (own data needed)'
+      author: zenibako
+      url: https://github.com/zenibako/butterscotch-pocket
+      version: 0.7.2
+      date_release: '2026-10-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: OS Binary
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: OS Config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - ini
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Application
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - elf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game data
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - win
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mid
+      - mod
+      - dat
+      - iso
+      - png
+      - bin
+      - grp
+      - pak
+      - wad
+      - rom
+      - nes
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mid
+      - mod
+      - dat
+      - iso
+      - png
+      - bin
+      - grp
+      - pak
+      - wad
+      - rom
+      - nes
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sound Bank
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - ofsf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Shared Config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - cfg
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 4
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 5
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 6
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 7
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 8
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 9
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Butterscotch Pocket (unofficial)
+
+    Butterscotch, an open-source GameMaker
+    runner by MrPowerGamerBR, on openfpgaOS.
+    It runs Undertale v1.08 and, as an
+    experiment, Deltarune Chapter 1. You
+    need to provide your own game files.
+
+    Put in Assets/butterscotch/common:
+      data.win      from your game
+      textures.bin  built from data.win
+      music.bin     built from data.win
+    Deltarune: deltarune.win,
+      dr_textures.bin, dr_music.bin
+
+    Controls
+      D-pad    Move
+      A/Start  Confirm
+      B        Cancel
+      X or Y   Game menu
+      Select   Butterscotch menu
+      L        Toggle speed/accuracy
+               (starts in speed)
+
+    Select > Debug:
+      Save log to SD card comes first.
+      Save-state status checks whether
+      the current scene can be saved.
+      Enable debug buttons for:
+      R           Log overlay
+      Hold Select and press:
+      Right/Left  Next/previous room
+      Start       Pause on/off
+      A           Step a frame (paused)
+      B           Unstick (interact = 0)
+      X           Script times in the log
+      Y           Save the log to the card
+
+    Starting takes about 20 seconds.
+    After saving the log, quit through the
+    Analogue menu to keep the log.
+
+    github.com/zenibako/butterscotch-pocket
+    No association with or endorsement by
+    any software it runs.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-19 13:19:54.000000000 Z
+  download_url: https://github.com/zenibako/butterscotch-pocket/releases/download/v0.7.3/butterscotch-pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - butterscotch
+      shortname: Butterscotch
+      description: Undertale v1.08; Deltarune ch.1 (experimental, own data)
+      author: zenibako
+      url: https://github.com/zenibako/butterscotch-pocket
+      version: 0.7.3
+      date_release: '2026-10-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: OS Binary
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: OS Config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - ini
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Application
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - elf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game data
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - win
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mid
+      - mod
+      - dat
+      - iso
+      - png
+      - bin
+      - grp
+      - pak
+      - wad
+      - rom
+      - nes
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mid
+      - mod
+      - dat
+      - iso
+      - png
+      - bin
+      - grp
+      - pak
+      - wad
+      - rom
+      - nes
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sound Bank
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - ofsf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Shared Config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - cfg
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 4
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 5
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 6
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 7
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 8
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 9
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Butterscotch Pocket (unofficial)
+
+    Undertale v1.08; Deltarune Chapter 1
+    Deltarune and save states experimental.
+    Provide your own supported game data.
+
+    Prepare data with Pocket Sync or CLI.
+    github.com/zenibako/butterscotch-pocket
+
+    Assets/butterscotch/common:
+    UT: data.win, textures.bin, music.bin
+    DR: deltarune.win, dr_textures.bin,
+        dr_music.bin
+
+    D-pad: Move; A/Start: Confirm
+    B: Cancel; X/Y: Game menu
+    Select: Butterscotch menu
+    L: Toggle speed/accuracy
+
+    Save states / sleep depend on scene.
+    Select > Debug > Save-state status
+    checks eligibility before sleeping.
+
+    Select > Debug > Save log to SD card
+    Quit via Analogue menu to keep logs.
+
+    No cartridge or link-cable support.
+    Dock: digital output only.
+
+    Butterscotch runner: MrPowerGamerBR
+    Pocket port: zenibako; on openfpgaOS
+    No endorsement by game developers.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-19 16:53:47.000000000 Z
+  download_url: https://github.com/zenibako/butterscotch-pocket/releases/download/v0.7.4/butterscotch-pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - butterscotch
+      shortname: Butterscotch
+      description: Undertale v1.08; Deltarune ch.1 (experimental, own data)
+      author: zenibako
+      url: https://github.com/zenibako/butterscotch-pocket
+      version: 0.7.4
+      date_release: '2026-10-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: OS Binary
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: OS Config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - ini
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Application
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - elf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game data
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - win
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mid
+      - mod
+      - dat
+      - iso
+      - png
+      - bin
+      - grp
+      - pak
+      - wad
+      - rom
+      - nes
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Data 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mid
+      - mod
+      - dat
+      - iso
+      - png
+      - bin
+      - grp
+      - pak
+      - wad
+      - rom
+      - nes
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sound Bank
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - ofsf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Shared Config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - cfg
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 4
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 5
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 6
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 7
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 8
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save 9
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters: !ruby/object:Analogue::Updaters
+    previous: []
+    declare_ai:
+    - OpenAI Codex
+    - Claude Code
+  info: |
+    Butterscotch Pocket (unofficial)
+
+    Undertale v1.08; Deltarune Chapter 1
+    Deltarune and save states experimental.
+    Provide your own supported game data.
+
+    Prepare data with Pocket Sync or CLI.
+    github.com/zenibako/butterscotch-pocket
+
+    Assets/butterscotch/common:
+    UT: data.win, textures.bin, music.bin
+    DR: deltarune.win, dr_textures.bin,
+        dr_music.bin
+
+    D-pad: Move; A/Start: Confirm
+    B: Cancel; X/Y: Game menu
+    Select: Butterscotch menu
+    L: Toggle speed/accuracy
+
+    Save states / sleep depend on scene.
+    Select > Debug > Save-state status
+    checks eligibility before sleeping.
+
+    Select > Debug > Save log to SD card
+    Quit via Analogue menu to keep logs.
+
+    No cartridge or link-cable support.
+    Dock: digital output only.
+
+    Butterscotch runner: MrPowerGamerBR
+    Pocket port: zenibako; on openfpgaOS
+    No endorsement by game developers.
+  requires_license: false
+funding:
