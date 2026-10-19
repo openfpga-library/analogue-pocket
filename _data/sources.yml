@@ -377,3 +377,6 @@
 - repository: zenibako/butterscotch-pocket
   assets:
     - ^butterscotch-pocket\.zip$
+- repository: zenibako/pico8pocket
+  assets:
+    - ^pico8pocket-v[0-9]+\.[0-9]+\.[0-9]+\.zip$
