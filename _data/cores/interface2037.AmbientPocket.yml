@@ -1,0 +1,53 @@
+--- !ruby/object:Inventory::Core
+id: interface2037.AmbientPocket
+repository: !ruby/object:GitHub::Repository
+  name: PocketAmbient
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: interface-2037
+  html_url: https://github.com/interface-2037/PocketAmbient
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-19 04:49:25.000000000 Z
+  download_url: https://github.com/interface-2037/PocketAmbient/releases/download/v0.6.0/interface2037.AmbientPocket_0.6.0_2026-10-18.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - ambient
+      shortname: AmbientPocket
+      description: 'Generative ambient music: DRIFT, TIDES, HUSH and MOTHER.'
+      author: interface2037
+      url: https://github.com/interface-2037/PocketAmbient
+      version: 0.6.0
+      date_release: '2026-10-18'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Saved settings
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: ambient.sav
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Ambient Pocket
+
+    Generative ambient music, indefinitely: DRIFT, TIDES, HUSH and MOTHER.
+    The composer runs on the Pocket (PicoRV32 soft CPU) and plays live. A or Start starts / stops,
+    Left / Right changes mode, B reseeds, Up / Down density, L / R brightness, X cycles the visuals
+    (Full / Minimal / Off), Y shows the info box. Hold Select + Start for 2 s to lock the buttons
+    (Pocket lock). Supports sleep / wake and Memories. Settings are also in the core menu.
+    Based on the openFPGA core template (https://github.com/open-fpga/core-template).
+  requires_license: false
+funding:
