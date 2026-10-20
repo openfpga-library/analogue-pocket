@@ -1,0 +1,67 @@
+--- !ruby/object:Inventory::Core
+id: danmorelle.VC4000
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-VC4000
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: danmorelle
+  html_url: https://github.com/danmorelle/openfpga-VC4000
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-20 13:34:57.000000000 Z
+  download_url: https://github.com/danmorelle/openfpga-VC4000/releases/download/v0.1.0/danmorelle.VC4000_0.1.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - vc4000
+      shortname: VC4000
+      description: Interton VC 4000 and compatible consoles. Port of the MiSTer VC4000
+        core.
+      author: danmorelle
+      url: https://github.com/danmorelle/openfpga-VC4000
+      version: 0.1.0
+      date_release: '2026-10-20'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - rom
+  updaters:
+  info: |
+    Interton VC 4000 for Analogue Pocket.
+
+    Port of the MiSTer VC4000 core (Signetics 2650 CPU and 2636 video
+    chip). Also runs games for the compatible consoles, such as the
+    Acetronic MPU-1000 and Occitane OC2000.
+
+    No BIOS needed. Cartridges: .bin (up to 8 KB) in Assets/vc4000/common.
+
+    Controls
+      A Fire (key 2)    B Key 1     X Key 3     Y Key 0
+      L Clear           R Enter     Start Start
+      Select tap        Game Select
+      Hold Select:  X=4 Y=5 A=6 B=7 Up=8 Right=9
+      Dock L2           Game Select
+
+    The original joysticks are analog. A Dock controller's left stick
+    works as one. With the D-pad, choose Absolute (jumps to the edges) or
+    Gradual (moves step by step) in the core settings.
+
+    Runs at the original 50 Hz PAL speed.
+  requires_license: false
+funding:
