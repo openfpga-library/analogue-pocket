@@ -1,0 +1,74 @@
+--- !ruby/object:Inventory::Core
+id: danmorelle.Astrocade
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-Astrocade
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: danmorelle
+  html_url: https://github.com/danmorelle/openfpga-Astrocade
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-20 22:44:02.000000000 Z
+  download_url: https://github.com/danmorelle/openfpga-Astrocade/releases/download/v0.1.0/danmorelle.Astrocade_0.1.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - astrocade
+      shortname: Astrocade
+      description: Bally Astrocade. Port of the MiSTer Astrocade core.
+      author: danmorelle
+      url: https://github.com/danmorelle/openfpga-Astrocade
+      version: 0.1.0
+      date_release: '2026-10-20'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: astrocade.rom
+      extensions:
+  updaters:
+  info: |
+    Bally Astrocade for Analogue Pocket.
+
+    Port of the MiSTer Astrocade core (MikeJ's Bally Astrocade design,
+    T80 Z80 CPU by Daniel Wallner, MiSTer port by Kitrinx and others).
+
+    Needs the BIOS: Assets/astrocade/common/astrocade.rom (8192 bytes,
+    often called astro.bin). Cartridges: .bin, up to 8 KB.
+
+    Controls
+      D-pad Joystick    A Trigger      L/R Turn the knob
+      B Keypad 1        X Keypad 2     Y Keypad 3
+      Start Keypad =
+      Hold Select:  X=4 Y=5 A=6 B=7 Up=8 Right=9 Down=0
+                    Left=CE  L=-  R=+  Start=C
+
+    A Dock controller's left analog stick turns the knob.
+
+    To pick a game: press its number on the keypad, or pull the trigger,
+    turn the knob to the number and pull the trigger again. Reset in the
+    core settings brings back the game menu.
+  requires_license: false
+funding:
