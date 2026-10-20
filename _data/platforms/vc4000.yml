@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: VC 4000
+manufacturer: Interton
+year: 1978
