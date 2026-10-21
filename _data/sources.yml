@@ -382,3 +382,6 @@
     - ^pico8pocket-v[0-9]+\.[0-9]+\.[0-9]+\.zip$
 - repository: danmorelle/openfpga-vc4000
 - repository: danmorelle/openfpga-astrocade
+- repository: defgenx/openfpga-atarist
+  assets:
+    - defgenx.AtariST
