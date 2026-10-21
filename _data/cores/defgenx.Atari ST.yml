@@ -1,0 +1,9 @@
+--- !ruby/object:Inventory::Core
+id: defgenx.Atari ST
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-AtariST
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: defgenx
+  html_url: https://github.com/defgenx/openfpga-AtariST
+releases: []
+funding:

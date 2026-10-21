@@ -1,0 +1,1212 @@
+--- !ruby/object:Inventory::Core
+id: defgenx.AtariST
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-AtariST
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: defgenx
+  html_url: https://github.com/defgenx/openfpga-AtariST
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-04 11:44:56.000000000 Z
+  download_url: https://github.com/defgenx/openfpga-AtariST/releases/download/v0.1.3/defgenx.AtariST.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - atarist
+      shortname: AtariST
+      description: Atari ST/STE/Mega STE, port of the MiSTery core
+      author: defgenx
+      url: https://github.com/defgenx/openfpga-AtariST
+      version: 0.1.3
+      date_release: '2026-10-04'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: TOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tos.img
+      extensions:
+      - img
+      - rom
+      - bin
+      - tos
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-04 13:31:45.000000000 Z
+  download_url: https://github.com/defgenx/openfpga-AtariST/releases/download/v0.1.4/defgenx.AtariST.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - atarist
+      shortname: AtariST
+      description: Atari ST/STE/Mega STE, port of the MiSTery core
+      author: defgenx
+      url: https://github.com/defgenx/openfpga-AtariST
+      version: 0.1.4
+      date_release: '2026-10-04'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: TOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tos.img
+      extensions:
+      - img
+      - rom
+      - bin
+      - tos
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-04 15:32:42.000000000 Z
+  download_url: https://github.com/defgenx/openfpga-AtariST/releases/download/v0.1.5/defgenx.AtariST.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - atarist
+      shortname: AtariST
+      description: Atari ST/STE/Mega STE, port of the MiSTery core
+      author: defgenx
+      url: https://github.com/defgenx/openfpga-AtariST
+      version: 0.1.5
+      date_release: '2026-10-04'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: TOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tos.img
+      extensions:
+      - img
+      - rom
+      - bin
+      - tos
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-04 16:53:19.000000000 Z
+  download_url: https://github.com/defgenx/openfpga-AtariST/releases/download/v0.1.6/defgenx.AtariST.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - atarist
+      shortname: AtariST
+      description: Atari ST/STE/Mega STE, port of the MiSTery core
+      author: defgenx
+      url: https://github.com/defgenx/openfpga-AtariST
+      version: 0.1.6
+      date_release: '2026-10-04'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: TOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tos.img
+      extensions:
+      - img
+      - rom
+      - bin
+      - tos
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-04 17:47:26.000000000 Z
+  download_url: https://github.com/defgenx/openfpga-AtariST/releases/download/v0.2.0/defgenx.AtariST.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - atarist
+      shortname: AtariST
+      description: Atari ST/STE/Mega STE, port of the MiSTery core
+      author: defgenx
+      url: https://github.com/defgenx/openfpga-AtariST
+      version: 0.2.0
+      date_release: '2026-10-04'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: TOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tos.img
+      extensions:
+      - img
+      - rom
+      - bin
+      - tos
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-04 18:02:42.000000000 Z
+  download_url: https://github.com/defgenx/openfpga-AtariST/releases/download/v0.2.1/defgenx.AtariST.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - atarist
+      shortname: AtariST
+      description: Atari ST/STE/Mega STE, port of the MiSTery core
+      author: defgenx
+      url: https://github.com/defgenx/openfpga-AtariST
+      version: 0.2.1
+      date_release: '2026-10-04'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: TOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tos.img
+      extensions:
+      - img
+      - rom
+      - bin
+      - tos
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - stc
+      - img
+      - rom
+      - bin
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-04 19:10:50.000000000 Z
+  download_url: https://github.com/defgenx/openfpga-AtariST/releases/download/v0.2.2/defgenx.AtariST.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - atarist
+      shortname: AtariST
+      description: Atari ST/STE/Mega STE, port of the MiSTery core
+      author: defgenx
+      url: https://github.com/defgenx/openfpga-AtariST
+      version: 0.2.2
+      date_release: '2026-10-04'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: TOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tos.img
+      extensions:
+      - img
+      - rom
+      - bin
+      - tos
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - stc
+      - img
+      - rom
+      - bin
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-05 10:06:20.000000000 Z
+  download_url: https://github.com/defgenx/openfpga-AtariST/releases/download/v0.2.3/defgenx.AtariST.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - atarist
+      shortname: AtariST
+      description: Atari ST/STE/Mega STE, port of the MiSTery core
+      author: defgenx
+      url: https://github.com/defgenx/openfpga-AtariST
+      version: 0.2.3
+      date_release: '2026-10-05'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: TOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tos.img
+      extensions:
+      - img
+      - rom
+      - bin
+      - tos
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - stc
+      - img
+      - rom
+      - bin
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-05 21:29:35.000000000 Z
+  download_url: https://github.com/defgenx/openfpga-AtariST/releases/download/v0.2.4/defgenx.AtariST.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - atarist
+      shortname: AtariST
+      description: Atari ST/STE/Mega STE, port of the MiSTery core
+      author: defgenx
+      url: https://github.com/defgenx/openfpga-AtariST
+      version: 0.2.4
+      date_release: '2026-10-05'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: TOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tos.img
+      extensions:
+      - img
+      - rom
+      - bin
+      - tos
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - stc
+      - img
+      - rom
+      - bin
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-05 21:47:59.000000000 Z
+  download_url: https://github.com/defgenx/openfpga-AtariST/releases/download/v0.2.5/defgenx.AtariST.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - atarist
+      shortname: AtariST
+      description: Atari ST/STE/Mega STE, port of the MiSTery core
+      author: defgenx
+      url: https://github.com/defgenx/openfpga-AtariST
+      version: 0.2.5
+      date_release: '2026-10-05'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: TOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tos.img
+      extensions:
+      - img
+      - rom
+      - bin
+      - tos
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - stc
+      - img
+      - rom
+      - bin
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-06 00:01:15.000000000 Z
+  download_url: https://github.com/defgenx/openfpga-AtariST/releases/download/v0.2.6/defgenx.AtariST.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - atarist
+      shortname: AtariST
+      description: Atari ST/STE/Mega STE, port of the MiSTery core
+      author: defgenx
+      url: https://github.com/defgenx/openfpga-AtariST
+      version: 0.2.6
+      date_release: '2026-10-06'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: TOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tos.img
+      extensions:
+      - img
+      - rom
+      - bin
+      - tos
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - stc
+      - img
+      - rom
+      - bin
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-06 12:25:19.000000000 Z
+  download_url: https://github.com/defgenx/openfpga-AtariST/releases/download/v0.2.7/defgenx.AtariST.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - atarist
+      shortname: AtariST
+      description: Atari ST/STE/Mega STE, port of the MiSTery core
+      author: defgenx
+      url: https://github.com/defgenx/openfpga-AtariST
+      version: 0.2.7
+      date_release: '2026-10-06'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: TOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tos.img
+      extensions:
+      - img
+      - rom
+      - bin
+      - tos
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - stc
+      - img
+      - rom
+      - bin
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-06 14:11:58.000000000 Z
+  download_url: https://github.com/defgenx/openfpga-AtariST/releases/download/v0.2.8/defgenx.AtariST.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - atarist
+      shortname: AtariST
+      description: Atari ST/STE/Mega STE, port of the MiSTery core
+      author: defgenx
+      url: https://github.com/defgenx/openfpga-AtariST
+      version: 0.2.8
+      date_release: '2026-10-06'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: TOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tos.img
+      extensions:
+      - img
+      - rom
+      - bin
+      - tos
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - stc
+      - img
+      - rom
+      - bin
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-21 06:59:09.000000000 Z
+  download_url: https://github.com/defgenx/openfpga-AtariST/releases/download/v0.2.9/defgenx.AtariST.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - atarist
+      shortname: AtariST
+      description: Atari ST/STE/Mega STE, port of the MiSTery core
+      author: defgenx
+      url: https://github.com/defgenx/openfpga-AtariST
+      version: 0.2.9
+      date_release: '2026-10-21'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: TOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tos.img
+      extensions:
+      - img
+      - rom
+      - bin
+      - tos
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy A
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Floppy B
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - st
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 0
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Hard Disk 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - hd
+      - img
+      - vhd
+      - hdf
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - stc
+      - img
+      - rom
+      - bin
+  updaters:
+  info:
+  requires_license: false
+funding:
