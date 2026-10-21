@@ -81,4 +81,80 @@ releases:
     Start: Pause. Select: Game.com Menu.
     When the Game.com is off, press A, B, X, Y or Start to turn it on.
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-21 05:10:53.000000000 Z
+  download_url: https://github.com/jakesjews/Analogue_Pocket_GameCom/releases/download/v0.3.3/jakesjews.GameCom_0.3.3.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gamecom
+      shortname: GameCom
+      description: Tiger Game.com. MiSTer core by Kitrinx; Pocket port.
+      author: jakesjews
+      url: https://github.com/jakesjews/Analogue_Pocket_GameCom
+      version: 0.3.3
+      date_release: '2026-10-21'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge 1
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - tgc
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: External BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: boot.rom
+      extensions:
+      - rom
+      - bin
+      - tgc
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - tgc
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Console Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: gamecom.sav
+      extensions:
+  updaters:
+  info: |
+    Game.com for Analogue Pocket
+    Original FPGA core: Kitrinx. Pocket port: jakesjews.
+    Needs the 256 KB external BIOS at Assets/gamecom/common/boot.rom.
+    L + D-pad: move touch cursor; R or L + A: touch.
+    Start: Pause. Select: Game.com Menu.
+    When the Game.com is off, press A, B, X, Y or Start to turn it on.
+    Link two Pockets with a Game Boy link cable for Compete.com two-player games.
+  requires_license: false
 funding:
