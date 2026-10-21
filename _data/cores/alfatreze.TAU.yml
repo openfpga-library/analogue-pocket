@@ -1,0 +1,106 @@
+--- !ruby/object:Inventory::Core
+id: alfatreze.TAU
+repository: !ruby/object:GitHub::Repository
+  name: Tau-Alpha
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: alfatreze
+  html_url: https://github.com/alfatreze/Tau-Alpha
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-21 13:25:23.000000000 Z
+  download_url: https://github.com/alfatreze/Tau-Alpha/releases/download/v0.6.1/alfatreze.TAU_0.6.1_2026-10-21.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - tau
+      shortname: TAU
+      description: Music player. Sync music with Tau Omega or the repo's tools
+      author: alfatreze
+      url: https://github.com/alfatreze/Tau-Alpha
+      version: 0.6.1
+      date_release: '2026-10-21'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Firmware
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: tau.rom
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Audio file
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mp3
+      - flac
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Tau loading artwork
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: tau-loading.bin
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Media library index
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tau-library.tdb
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cold image
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: tau-cold.bin
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Assets
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tau-assets.bin
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cover image
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - timg
+  updaters:
+  info: 'TAU music player for the Analogue Pocket. It plays MP3 and FLAC from the
+    SD card: the music, covers and library index must be put there with Tau Omega
+    (the companion app) or with the Python tools in the project repository (tools/sync_media.py).
+    https://github.com/alfatreze/Tau-Alpha
+
+    '
+  requires_license: false
+funding:
