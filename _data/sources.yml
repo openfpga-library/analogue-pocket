@@ -385,3 +385,6 @@
 - repository: defgenx/openfpga-atarist
   assets:
     - defgenx.AtariST
+- repository: auricom79/openfpga-openice
+  assets:
+    - ^auricom79\.OpenIce_.*\.zip$
