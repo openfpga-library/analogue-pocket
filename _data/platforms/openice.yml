@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: NHL Open Ice
+manufacturer: Midway
+year: 1995

@@ -1,0 +1,121 @@
+--- !ruby/object:Inventory::Core
+id: auricom79.OpenIce
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-openice
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: auricom79
+  html_url: https://github.com/auricom79/openfpga-openice
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-22 14:51:35.000000000 Z
+  download_url: https://github.com/auricom79/openfpga-openice/releases/download/v0.1.0-test.4/auricom79.OpenIce_0.1.0-test.4.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - openice
+      shortname: OpenIce
+      description: NHL Open Ice - experimental Pocket port.
+      author: auricom79
+      url: https://github.com/auricom79/openfpga-openice
+      version: 0.1.0-test.4
+      date_release: '2026-10-20'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Program
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: openice-program.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Graphics
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: openice-graphics.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: DCS Sound
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: openice-sound.bin
+      extensions:
+      - bin
+  updaters:
+  info:
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-22 14:58:38.000000000 Z
+  download_url: https://github.com/auricom79/openfpga-openice/releases/download/v0.1.0-test.4.1/auricom79.OpenIce_0.1.0-test.4.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - openice
+      shortname: OpenIce
+      description: NHL Open Ice - experimental Pocket port.
+      author: auricom79
+      url: https://github.com/auricom79/openfpga-openice
+      version: 0.1.0-test.4.1
+      date_release: '2026-10-22'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Program
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: openice-program.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Graphics
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: openice-graphics.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: DCS Sound
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: openice-sound.bin
+      extensions:
+      - bin
+  updaters:
+  info:
+  requires_license: false
+funding:
