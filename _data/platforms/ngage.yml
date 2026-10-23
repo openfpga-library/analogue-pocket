@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Handheld
+name: N-Gage
+manufacturer: Nokia
+year: 2003
