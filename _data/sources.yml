@@ -388,3 +388,4 @@
 - repository: auricom79/openfpga-openice
   assets:
     - ^auricom79\.OpenIce_.*\.zip$
+- repository: plasticbugs/n-gage
