@@ -392,3 +392,4 @@
 - repository: mee55237/openfpga-minicube64
   assets:
     - openfpga-minicube64.*\.zip
+    - ^openfpga-minicube64.*\.zip$
