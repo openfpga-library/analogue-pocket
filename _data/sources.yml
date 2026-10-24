@@ -389,3 +389,6 @@
   assets:
     - ^auricom79\.OpenIce_.*\.zip$
 - repository: plasticbugs/n-gage
+- repository: mee55237/openfpga-minicube64
+  assets:
+    - openfpga-minicube64.*\.zip
