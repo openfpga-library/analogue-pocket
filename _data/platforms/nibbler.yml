@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Nibbler
+manufacturer: Rock-Ola
+year: 1982

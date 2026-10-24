@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade Multi
+name: Namco System 11
+manufacturer: Namco
+year: 1994
