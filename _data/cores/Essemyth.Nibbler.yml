@@ -1,0 +1,55 @@
+--- !ruby/object:Inventory::Core
+id: Essemyth.Nibbler
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-nibbler
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: essemyth
+  html_url: https://github.com/essemyth/openfpga-nibbler
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-22 18:47:20.000000000 Z
+  download_url: https://github.com/essemyth/openfpga-nibbler/releases/download/v1.0.0/Essemyth.Nibbler_1.0.0_2026-10-22.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - nibbler
+      shortname: Nibbler
+      description: Rock-Ola Nibbler (1982) arcade core.
+      author: Essemyth
+      url: https://github.com/essemyth/openfpga-nibbler
+      version: 1.0.0
+      date_release: '2026-10-22'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Nibbler ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: nibbler.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: High Scores
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: nibbler.hi
+      extensions:
+      - hi
+  updaters:
+  info:
+  requires_license: false
+funding:
