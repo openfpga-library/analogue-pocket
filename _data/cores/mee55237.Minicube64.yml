@@ -1,0 +1,46 @@
+--- !ruby/object:Inventory::Core
+id: mee55237.Minicube64
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-minicube64
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: mee55237
+  html_url: https://github.com/mee55237/openfpga-minicube64
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-24 16:29:15.000000000 Z
+  download_url: https://github.com/mee55237/openfpga-minicube64/releases/download/1.0.0/openfpga-minicube64-1.0.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - minicube64
+      shortname: Minicube64
+      description: Minicube64 for the Analogue Pocket
+      author: mee55237
+      url: https://github.com/mee55237/openFPGA-minicube64
+      version: 1.0.0
+      date_release: '2026-10-17'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mc64
+      - bin
+  updaters:
+  info:
+  requires_license: false
+funding:
