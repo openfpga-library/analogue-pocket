@@ -393,3 +393,4 @@
   assets:
     - openfpga-minicube64.*\.zip
     - ^openfpga-minicube64.*\.zip$
+- repository: mmmax4/openfpga-konami-pregx
