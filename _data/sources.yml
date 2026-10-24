@@ -395,3 +395,6 @@
     - ^openfpga-minicube64.*\.zip$
 - repository: mmmax4/openfpga-konami-pregx
 - repository: mcnast13/namcosystem11-pocket
+- repository: essemyth/openfpga-nibbler
+  assets:
+    - Essemyth\.Nibbler_.*\.zip
