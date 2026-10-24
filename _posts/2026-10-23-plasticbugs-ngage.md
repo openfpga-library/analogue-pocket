@@ -1,7 +1,7 @@
 ---
 layout: post
 author: plasticbugs
-title: plasticbugs.ngage - 1.0.0
+title: plasticbugs.ngage - 1.1.0
 date: 2026-10-23
 categories: [Handheld, N-Gage]
 tags: [plasticbugs.ngage]
