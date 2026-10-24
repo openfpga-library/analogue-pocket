@@ -318,6 +318,8 @@
 - repository: spoonelli/atari-dual-68k
   assets:
     - AtariDual68k-pocket-
+    - AtariDual68k-klaxp-
+    - AtariDual68k-guts-
 - repository: cjchand/openfpga-mattel-football
 - repository: cjchand/openfpga-mattel-football-ii
 - repository: mhlin6402/pocketplayer
