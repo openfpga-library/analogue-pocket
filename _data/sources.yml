@@ -392,8 +392,9 @@
 - repository: mee55237/openfpga-minicube64
   assets:
     - openfpga-minicube64.*\.zip
-    - ^openfpga-minicube64.*\.zip$
 - repository: mmmax4/openfpga-konami-pregx
+  assets:
+    - mmmax4-pregx.*\.zip
 - repository: mcnast13/namcosystem11-pocket
 - repository: essemyth/openfpga-nibbler
   assets:
