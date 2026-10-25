@@ -1,0 +1,92 @@
+--- !ruby/object:Inventory::Core
+id: spoonelli.guts
+repository: !ruby/object:GitHub::Repository
+  name: Atari-Dual-68k
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: spoonelli
+  html_url: https://github.com/spoonelli/Atari-Dual-68k
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-23 03:31:19.000000000 Z
+  download_url: https://github.com/spoonelli/Atari-Dual-68k/releases/download/v0.3.0/AtariDual68k-guts-v0.3.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - guts
+      shortname: guts
+      description: Atari's unreleased Guts n' Glory prototype on the 'Escape' hardware
+        (68010, JSA-II sound with the OKI6295).
+      author: spoonelli
+      url: https://github.com/spoonelli/Atari-Dual-68k
+      version: 0.3.0
+      date_release: '2026-10-22'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: guts.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: EEPROM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: guts.sav
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Guts n' Glory - Atari's unreleased prototype (1989), on the "Escape" hardware
+    openFPGA core for Analogue Pocket - v0.3.x
+
+    Single 68010 + JSA-II audio (YM2151 + OKI6295 samples), analogue stick.
+    High scores and settings persist to the SD card.
+    ROM required: MAME 'guts', user-supplied (not included).
+
+    Controls: analogue stick (or d-pad); Button 1 (A) fire, Button 2 (B)
+    the game's own 'Left START', Button 3 (X). Select inserts a coin.
+
+    Developer HUD (core menu, off by default) shows the build number
+    bottom-right.
+
+    github.com/spoonelli/Atari-Dual-68k  (GPL-3.0)
+
+    Credits - several are licence obligations, not courtesies:
+      MAME / Aaron Giles - eprom.cpp driver + device models, behavioural
+        reference only (BSD-3-Clause)
+      MiSTer-devel / d18c7db - Arcade-Atari-system1_MiSTer RTL base (GPL-3.0)
+      TobiFlex (Tobias Gubener) - TG68K.C 68000 core (LGPL-3.0)
+      D. Wallner, M. Johnson, W. Scherr, M. Leikvoll - T65 6502 core
+        (BSD-3-style, OpenCores)
+      jotego (Jose Tejada) - jt51 YM2151 and jt6295 OKI6295 cores (GPL-3.0)
+      agg23 (Adam Gastineau) - psram.sv CRAM controller (MIT)
+      Analogue - APF framework (proprietary, Analogue SLA)
+    Full terms: LICENSE.txt and NOTICE.md in the release zip.
+  requires_license: false
+funding:
