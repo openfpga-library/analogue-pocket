@@ -742,4 +742,105 @@ releases:
     picture). The slot is powered: remove
     any cartridge first.
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-25 18:11:08.000000000 Z
+  download_url: https://github.com/plasticbugs/n-gage/releases/download/v1.4.0/ngage-pocket-sdcard.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - ngage
+      shortname: ngage
+      description: 'Nokia N-Gage (2003): an ARMv4T running the phone firmware above
+        a small kernel'
+      author: plasticbugs
+      url: https://github.com/plasticbugs/analogue-pocket-ngage
+      version: 1.4.0
+      date_release: '2026-10-25'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: NGVM kernel
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ngvm.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Phone firmware
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: sym.rom
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game drive
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Saves
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: ngage.sav
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Nokia N-Gage
+
+    The phone's own firmware (Symbian OS 6.1)
+    runs on a soft ARMv4T in the FPGA, above
+    a small kernel in place of the phone's,
+    with the game's memory card as drive E:.
+
+    Needs your own firmware dump and game
+    cards: see Assets/ngage/common/README.txt
+
+    * d-pad    the phone's arrows
+    * A / B    game keys 5 / 7
+    * X        OK, Y key 9
+    * L / R    the soft keys
+    * Select   #, Start OK
+    * Select+R the on-screen keypad: 0-9,
+               * #, C, the soft keys. D-pad
+               moves, A presses, Y moves it
+
+    Analogizer: CRT video and SNAC pads,
+    set in this core's menu (Analogizer:
+    On; H and V Position centre the
+    picture). The slot is powered: remove
+    any cartridge first.
+  requires_license: false
 funding:
