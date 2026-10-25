@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade Multi
+name: Konami pre-GX
+manufacturer: Konami
+year: 1993
