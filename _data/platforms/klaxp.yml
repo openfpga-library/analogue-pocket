@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Klax (proto)
+manufacturer: Atari Games
+year: 1989

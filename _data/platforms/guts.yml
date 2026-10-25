@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Guts n' Glory
+manufacturer: Atari Games
+year: 1989
