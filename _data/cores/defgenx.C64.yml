@@ -244,4 +244,84 @@ releases:
   updaters:
   info:
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-26 19:34:57.000000000 Z
+  download_url: https://github.com/defgenx/openfpga-C64/releases/download/v0.2.3/defgenx.C64.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - c64
+      shortname: C64
+      description: Commodore 64, port of the C64_MiSTer core
+      author: defgenx
+      url: https://github.com/defgenx/openfpga-C64
+      version: 0.2.3
+      date_release: '2026-10-26'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Program
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - prg
+      - t64
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - crt
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Disk
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - d64
+      - g64
+      - d81
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Tape
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - tap
+    - !ruby/object:Analogue::Data::DataSlot
+      name: System ROM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+      - bin
+  updaters:
+  info:
+  requires_license: false
 funding:
