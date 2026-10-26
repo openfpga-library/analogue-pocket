@@ -1,5 +1,5 @@
 --- !ruby/object:Analogue::Platform
 category: Computer
-name: Commodore 64
-manufacturer: Commodore
+name: C64
+manufacturer: Commodore International
 year: 1982
