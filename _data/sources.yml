@@ -403,3 +403,6 @@
   assets:
     - Essemyth\.Nibbler_.*\.zip
 - repository: defgenx/openfpga-c64
+- repository: miasmark/openfpga-2600
+  assets:
+    - M_Atari2600
