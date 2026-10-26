@@ -402,3 +402,4 @@
 - repository: essemyth/openfpga-nibbler
   assets:
     - Essemyth\.Nibbler_.*\.zip
+- repository: defgenx/openfpga-c64
