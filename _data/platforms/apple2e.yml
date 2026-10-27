@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: Apple IIe
+manufacturer: Apple
+year: 1979

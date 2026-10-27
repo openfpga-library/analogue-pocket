@@ -1,0 +1,149 @@
+--- !ruby/object:Inventory::Core
+id: Experimental.C64MiSTer
+repository: !ruby/object:GitHub::Repository
+  name: openFPGA-C64-MiSTer
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: toby01019
+  html_url: https://github.com/toby01019/openFPGA-C64-MiSTer
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-27 07:17:58.000000000 Z
+  download_url: https://github.com/toby01019/openFPGA-C64-MiSTer/releases/download/v0.5.1-alpha/C64-Pocket-0.5.1-Test-SD-EN.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - c64mister
+      shortname: C64MiSTer
+      description: 'C64 Alpha: EasyFlash, TobyPink samples and Dock USB keyboard'
+      author: Experimental
+      url: https://github.com/toby01019/openFPGA-C64-MiSTer
+      version: 0.5.1-alpha
+      date_release: '2026-10-26'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.3'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PRG
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - prg
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Disk 8
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - d64
+      - g64
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - crt
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Disk 9
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - d64
+      - g64
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Internal file
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - d64
+      - g64
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Internal file
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ''
+      extensions:
+      - d64
+      - g64
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BASIC ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: basic.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Character ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: characters.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: KERNAL ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: kernal.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: 1541 ROM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 1541.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: TobyPink audio bank
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: V027-AUDIO.REU
+      extensions:
+      - reu
+  updaters:
+  info:
+  requires_license: false
+funding:
