@@ -1,0 +1,47 @@
+--- !ruby/object:Inventory::Core
+id: Newsdee.Apple2e
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-apple2e
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: Newsdee
+  html_url: https://github.com/Newsdee/openfpga-apple2e
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-10-25 22:49:02.000000000 Z
+  download_url: https://github.com/Newsdee/openfpga-apple2e/releases/download/0.2.5/Apple2e_Pocket_0.2.5.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - apple2e
+      shortname: Apple2e
+      description: Apple IIe (native 560x192 streaming raster, no frame buffer; WOZ
+        floppy drive via Pocket SDRAM, on-screen keyboard; NTSC colour, hardwired
+        defaults; APF sync contract fix)
+      author: Newsdee
+      url: https://github.com/Newsdee
+      version: 0.2.5
+      date_release: '2026-10-25'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: disk
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: disk
+      extensions:
+      - woz
+  updaters:
+  info:
+  requires_license: false
+funding:
