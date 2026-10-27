@@ -410,3 +410,6 @@
   assets:
     - ^C64-Pocket-.*-Test-SD-EN\.zip$
 - repository: newsdee/openfpga-apple2e
+- repository: zenibako/vvvvvv-pocket
+  assets:
+    - ^vvvvvv-openfpga\.zip$
