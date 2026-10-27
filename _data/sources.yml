@@ -406,3 +406,6 @@
 - repository: miasmark/openfpga-2600
   assets:
     - M_Atari2600
+- repository: toby01019/openfpga-c64-mister
+  assets:
+    - ^C64-Pocket-.*-Test-SD-EN\.zip$
