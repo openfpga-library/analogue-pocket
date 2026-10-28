@@ -1,7 +1,7 @@
 ---
 layout: post
 author: zenibako
-title: zenibako.Butterscotch - 0.7.7
+title: zenibako.Butterscotch - 0.7.8
 date: 2026-10-28
 categories: [Computer, Butterscotch]
 tags: [zenibako.Butterscotch]
