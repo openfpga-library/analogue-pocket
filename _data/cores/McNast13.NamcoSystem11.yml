@@ -478,4 +478,122 @@ releases:
   updaters:
   info:
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-10-27 23:21:03.000000000 Z
+  download_url: https://github.com/McNast13/NamcoSystem11-Pocket/releases/download/v0.1.4/NamcoSystem11-pocket-core-v0.1.4.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - namco_system11
+      shortname: NamcoSystem11
+      description: Namco System 11 arcade (experimental)
+      author: McNast13
+      url: https://github.com/McNast13/NamcoSystem11-Pocket
+      version: 0.1.4
+      date_release: '2026-10-27'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Program
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Config
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Fixed ROM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Banked ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Banked ROM (2)
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: C76 program
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Wave ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: C76 BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: c76.bin
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: EEPROM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info:
+  requires_license: false
 funding:
