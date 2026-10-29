@@ -413,3 +413,4 @@
 - repository: zenibako/vvvvvv-pocket
   assets:
     - ^vvvvvv-openfpga\.zip$
+- repository: retrodriven/streetrod-pocket
