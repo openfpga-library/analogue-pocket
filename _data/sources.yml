@@ -415,3 +415,6 @@
     - ^vvvvvv-openfpga\.zip$
 - repository: retrodriven/streetrod-pocket
 - repository: frazilpop/toaplan-v2-pocket
+- repository: fbmrqs/openfpga-pocketdreamconsole
+  assets:
+    - ^fbmrqs\.PocketDreamConsole_.*\.zip$
