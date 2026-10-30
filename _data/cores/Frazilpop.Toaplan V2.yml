@@ -1,0 +1,9 @@
+--- !ruby/object:Inventory::Core
+id: Frazilpop.Toaplan V2
+repository: !ruby/object:GitHub::Repository
+  name: Toaplan-V2-Pocket
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: Frazilpop
+  html_url: https://github.com/Frazilpop/Toaplan-V2-Pocket
+releases: []
+funding:
