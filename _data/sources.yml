@@ -414,3 +414,4 @@
   assets:
     - ^vvvvvv-openfpga\.zip$
 - repository: retrodriven/streetrod-pocket
+- repository: frazilpop/toaplan-v2-pocket
