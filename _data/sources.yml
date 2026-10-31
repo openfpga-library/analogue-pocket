@@ -418,5 +418,4 @@
 - repository: fbmrqs/openfpga-pocketdreamconsole
   assets:
     - ^fbmrqs\.PocketDreamConsole_.*\.zip$
-- repository: augustinwinter/openfpga-cave
 - repository: harpmudd/harpmudd.bombjack
