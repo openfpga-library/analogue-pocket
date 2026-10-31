@@ -3,7 +3,7 @@ layout: post
 author: plasticbugs
 title: plasticbugs.smashtv - 0.2.1
 date: 2026-10-13
-categories: [Arcade, Smash T.V.]
+categories: [Arcade, Smash TV]
 tags: [plasticbugs.smashtv]
 ---
 Smash T.V.
