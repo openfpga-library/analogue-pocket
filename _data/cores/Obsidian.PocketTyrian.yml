@@ -1,9 +1,0 @@
---- !ruby/object:Inventory::Core
-id: Obsidian.PocketTyrian
-repository: !ruby/object:GitHub::Repository
-  name: PocketTyrian
-  owner: !ruby/object:GitHub::Repository::Owner
-    login: obsidian-dot-dev
-  html_url: https://github.com/obsidian-dot-dev/PocketTyrian
-releases: []
-funding:
