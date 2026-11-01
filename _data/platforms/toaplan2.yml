@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade Multi
+name: Toaplan V2
+manufacturer: Toaplan
+year: 1993
