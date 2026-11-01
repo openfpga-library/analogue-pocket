@@ -420,3 +420,4 @@
     - ^fbmrqs\.PocketDreamConsole_.*\.zip$
 - repository: harpmudd/harpmudd.bombjack
 - repository: augustinwinter/openfpga-cave
+- repository: retrodriven/streetrod2-pocket
