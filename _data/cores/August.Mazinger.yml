@@ -1,0 +1,45 @@
+--- !ruby/object:Inventory::Core
+id: August.Mazinger
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-cave
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: augustinwinter
+  html_url: https://github.com/augustinwinter/openfpga-cave
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-11-01 02:13:05.000000000 Z
+  download_url: https://github.com/augustinwinter/openfpga-cave/releases/download/v1.0.0/August.Mazinger_1.0.0_2026-10-30.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - cave
+      shortname: Mazinger
+      description: Mazinger Z (Cave) - BR-AX hardware-validated build
+      author: August
+      url: ''
+      version: 1.0.0
+      date_release: '2026-10-30'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Mazinger ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: mazinger-world.rom
+      extensions:
+      - rom
+  updaters:
+  info:
+  requires_license: false
+funding:
