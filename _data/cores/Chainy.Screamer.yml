@@ -295,4 +295,293 @@ releases:
 
     Requires your own copy of the game data.
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-11-01 23:36:04.000000000 Z
+  download_url: https://github.com/dennisbohn/openfpga-screamer/releases/download/v1.0.1/Chainy.Screamer_1.0.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - screamer
+      shortname: Screamer
+      description: 'Screamer (1995): RISC-V soft core and a hardware 3D renderer'
+      author: Chainy
+      url: https://github.com/dennisbohn/openfpga-screamer
+      version: 1.0.1
+      date_release: '2026-11-02'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Firmware
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: firmware.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Debug Log
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: debug.txt
+      extensions:
+      - txt
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Program
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: program.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MAP1H.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: GFX/MAP1H.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: GAME.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: GFX/GAME.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MAP1.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: DATA/MAP1.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: GEN.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: DATA/GEN.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: LOCAL.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: DATA/LOCAL.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SOUND.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: DATA/SOUND.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MAP2H.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: GFX/MAP2H.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MAP3H.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: GFX/MAP3H.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MAP4H.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: GFX/MAP4H.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MAP5H.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: GFX/MAP5H.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MAP6H.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: GFX/MAP6H.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MAP2.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: DATA/MAP2.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MAP3.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: DATA/MAP3.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MAP4.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: DATA/MAP4.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MAP5.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: DATA/MAP5.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MAP6.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: DATA/MAP6.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MENU.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: GFX/MENU.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: GRAF.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: GFX/GRAF.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SCREAM.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: SCREAM.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SCREAM.gog
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: SCREAM.gog
+      extensions:
+      - gog
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CHOICE.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: CHOICE.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ATTACK.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: ATTACK.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MUSIC.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: DATA/MUSIC.DAT
+      extensions:
+      - dat
+  updaters:
+  info: |
+    Screamer (Graffiti / Virgin Interactive, 1995) for the Analogue Pocket.
+
+    Requires your own copy of the game data.
+  requires_license: false
 funding:
