@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: Commander Keen
+manufacturer: id Software
+year: 1990
