@@ -339,4 +339,126 @@ releases:
     Hardware sleep and save states are not supported by this port.
     Port and preparation tooling developed with OpenAI Codex and Claude Code.
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-11-04 12:13:44.000000000 Z
+  download_url: https://github.com/zenibako/VVVVVV-pocket/releases/download/v0.2.0/vvvvvv-openfpga.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - vvvvvv
+      shortname: vvvvvv
+      description: VVVVVV and Make and Play on openfpgaOS.
+      author: zenibako
+      url: https://github.com/zenibako/VVVVVV-pocket
+      version: 0.2.0
+      date_release: '2026-10-28'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.2'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: OS Binary
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: os.bin
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: OS Config
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: vvvvvv.ini
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Application
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: vvvvvv.elf
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game Data
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: data.zip
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Fonts and Languages
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: vvvvvv-repo.zip
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Music
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: vvvvvv-music.bin
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: vvvvvv_0.sav
+      extensions:
+      - sav
+  updaters: !ruby/object:Analogue::Updaters
+    previous: []
+    declare_ai:
+    - OpenAI Codex
+    - Claude Code
+  info: |
+    VVVVVV for Analogue Pocket / openfpgaOS (altered port).
+    Based on VVVVVV, copyright Terry Cavanagh 2010-2020.
+    One core offers two launch files: vvvvvv.json (full game) and vvvvvv-mp.json
+    (Make and Play). Each edition has separate data/music and ordinary saves.
+    The full game requires your own legally obtained data.zip and converted music;
+    the preparation plugin handles only that owned installation.
+    The self-contained vvvvvv-makeandplay-openfpga.zip supplies the official free
+    Make and Play assets, including 17 player levels, with no purchase or preparation
+    plugin needed. Install it into the same core; it contains only the MAKEANDPLAY
+    application and excludes the original campaign. Its public asset filenames are
+    listed by its launch instance for Pocket Sync Required Files.
+    Game source uses the VVVVVV Source Code License v1.0 and license exceptions.
+    See LICENSE.txt, the free package's License-exceptions.txt/MAKE-AND-PLAY.txt,
+    and the release's licenses.tar.gz for notices. Complete source accompanies the
+    release; see SOURCE-AVAILABILITY.json for the matched runtime source.
+    Runtime: the pinned os20 openfpgaOS build. Ordinary game saves are supported;
+    hardware sleep and save states are not supported by this port.
+    Port and preparation tooling developed with OpenAI Codex and Claude Code.
+  requires_license: false
 funding:
