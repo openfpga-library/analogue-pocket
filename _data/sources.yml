@@ -422,3 +422,4 @@
 - repository: augustinwinter/openfpga-cave
 - repository: retrodriven/streetrod2-pocket
 - repository: dennisbohn/openfpga-screamer
+- repository: akoaysigod/pocket_saturn_core
