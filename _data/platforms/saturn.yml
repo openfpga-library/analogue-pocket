@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: Saturn
+manufacturer: Sega
+year: 1994
