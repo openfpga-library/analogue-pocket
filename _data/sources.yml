@@ -424,3 +424,6 @@
 - repository: defgenx/openfpga-vic20
   assets:
     - defgenx.VIC20
+- repository: toby01019/openfpga-c64-mister
+  assets:
+    - ^C64-Pocket-.*-Test-SD-EN\.zip$
