@@ -421,3 +421,6 @@
 - repository: dennisbohn/openfpga-screamer
 - repository: akoaysigod/pocket_saturn_core
 - repository: retrodriven/commanderkeen-pocket
+- repository: defgenx/openfpga-vic20
+  assets:
+    - defgenx.VIC20
