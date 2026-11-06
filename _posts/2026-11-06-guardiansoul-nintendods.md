@@ -1,7 +1,7 @@
 ---
 layout: post
 author: GuardianSoul
-title: GuardianSoul.NintendoDS - 0.5.0
+title: GuardianSoul.NintendoDS - 0.5.1
 date: 2026-11-06
 categories: [Handheld, Nintendo DS]
 tags: [GuardianSoul.NintendoDS]
