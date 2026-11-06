@@ -427,3 +427,6 @@
 - repository: toby01019/openfpga-c64-mister
   assets:
     - ^C64-Pocket-.*-Test-SD-EN\.zip$
+- repository: guardiansoul/openfpga-nintendods
+  assets:
+    - GuardianSoul\.NintendoDS_.*\.zip$
