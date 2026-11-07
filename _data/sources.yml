@@ -431,3 +431,6 @@
   assets:
     - GuardianSoul\.NintendoDS_.*\.zip$
 - repository: retrodriven/retrodriven.simcity
+- repository: kewalker/gba-core
+  assets:
+    - ^BitBird\.GBA_[0-9]+\.[0-9]+\.[0-9]+\.zip$
