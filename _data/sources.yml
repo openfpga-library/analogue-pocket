@@ -430,3 +430,4 @@
 - repository: guardiansoul/openfpga-nintendods
   assets:
     - GuardianSoul\.NintendoDS_.*\.zip$
+- repository: retrodriven/retrodriven.simcity
