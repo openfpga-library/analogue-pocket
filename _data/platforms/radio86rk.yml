@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: Radio-86RK
+manufacturer: Radio magazine
+year: 1986
