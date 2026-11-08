@@ -434,3 +434,6 @@
 - repository: kewalker/gba-core
   assets:
     - ^BitBird\.GBA_[0-9]+\.[0-9]+\.[0-9]+\.zip$
+- repository: miasmark/openfpga-intellivision
+  assets:
+    - M_Intellivision_
