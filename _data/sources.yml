@@ -437,3 +437,4 @@
 - repository: miasmark/openfpga-intellivision
   assets:
     - M_Intellivision_
+- repository: barabashkad/radio86-rk-pocket
