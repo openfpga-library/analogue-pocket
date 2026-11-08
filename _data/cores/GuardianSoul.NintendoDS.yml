@@ -228,4 +228,115 @@ releases:
 
     Setup, controls and source: https://github.com/GuardianSoul/openfpga-NintendoDS. The core is GPL-3.0-or-later; see the licenses folder.
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-11-08 11:38:51.000000000 Z
+  download_url: https://github.com/GuardianSoul/openfpga-NintendoDS/releases/download/v0.5.2/GuardianSoul.NintendoDS_0.5.2_2026-11-08.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - nds
+      shortname: NintendoDS
+      description: A Nintendo DS core for the Analogue Pocket
+      author: GuardianSoul
+      url: https://github.com/GuardianSoul/openfpga-NintendoDS
+      version: 0.5.2
+      date_release: '2026-11-08'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: NDS ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - nds
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ARM9 BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: bios9.bin
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ARM7 BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: bios7.bin
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Firmware
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: firmware.bin
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Core log
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: nds-log.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM Tables
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - ndt
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Boot ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: nds_boot.bin
+      extensions:
+  updaters:
+  info: |
+    Nintendo DS core for Analogue Pocket by GuardianSoul.
+
+    You need your own DS BIOS and firmware (bios9.bin, bios7.bin and firmware.bin in Assets/nds/common) and your own .nds games, in the same folder. Games start directly, without the DS menu.
+
+    Saves go to Saves/nds/common when you quit through the Pocket menu, so quit before turning the Pocket off.
+
+    Select + L or R changes the screen layout. Select + A, B, X or Y turns touch mode on or off; in touch mode the D-Pad moves the cursor and A touches. Core Settings change this.
+
+    Setup, controls and source: https://github.com/GuardianSoul/openfpga-NintendoDS. The core is GPL-3.0-or-later; see the licenses folder.
+  requires_license: false
 funding:
