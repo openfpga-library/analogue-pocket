@@ -1,5 +1,5 @@
 --- !ruby/object:Analogue::Platform
-category: fantasy console
+category: Fantasy Console
 name: Minicube64
 manufacturer: AERIF°RM
 year: 2021
