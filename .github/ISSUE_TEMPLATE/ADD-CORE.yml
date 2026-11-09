@@ -1,6 +1,7 @@
 name: Add Core
 description: Add a new core
 title: "[New Core]: "
+labels: ["new core"]
 body:
   - type: input
     id: repostiory-name
