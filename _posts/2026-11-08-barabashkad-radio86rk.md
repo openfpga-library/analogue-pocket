@@ -1,7 +1,7 @@
 ---
 layout: post
 author: BarabashkaD
-title: BarabashkaD.Radio86RK - 0.6.1
+title: BarabashkaD.Radio86RK - 0.6.2
 date: 2026-11-08
 categories: [Computer, Radio-86RK]
 tags: [BarabashkaD.Radio86RK]
