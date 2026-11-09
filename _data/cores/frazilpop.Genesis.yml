@@ -1,0 +1,72 @@
+--- !ruby/object:Inventory::Core
+id: frazilpop.Genesis
+repository: !ruby/object:GitHub::Repository
+  name: Genesis-Pocket
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: Frazilpop
+  html_url: https://github.com/Frazilpop/Genesis-Pocket
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-11-08 23:38:42.000000000 Z
+  download_url: https://github.com/Frazilpop/Genesis-Pocket/releases/download/v1.0.0/genesis-1.0.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - genesis
+      - analogizer
+      shortname: Genesis
+      description: Sega Genesis / Mega Drive core with save states
+      author: frazilpop
+      url: https://github.com/Frazilpop/Genesis-Pocket
+      version: 1.0.0
+      date_release: '2026-11-08'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - md
+      - bin
+      - gen
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Analogizer config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 1
+      filename: analogizer.bin
+      extensions:
+      - bin
+  updaters:
+  info: |
+    Sega Genesis / Mega Drive core
+
+    Based on MiSTer-devel/Genesis_MiSTer (GPL-3.0): FX68K, T80, jt12, jt89 and fpgagen's VDP.
+    Analogue Pocket port by Frazilpop.
+  requires_license: false
+funding:
