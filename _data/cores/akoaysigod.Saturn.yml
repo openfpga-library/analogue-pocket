@@ -367,4 +367,365 @@ releases:
     - Some games run slower than on a Saturn, for example Fighters Megamix's fights (30 fps instead of 60) and Doom:
       the Saturn's CPUs wait longer for the Pocket's memory than for their own.
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-11-09 05:06:47.000000000 Z
+  download_url: https://github.com/akoaysigod/pocket_saturn_core/releases/download/v0.1.1/akoaysigod.Saturn_0.1.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - saturn
+      shortname: Saturn
+      description: Sega Saturn (port of the Saturn_MiSTer core)
+      author: akoaysigod
+      url: https://github.com/akoaysigod
+      version: 0.1.1
+      date_release: '2026-11-05'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: boot.rom
+      extensions:
+      - rom
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Backup RAM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Backup Cartridge
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - csav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge ROM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Disc (.cue)
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - cue
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Track 1 (audio CD)
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 4
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 5
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 6
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 7
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 8
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 9
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 10
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 11
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 12
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 13
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 14
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 15
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 16
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 17
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 18
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 19
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 20
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 21
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 22
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 23
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 24
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 25
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+  updaters:
+  info: |
+    Sega Saturn for the Analogue Pocket, version 0.1-f2s6 (test build: fresh-eyes candidate 2, seed 6)
+    A port of the Saturn_MiSTer core (github.com/MiSTer-devel/Saturn_MiSTer) by Sergiy Dvodnenko (srg320) and
+    contributors, trimmed to fit the Pocket's FPGA: one controller (digital pad), no save states, no sleep.
+
+    BIOS: put your own Saturn BIOS in Assets/saturn/common, named boot.rom (512 KB).
+    Games: a .cue with its .bin files, each game's folder in Assets/saturn/common. The game entries (instance JSONs) go
+    in Assets/saturn/akoaysigod.Saturn; see Assets/saturn/common/HOW_TO_ADD_GAMES.txt. "BIOS (no disc)" boots the BIOS.
+    Backup RAM (internal, and the backup RAM cartridge) is saved per game.
+    Region: USA unless set in Core Settings (the core can't read a disc's region here); Reset after changing it.
+
+    Known issues
+    - Some games run slower than on a Saturn, for example Fighters Megamix's fights (30 fps instead of 60) and Doom:
+      the Saturn's CPUs wait longer for the Pocket's memory than for their own.
+  requires_license: false
 funding:
