@@ -445,3 +445,4 @@
 - repository: uniplexed/neomillie
   assets:
     - uniplexed.NeoMillie_
+    - uniplexed.NeoMillieCD_
