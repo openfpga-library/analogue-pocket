@@ -441,7 +441,7 @@
 - repository: frazilpop/genesis-pocket
 - repository: defgenx/openfpga-saturn
   assets:
-    - ^defgenx\\.Saturn\\.zip$
+    - defgenx.Saturn
 - repository: uniplexed/neomillie
   assets:
     - uniplexed.NeoMillie_
