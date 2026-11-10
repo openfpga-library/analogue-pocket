@@ -161,6 +161,161 @@ releases:
   updaters:
   info:
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-11-10 02:20:35.000000000 Z
+  download_url: https://github.com/uniplexed/neomillie/releases/download/cart-v0.5.1/uniplexed.NeoMillie_0.5.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - ng
+      shortname: NeoMillie
+      description: Neo Geo MVS and AES cartridges, from the MiSTer Neo Geo RTL
+      author: uniplexed
+      url: https://github.com/uniplexed/neomillie
+      version: 0.5.1
+      date_release: '2026-11-10'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game JSON Setup
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Memory Card
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Backup Ram
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: backup.bak
+      extensions:
+      - bak
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: uni-bios_4_0.rom
+      extensions:
+      - rom
+      - sp1
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: LO
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: 000-lo.lo
+      extensions:
+      - lo
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SFIX
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: sfix.sfix
+      extensions:
+      - sfix
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - srom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PROG
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - pbin
+      - prom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - cbin
+      - crom0
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mbin
+      - m1rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: VROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - vbin
+      - vroma0
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PROG1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - pbin
+      - prom1
+  updaters:
+  info:
+  requires_license: false
 funding: !ruby/object:GitHub::Funding
   custom:
   - https://www.paypal.com/donate/?hosted_button_id=A72RAVHX98628
