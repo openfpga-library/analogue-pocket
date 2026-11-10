@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Spy Hunter
+manufacturer: Bally Midway
+year: 1983

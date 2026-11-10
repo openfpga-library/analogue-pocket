@@ -1029,4 +1029,356 @@ releases:
   updaters:
   info:
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-11-10 14:45:41.000000000 Z
+  download_url: https://github.com/defgenx/openfpga-Saturn/releases/download/v0.1.3/defgenx.Saturn.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - saturn
+      shortname: Saturn
+      description: Sega Saturn, port of the Saturn_MiSTer core
+      author: defgenx
+      url: https://github.com/defgenx/openfpga-Saturn
+      version: 0.1.3
+      date_release: '2026-11-10'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.0'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game (.json)
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Disc (.img)
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - img
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Disc TOC
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - toc
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Backup RAM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: saturn_bram.sav
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cart backup RAM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: saturn_cart.cart
+      extensions:
+      - cart
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge ROM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 01
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 02
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 03
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 04
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 05
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 06
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 07
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 08
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 09
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 10
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 11
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 12
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 13
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 14
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 15
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 16
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 17
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 18
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 19
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 20
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 21
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 22
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CD file 23
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+      - img
+  updaters:
+  info:
+  requires_license: false
 funding:
