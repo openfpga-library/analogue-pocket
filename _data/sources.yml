@@ -442,3 +442,7 @@
 - repository: defgenx/openfpga-saturn
   assets:
     - defgenx.Saturn
+- repository: uniplexed/neomillie
+  assets:
+    - uniplexed.NeoMillie_
+    - uniplexed.NeoMillieCD_
