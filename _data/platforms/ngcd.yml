@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: Neo Geo CD
+manufacturer: SNK
+year: 1994
