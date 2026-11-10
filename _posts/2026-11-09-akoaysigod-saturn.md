@@ -3,7 +3,7 @@ layout: post
 author: akoaysigod
 title: akoaysigod.Saturn - 0.1.2
 date: 2026-11-09
-categories: [Console, Saturn]
+categories: [Console, Sega Saturn]
 tags: [akoaysigod.Saturn]
 ---
 Sega Saturn for the Analogue Pocket, version 0.1.2
