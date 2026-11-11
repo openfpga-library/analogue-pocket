@@ -1,0 +1,69 @@
+--- !ruby/object:Inventory::Core
+id: frazilpop.Snow Board Championship
+repository: !ruby/object:GitHub::Repository
+  name: Snow-Board-Championship-Pocket
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: Frazilpop
+  html_url: https://github.com/Frazilpop/Snow-Board-Championship-Pocket
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-11-11 07:35:21.000000000 Z
+  download_url: https://github.com/Frazilpop/Snow-Board-Championship-Pocket/releases/download/v1.0.0/snowboar-1.0.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - snowboar
+      shortname: Snow Board Championship
+      description: Gaelco's Snow Board Championship
+      author: frazilpop
+      url: https://github.com/Frazilpop/Snow-Board-Championship-Pocket
+      version: 1.0.0
+      date_release: '2026-11-10'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    Gaelco REF 960419/1 board: MC68000 @ 15 MHz, CG-1V video and 7-channel PCM sound, Lattice ispLSI protection.
+
+    Based on jlrh's Gaelco MiSTer cores, World Rally 2 and Alligator Hunt (GPL-3.0).
+    Analogue Pocket port by Frazilpop.
+  requires_license: false
+funding:
