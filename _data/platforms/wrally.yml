@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: World Rally
+manufacturer: Gaelco
+year: 1993

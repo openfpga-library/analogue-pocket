@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Snow Board Championship
+manufacturer: Gaelco / OMK
+year: 1996
