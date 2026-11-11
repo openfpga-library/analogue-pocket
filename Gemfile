@@ -12,13 +12,13 @@ source 'https://rubygems.org'
 # gem "jekyll", "~> 4.2.2"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
-gem 'github-pages', '~> 232', group: :jekyll_plugins
+gem 'github-pages', '~> 233', group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem 'jekyll-feed', '~> 0.17.0'
+  gem 'jekyll-feed', '~> 0.18.0'
   gem 'jekyll-minifier', '~> 0.1.10'
   gem 'jekyll-paginate', '~> 1.1'
-  gem 'jekyll-remote-theme', '~> 0.4.3'
+  gem 'jekyll-remote-theme', '~> 0.6.2'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -42,10 +42,10 @@ gem 'faraday-retry', '~> 2.4.0'
 gem 'json-schema', '~> 6.2.1'
 gem 'netrc', '~> 0.11.0'
 gem 'octokit', '~> 4.25.1'
-gem 'rubyzip', '~> 2.4.1'
+gem 'rubyzip', '~> 3.7.0'
 gem 'slugify', '~> 1.0.7'
 gem 'thor', '~> 1.5.0'
 
 group :test, :development do
-  gem 'rubocop', '~> 1.89'
+  gem 'rubocop', '~> 1.92'
 end
