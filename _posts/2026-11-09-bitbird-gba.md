@@ -3,7 +3,7 @@ layout: post
 author: BitBird
 title: BitBird.GBA - 0.1.1
 date: 2026-11-09
-categories: [Handheld, GBA]
+categories: [Handheld, Game Boy Advance]
 tags: [BitBird.GBA]
 ---
 

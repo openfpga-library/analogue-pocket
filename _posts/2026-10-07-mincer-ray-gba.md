@@ -3,7 +3,7 @@ layout: post
 author: mincer_ray
 title: mincer_ray.GBA - 1.0.0
 date: 2026-10-07
-categories: [Handheld, GBA]
+categories: [Handheld, Game Boy Advance]
 tags: [mincer_ray.GBA]
 ---
 Port by mincer_ray. Original core GBA_MiSTer by various contributers.
