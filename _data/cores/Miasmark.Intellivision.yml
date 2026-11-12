@@ -288,4 +288,145 @@ releases:
 
     Licenses: see the licenses/ folder (MIT, with third-party notices).
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-11-12 17:44:45.000000000 Z
+  download_url: https://github.com/Miasmark/openFPGA-Intellivision/releases/download/v1.0.7/M_Intellivision_Pocket_1.0.7.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - intv
+      shortname: Intellivision
+      description: Mattel Intellivision with the ECS, Intellivoice and JLP.
+      author: Miasmark
+      url: https://github.com/Miasmark/openFPGA-Intellivision
+      version: 1.0.7
+      date_release: '2026-11-12'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - int
+      - bin
+      - rom
+      - luigi
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge CFG
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - cfg
+    - !ruby/object:Analogue::Data::DataSlot
+      name: EXEC
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: exec.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: GROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: grom.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ECS ROM
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ecs.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Intellivoice
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: ivoice.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: JLP flash
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ECS tape
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - ecs
+  updaters:
+  info: |
+    Mattel Intellivision for Analogue Pocket
+    A clean-room core with the ECS, the Intellivoice, JLP cartridges and
+    save states. Timing measured against a real console (Model 2609).
+
+    System ROMs (yours to supply, in /Assets/intv/common/):
+      exec.bin     EXEC ROM, 8,192 bytes (required)
+      grom.bin     GROM, 2,048 bytes (required)
+      ecs.bin      ECS ROM, 24,576 bytes (for ECS games)
+      ivoice.bin   Intellivoice SP0256-012 ROM, 2,048 bytes (for voice games)
+
+    Cartridges: .int / .bin / .rom / .luigi (LTO Flash; an .itv loads
+    renamed .rom). A .bin that needs a .cfg takes NAME.cfg from beside
+    NAME.bin by itself. JLP games keep their flash saves in a .sav file.
+
+    Controls (Keypad Mode Auto: by the game, else Layer):
+      D-pad        the disc; L + D-pad: the 8 in-between directions
+      A / B / X    side buttons: lower right / lower left / top
+      R + D-pad    keypad 1-9 by position
+      R + Y B A    keypad Clear / 0 / Enter;  R + X: 5
+      Select       the on-screen keypad (D-pad, A presses, B closes)
+      Start        the on-screen ECS keyboard, with the ECS on (D-pad,
+                   A presses, hold Y for SHIFT and X for CTL, B closes)
+
+    ECS (menu, taken at the next Reset or load): Auto attaches it as each
+    cartridge needs. "ECS Keyboard": the USB keyboard on the Dock as the
+    computer keyboard or the music synthesizer.
+
+    While files load, or when a required one is missing, a test pattern
+    shows one block per file: green loaded, yellow another size, red
+    required and missing, grey optional and missing.
+
+    Licenses: see the licenses/ folder (MIT, with third-party notices).
+  requires_license: false
 funding:
