@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Console
+name: GameTank
+manufacturer: Clyde Shaffer
+year: 2020
