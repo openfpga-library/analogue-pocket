@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: Screamer 2
+manufacturer: Virgin Interactive
+year: 1996
