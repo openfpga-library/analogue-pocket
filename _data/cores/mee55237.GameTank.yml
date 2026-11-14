@@ -1,0 +1,55 @@
+--- !ruby/object:Inventory::Core
+id: mee55237.GameTank
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-gametank
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: mee55237
+  html_url: https://github.com/mee55237/openfpga-gametank
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-11-13 13:29:23.000000000 Z
+  download_url: https://github.com/mee55237/openfpga-gametank/releases/download/v1.02/openfpga-gametank-1.0.2.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gametank
+      shortname: GameTank
+      description: GameTank for the Analogue Pocket
+      author: mee55237
+      url: https://github.com/mee55237/openfpga-gametank
+      version: 1.0.2
+      date_release: '2026-11-14'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - gtr
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info:
+  requires_license: false
+funding:

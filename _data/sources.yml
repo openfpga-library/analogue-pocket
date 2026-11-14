@@ -450,3 +450,7 @@
 - repository: frazilpop/world-rally-pocket
 - repository: frazilpop/world-rally-2-pocket
 - repository: frazilpop/snow-board-championship-pocket
+- repository: mee55237/openfpga-gametank
+  assets:
+    - ^openfpga-gametank.*.zip$
+- repository: alfatreze/tau-gallery
