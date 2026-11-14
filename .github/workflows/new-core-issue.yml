@@ -44,7 +44,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BODY: |
             > [!CAUTION]
-            > ### Core Validation Failed
+            > ### Core Submission Failed
             > Please review the [details](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) and make any necessary corrections before re-submitting.
             >
             > _If you believe this is an error, feel free to reach out for support._
