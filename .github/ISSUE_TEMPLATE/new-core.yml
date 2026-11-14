@@ -1,10 +1,10 @@
-name: Add Core
-description: Add a new core
+name: New Core
+description: Add a new openFPGA core
 title: "[New Core]: "
 labels: ["new core"]
 body:
   - type: input
-    id: repostiory-name
+    id: repository
     attributes:
       label: GitHub Repository
       description: The GitHub repository where the openFPGA core is hosted.
@@ -16,11 +16,10 @@ body:
       value: |
         ### GitHub Release Options
         ---
-
         > [!NOTE]
         > If the openFPGA core is distributed via GitHub releases as a *single* asset, no further options are required.
   - type: input
-    id: options-filter
+    id: asset-filter
     attributes:
       label: Asset Filter
       description: Specify a RegEx pattern if the GitHub release contains multiple assets to narrow the selection.
@@ -31,7 +30,7 @@ body:
         ### Repository File Options
         ---
   - type: input
-    id: options-path
+    id: content-path
     attributes:
       label: Path
       description: Specify the path to the file if the openFPGA core is distributed as a repository file.

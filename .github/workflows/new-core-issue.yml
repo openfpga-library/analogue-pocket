@@ -1,0 +1,93 @@
+name: New Core Issue
+
+on:
+  issues:
+    types: [opened, reopened]
+
+jobs:
+  process_issue:
+    if: contains(github.event.issue.labels.*.name, 'new core')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Parse Issue
+        id: parse-issue
+        uses: openfpga-library/openfpga-toolkit/parse-issue@v0
+        with:
+          issue: "${{ github.event.issue.body }}"
+          template-path: ".github/ISSUE_TEMPLATE/new-core.yml"
+
+      - name: Download Core
+        id: download-file
+        uses: openfpga-library/openfpga-toolkit/download-file@v0
+        with:
+          repository: "${{ fromJSON(steps.parse-issue.outputs.issue).repository }}"
+          asset-filter: "${{ fromJSON(steps.parse-issue.outputs.issue).asset-filter }}"
+          content-path: "${{ fromJSON(steps.parse-issue.outputs.issue).content-path }}"
+
+      - name: Validate Core
+        uses: openfpga-library/openfpga-toolkit/validate-core@v0
+        with:
+          zip-path: "${{ steps.download-file.outputs.file-path }}"
+
+      - name: Add Issue Comment
+        if: failure()
+        run: gh issue comment "${{ github.event.issue.number }}" --body "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BODY: |
+            > [!CAUTION]
+            > ### Core Validation Failed
+            > Please review the [details](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) and make any necessary corrections before re-submitting.
+            >
+            > _If you believe this is an error, feel free to reach out for support._
+
+      - name: Install Dependencies
+        run: npm install js-yaml
+
+      - name: Update Sources
+        uses: actions/github-script@v6
+        id: update-sources
+        with:
+          result-encoding: json
+          script: |
+            const script = require('./.github/workflows/auto_core_adder/index.js')
+            const result = script({github, context, core})
+            console.log(result)
+
+      - name: Generate Token
+        uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.PR_CREATOR_APP_ID }}
+          private_key: ${{ secrets.PR_CREATOR_PRIVATE_KEY }}
+
+      - name: Create Pull Request
+        id: create-pull-request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          branch: create-pull-request/patch-${{github.event.issue.number}}
+          title: AUTOMATED PR FOR - ${{ github.event.issue.title }}
+          body: Closes \#${{ github.event.issue.number }}
+          token: ${{ steps.generate-token.outputs.token }}
+
+      - name: Enable Auto-Merge & Approve PR
+        if: steps.create-pull-request.outputs.pull-request-number
+        run: |
+          gh pr merge --squash --auto "$PR_NUMBER"
+          gh pr review --approve "$PR_NUMBER"
+        env:
+          GH_TOKEN: ${{ steps.generate-token.outputs.token }}
+          PR_NUMBER: ${{ steps.create-pull-request.outputs.pull-request-number }}
+
+      - name: Close Issue
+        if: ${{ !cancelled() }}
+        run: gh issue close "${{ github.event.issue.number }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
