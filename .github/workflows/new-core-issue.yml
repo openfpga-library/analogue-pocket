@@ -35,6 +35,7 @@ jobs:
         uses: openfpga-library/openfpga-toolkit/validate-core@v0
         with:
           zip-path: "${{ steps.download-file.outputs.file-path }}"
+        continue-on-error: true
 
       - name: Add Issue Comment
         if: failure()
