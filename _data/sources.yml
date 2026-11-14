@@ -454,3 +454,4 @@
   assets:
     - ^openfpga-gametank.*.zip$
 - repository: alfatreze/tau-gallery
+- repository: danimanx/spacefish
