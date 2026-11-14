@@ -453,3 +453,4 @@
 - repository: mee55237/openfpga-gametank
   assets:
     - ^openfpga-gametank.*.zip$
+- repository: alfatreze/tau-gallery
