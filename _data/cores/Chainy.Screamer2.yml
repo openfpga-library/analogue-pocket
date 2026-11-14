@@ -1,0 +1,336 @@
+--- !ruby/object:Inventory::Core
+id: Chainy.Screamer2
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-screamer2
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: dennisbohn
+  html_url: https://github.com/dennisbohn/openfpga-screamer2
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-11-14 00:15:30.000000000 Z
+  download_url: https://github.com/dennisbohn/openfpga-screamer2/releases/download/v1.0.0/Chainy.Screamer2_1.0.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - screamer2
+      shortname: Screamer2
+      description: 'Screamer 2 (1996): RISC-V soft core and a hardware 3D renderer'
+      author: Chainy
+      url: https://github.com/dennisbohn/openfpga-screamer2
+      version: 1.0.0
+      date_release: '2026-11-14'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Firmware
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: firmware.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Debug Log
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: debug.txt
+      extensions:
+      - txt
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Program
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: program.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SCREAMER2.zip
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: SCREAMER2.zip
+      extensions:
+      - zip
+    - !ruby/object:Analogue::Data::DataSlot
+      name: GAME.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: GAME.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: GAME.GOG
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: GAME.GOG
+      extensions:
+      - gog
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CHOICE.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: CHOICE.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ATTACK.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: ATTACK.DAT
+      extensions:
+      - dat
+  updaters:
+  info: |
+    Screamer 2 (Milestone / Virgin Interactive, 1996) for the Analogue Pocket.
+
+    Requires your own copy of the game data.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-11-14 02:36:52.000000000 Z
+  download_url: https://github.com/dennisbohn/openfpga-screamer2/releases/download/v1.1.0/Chainy.Screamer2_1.1.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - screamer2
+      shortname: Screamer2
+      description: 'Screamer 2 (1996): RISC-V soft core and a hardware 3D renderer'
+      author: Chainy
+      url: https://github.com/dennisbohn/openfpga-screamer2
+      version: 1.1.0
+      date_release: '2026-11-14'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Firmware
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: firmware.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Debug Log
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: debug.txt
+      extensions:
+      - txt
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Program
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: program.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SCREAMER2.zip
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: SCREAMER2.zip
+      extensions:
+      - zip
+    - !ruby/object:Analogue::Data::DataSlot
+      name: GAME.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: GAME.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: GAME.GOG
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: GAME.GOG
+      extensions:
+      - gog
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CHOICE.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: CHOICE.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ATTACK.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: ATTACK.DAT
+      extensions:
+      - dat
+  updaters:
+  info: |
+    Screamer 2 (Milestone / Virgin Interactive, 1996) for the Analogue Pocket.
+
+    Requires your own copy of the game data.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-11-14 14:53:36.000000000 Z
+  download_url: https://github.com/dennisbohn/openfpga-screamer2/releases/download/v1.1.1/Chainy.Screamer2_1.1.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - screamer2
+      shortname: Screamer2
+      description: 'Screamer 2 (1996): RISC-V soft core and a hardware 3D renderer'
+      author: Chainy
+      url: https://github.com/dennisbohn/openfpga-screamer2
+      version: 1.1.1
+      date_release: '2026-11-14'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Firmware
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: firmware.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Debug Log
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: debug.txt
+      extensions:
+      - txt
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Program
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: program.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: SCREAMER2.zip
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: SCREAMER2.zip
+      extensions:
+      - zip
+    - !ruby/object:Analogue::Data::DataSlot
+      name: GAME.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: GAME.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: GAME.GOG
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: GAME.GOG
+      extensions:
+      - gog
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CHOICE.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: CHOICE.DAT
+      extensions:
+      - dat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ATTACK.DAT
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: ATTACK.DAT
+      extensions:
+      - dat
+  updaters:
+  info: |
+    Screamer 2 (Milestone / Virgin Interactive, 1996) for the Analogue Pocket.
+
+    Requires your own copy of the game data.
+  requires_license: false
+funding:
