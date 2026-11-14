@@ -1,0 +1,101 @@
+--- !ruby/object:Inventory::Core
+id: alfatreze.Tau Gallery
+repository: !ruby/object:GitHub::Repository
+  name: Tau-Gallery
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: alfatreze
+  html_url: https://github.com/alfatreze/Tau-Gallery
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-11-14 01:37:23.000000000 Z
+  download_url: https://github.com/alfatreze/Tau-Gallery/releases/download/v0.9.0/alfatreze.Tau_Gallery_0.9.0_2026-11-14.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - tau_gallery
+      shortname: Tau Gallery
+      description: 'Photo gallery: fast previews, zoom and pan for big images'
+      author: alfatreze
+      url: https://github.com/alfatreze/Tau-Gallery
+      version: 0.9.0
+      date_release: '2026-11-14'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: false
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Firmware
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: tau.rom
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Audio file
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mp3
+      - flac
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Gallery loading artwork
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: tau-loading.bin
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Media library index
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tau-library.tdb
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cold image
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: tau-cold.bin
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Assets
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: tau-assets.bin
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cover image
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - timg
+  updaters:
+  info:
+  requires_license: false
+funding:
