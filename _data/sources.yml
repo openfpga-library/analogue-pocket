@@ -455,3 +455,4 @@
     - ^openfpga-gametank.*.zip$
 - repository: alfatreze/tau-gallery
 - repository: dennisbohn/openfpga-screamer2
+- repository: danimanx/spacefish
