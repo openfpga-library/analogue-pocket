@@ -9,9 +9,7 @@ jobs:
     if: contains(github.event.issue.labels.*.name, 'new core')
     runs-on: ubuntu-latest
     permissions:
-      contents: write
       issues: write
-      pull-requests: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -49,6 +47,20 @@ jobs:
             >
             > _If you believe this is an error, feel free to reach out for support._
 
+      - name: Close Issue
+        if: ${{ !cancelled() }}
+        run: gh issue close "${{ github.event.issue.number }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  update_sources:
+    runs-on: ubuntu-latest
+    needs: [process_issue]
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
+    steps:
       - name: Install Dependencies
         run: npm install js-yaml
 
@@ -85,9 +97,3 @@ jobs:
         env:
           GH_TOKEN: ${{ steps.generate-token.outputs.token }}
           PR_NUMBER: ${{ steps.create-pull-request.outputs.pull-request-number }}
-
-      - name: Close Issue
-        if: ${{ !cancelled() }}
-        run: gh issue close "${{ github.event.issue.number }}"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
