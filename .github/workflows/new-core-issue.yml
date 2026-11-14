@@ -78,11 +78,10 @@ jobs:
           body: Closes \#${{ github.event.issue.number }}
           token: ${{ steps.generate-token.outputs.token }}
 
-      - name: Enable Auto-Merge & Approve PR
+      - name: Enable Auto-Merge & Bypass Reviews
         if: steps.create-pull-request.outputs.pull-request-number
         run: |
-          gh pr merge --squash --auto "$PR_NUMBER"
-          gh pr review --approve "$PR_NUMBER"
+          gh pr merge --admin --squash --auto "$PR_NUMBER"
         env:
           GH_TOKEN: ${{ steps.generate-token.outputs.token }}
           PR_NUMBER: ${{ steps.create-pull-request.outputs.pull-request-number }}
