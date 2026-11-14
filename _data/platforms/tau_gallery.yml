@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Media Players
+name: Tau Gallery
+manufacturer: alfatreze
+year: 2026
