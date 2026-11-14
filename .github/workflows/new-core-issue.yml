@@ -11,7 +11,7 @@ jobs:
     permissions:
       issues: write
     steps:
-      - name: Checkout repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Parse Issue
@@ -61,6 +61,9 @@ jobs:
       issues: write
       pull-requests: write
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
       - name: Install Dependencies
         run: npm install js-yaml
 
