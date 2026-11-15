@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Taito F3 System
+manufacturer: Taito
+year: 1992
