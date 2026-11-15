@@ -93,7 +93,7 @@ jobs:
           body: Closes \#${{ github.event.issue.number }}
           token: ${{ steps.generate-token.outputs.token }}
 
-      - name: Enable Auto-Merge & Bypass Reviews
+      - name: Enable Auto-Merge
         if: steps.create-pull-request.outputs.pull-request-number
         run: |
           gh pr merge --auto --squash "$PR_NUMBER"
