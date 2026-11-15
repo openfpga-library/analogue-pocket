@@ -21,8 +21,7 @@ Then navigate to `http://localhost:4000/`
 openFPGA Library provides a read-only API for developers. More information can be found in the [documentation](https://openfpga-library.github.io/analogue-pocket/api/swagger/).
 
 ## Adding a new core
-
-To add a new core, go to [Issues](https://github.com/openfpga-library/analogue-pocket/issues), select the `New Issue` button, choose `Add Core`, then fill in the fields.
+To submit a new core to the openFPGA library, simply complete the [New Core template](https://github.com/openfpga-library/analogue-pocket/issues/new?template=new-core.yml).
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
