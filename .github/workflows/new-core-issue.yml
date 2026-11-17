@@ -34,7 +34,7 @@ jobs:
           zip-path: "${{ steps.download-file.outputs.file-path }}"
         continue-on-error: true
 
-      - name: Add Issue Comment
+      - name: Add Comment & Close Issue
         if: failure()
         run: |
           gh issue comment "$ISSUE_NUMBER" --body "$BODY"
