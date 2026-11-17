@@ -1,7 +1,6 @@
 name: New Core
 description: Add a new openFPGA core
 title: "[New Core]: "
-labels: ["new core"]
 body:
   - type: input
     id: repository
