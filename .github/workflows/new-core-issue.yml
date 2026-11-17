@@ -6,7 +6,6 @@ on:
 
 jobs:
   process_issue:
-    if: contains(github.event.issue.labels.*.name, 'new core')
     runs-on: ubuntu-latest
     permissions:
       issues: write
