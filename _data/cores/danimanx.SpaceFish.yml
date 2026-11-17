@@ -59,4 +59,57 @@ releases:
     Supports Darius Gaiden, Ray Force, Bubble Bobble II, Elevator Action Returns,
     Puzzle Bobble 2, 3, 4, Arkanoid Returns, Cleopatra Fortune, Twin Cobra II, and more!
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-11-17 12:34:26.000000000 Z
+  download_url: https://github.com/DanimanX/SpaceFish/releases/download/v1.0.1/SpaceFish_Pocket_v1.0.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - taitof3
+      shortname: SpaceFish
+      description: Taito F3 System arcade multigame core (Darius Gaiden, Ray Force,
+        Bubble Bobble II, Elevator Action Returns, Puzzle Bobble 2-4, and more), ported
+        from Arcade-taitoF3_MiSTer.
+      author: danimanx
+      url: https://github.com/DanimanX/SpaceFish
+      version: 1.0.1
+      date_release: '2026-11-17'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Arcade Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rom
+  updaters:
+  info: |
+    SpaceFish - Taito F3 System for Analogue Pocket
+    Ported by DanimanX from spacestate1/Arcade-taitoF3_MiSTer.
+    Hardware: Taito F3 System (MC68EC020 @ 16MHz, ES5505 Ensoniq sound, TC0630FDP video)
+    Supports Darius Gaiden, Ray Force, Bubble Bobble II, Elevator Action Returns,
+    Puzzle Bobble 2, 3, 4, Arkanoid Returns, Cleopatra Fortune, Twin Cobra II, and more!
+  requires_license: false
 funding:
