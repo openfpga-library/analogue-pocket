@@ -12,9 +12,8 @@ class ZipHelper
     Zip::File.open(path) do |zip|
       zip.each do |file|
         file_path = File.join(temp_directory, file.name)
-        directory_path = File.dirname(file_path)
-        FileUtils.mkdir_p(directory_path)
-        zip.extract(file, destination_directory: directory_path) unless File.exist?(file_path)
+        FileUtils.mkdir_p(File.dirname(file_path))
+        zip.extract(file, file.name, destination_directory: temp_directory) unless File.exist?(file_path)
       end
     end
 
