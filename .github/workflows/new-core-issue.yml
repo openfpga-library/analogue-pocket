@@ -35,7 +35,7 @@ jobs:
         continue-on-error: true
 
       - name: Add Issue Comment
-        if: failure()
+        if: failure() && steps.download-file.outcome == 'failure'
         run: gh issue comment "${{ github.event.issue.number }}" --body "$BODY"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -47,7 +47,7 @@ jobs:
             > _If you believe this is an error, feel free to reach out for support._
 
       - name: Close Issue
-        if: ${{ !cancelled() && steps.download-file.outcome == 'failure' }}
+        if: ${{ !cancelled() && steps.parse-issue.outcome == 'success' }}
         run: gh issue close "${{ github.event.issue.number }}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
