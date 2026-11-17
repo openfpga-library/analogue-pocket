@@ -34,20 +34,23 @@ jobs:
           zip-path: "${{ steps.download-file.outputs.file-path }}"
         continue-on-error: true
 
-      - name: Add Comment & Close Issue
+      - name: Add Issue Comment
         if: failure()
-        run: |
-          gh issue comment "$ISSUE_NUMBER" --body "$BODY"
-          gh issue close "$ISSUE_NUMBER"
+        run: gh issue comment "${{ github.event.issue.number }}" --body "$BODY"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ISSUE_NUMBER: ${{ github.event.issue.number }}
           BODY: |
             > [!CAUTION]
             > ### Core Submission Failed
             > Please review the [details](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) and make any necessary corrections before re-submitting.
             >
             > _If you believe this is an error, feel free to reach out for support._
+
+      - name: Close Issue
+        if: ${{ !cancelled() && steps.download-file.outcome == 'failure' }}
+        run: gh issue close "${{ github.event.issue.number }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   update_sources:
     runs-on: ubuntu-latest
