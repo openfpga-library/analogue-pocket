@@ -47,7 +47,7 @@ jobs:
             > _If you believe this is an error, feel free to reach out for support._
 
       - name: Close Issue
-        if: ${{ !cancelled() && steps.download-file.outcome != 'cancelled' }}
+        if: ${{ !cancelled() && steps.download-file.outcome == 'success' }}
         run: gh issue close "${{ github.event.issue.number }}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
