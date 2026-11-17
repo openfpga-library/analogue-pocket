@@ -36,21 +36,18 @@ jobs:
 
       - name: Add Issue Comment
         if: failure()
-        run: gh issue comment "${{ github.event.issue.number }}" --body "$BODY"
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "$BODY"
+          gh issue close "$ISSUE_NUMBER"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
           BODY: |
             > [!CAUTION]
             > ### Core Submission Failed
             > Please review the [details](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) and make any necessary corrections before re-submitting.
             >
             > _If you believe this is an error, feel free to reach out for support._
-
-      - name: Close Issue
-        if: ${{ !cancelled() }}
-        run: gh issue close "${{ github.event.issue.number }}"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   update_sources:
     runs-on: ubuntu-latest
