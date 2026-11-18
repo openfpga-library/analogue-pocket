@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Psikyo 68k
+manufacturer: Psikyo
+year: 1993
