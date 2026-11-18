@@ -457,3 +457,6 @@
 - repository: dennisbohn/openfpga-screamer2
 - repository: danimanx/spacefish
 - repository: frazilpop/pcenginecd-pocket
+- repository: DanimanX/TengaiPoketto
+  assets:
+    - ^TengaiPoketto_Pocket_.*\.zip$
