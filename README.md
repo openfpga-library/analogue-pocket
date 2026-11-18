@@ -1,6 +1,9 @@
 # openFPGA Library
 openFPGA Library is the premier destination for keeping track of cores built with [openFPGA](https://www.analogue.co/developer).
 
+## Adding a new core
+To submit a new core to the openFPGA library, simply complete the [New Core template](https://github.com/openfpga-library/analogue-pocket/issues/new?template=new-core.yml).
+
 ## Installation
 You will need to install [Ruby](https://www.ruby-lang.org/en/documentation/installation/), then run the following command in the root of the project:
 
@@ -19,9 +22,6 @@ Then navigate to `http://localhost:4000/`
 
 ## Cores API
 openFPGA Library provides a read-only API for developers. More information can be found in the [documentation](https://openfpga-library.github.io/analogue-pocket/api/swagger/).
-
-## Adding a new core
-To submit a new core to the openFPGA library, simply complete the [New Core template](https://github.com/openfpga-library/analogue-pocket/issues/new?template=new-core.yml).
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
