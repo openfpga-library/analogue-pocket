@@ -5,7 +5,7 @@ run-name: ${{ github.actor }} is updating the Analogue Pocket openFPGA Library ð
 on:
   schedule:
     # Run every 30 minutes
-    - cron: '*/30 * * * *'
+    - cron: '23,53 * * * *'
   workflow_dispatch:
 
 jobs:
