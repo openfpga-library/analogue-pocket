@@ -217,4 +217,116 @@ releases:
     Built from Mazamars312's openfpga-pcengine-cd, itself based on agg23's PC Engine port, with the chips from MiSTer's TurboGrafx16 core by Gregory Estrade, srg320, greyrogue and dshadoff. The MiSTer CD drive run as firmware on a small RISC-V CPU inside the core.
     Analogue Pocket core by Frazilpop.
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-11-18 23:08:29.000000000 Z
+  download_url: https://github.com/Frazilpop/PCEngineCD-Pocket/releases/download/v1.2.0/pcenginecd-1.2.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - pcecd
+      - analogizer
+      shortname: PCEngineCD
+      description: PC Engine CD for the Analogue Pocket with save states
+      author: frazilpop
+      url: https://github.com/Frazilpop/PCEngineCD-Pocket
+      version: 1.2.0
+      date_release: '2026-11-18'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.3'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CDRom Cue File
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - cue
+      - pce
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CDRom Bin File
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - cue
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: PCE Boot Rom
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: bios_3_0_jap.pce
+      extensions:
+      - pce
+    - !ruby/object:Analogue::Data::DataSlot
+      name: MPU Bios
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: pce_mpu_bios.bin
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: CDRom Subcode File
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sub
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Another disc
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - cue
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Analogizer config
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 1
+      filename: analogizer.bin
+      extensions:
+      - bin
+  updaters:
+  info: |
+    PC Engine CD-ROM² / TurboGrafx-CD core with save states.
+
+    Built from Mazamars312's openfpga-pcengine-cd, itself based on agg23's PC Engine port, with the chips from MiSTer's TurboGrafx16 core by Gregory Estrade, srg320, greyrogue and dshadoff. The MiSTer CD drive run as firmware on a small RISC-V CPU inside the core.
+    Analogue Pocket core by Frazilpop.
+  requires_license: false
 funding:

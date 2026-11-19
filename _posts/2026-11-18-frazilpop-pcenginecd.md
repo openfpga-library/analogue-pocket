@@ -1,7 +1,7 @@
 ---
 layout: post
 author: frazilpop
-title: frazilpop.PCEngineCD - 1.1.0
+title: frazilpop.PCEngineCD - 1.2.0
 date: 2026-11-18
 categories: [Console, PC Engine CD]
 tags: [frazilpop.PCEngineCD]
