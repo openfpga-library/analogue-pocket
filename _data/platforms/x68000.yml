@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: X68000
+manufacturer: Sharp
+year: 1987
