@@ -1,7 +1,7 @@
 ---
 layout: post
 author: bertrandom
-title: bertrandom.SkyRoads - 0.2.1
+title: bertrandom.SkyRoads - 0.2.2
 date: 2026-11-19
 categories: [Computer, SkyRoads]
 tags: [bertrandom.SkyRoads]
