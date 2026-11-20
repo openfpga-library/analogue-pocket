@@ -1,0 +1,137 @@
+--- !ruby/object:Inventory::Core
+id: bertrandom.SkyRoads
+repository: !ruby/object:GitHub::Repository
+  name: skyroads-pocket
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: bertrandom
+  html_url: https://github.com/bertrandom/skyroads-pocket
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-11-19 19:37:36.000000000 Z
+  download_url: https://github.com/bertrandom/skyroads-pocket/releases/download/v0.2.0/bertrandom.SkyRoads_0.2.0_2026-11-17.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - skyroads
+      shortname: SkyRoads
+      description: SkyRoads from its decompilation, on a RISC-V CPU in the FPGA
+      author: bertrandom
+      url: https://skyroads.org
+      version: 0.2.0
+      date_release: '2026-11-17'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Firmware
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: skyroads_fw.bin
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game data
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: skyroads_data.bin
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Progress
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: skyroads.sav
+      extensions:
+      - sav
+  updaters:
+  info: |
+    SkyRoads (c) 1993 Bluemoon Interactive, freeware: the full game is a free
+    download from http://www.bluemoon.ee/history/skyroads/index.html
+
+    The game's own code, from the decompilation at https://skyroads.org,
+    compiled for a RISC-V CPU that runs in the FPGA, with the VGA screen, the
+    AdLib (an OPL2), the Sound Blaster's samples and the PC speaker as hardware
+    next to it.  The game's files are included.
+
+    Controls: d-pad steer / accelerate / brake; A, B or Y jump (Enter in the
+    menus); Start Enter; X or Select Esc.
+  requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-11-19 19:55:40.000000000 Z
+  download_url: https://github.com/bertrandom/skyroads-pocket/releases/download/v0.2.1/bertrandom.SkyRoads_0.2.1_2026-11-19.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - skyroads
+      shortname: SkyRoads
+      description: SkyRoads from its decompilation, on a RISC-V CPU in the FPGA
+      author: bertrandom
+      url: https://skyroads.org
+      version: 0.2.1
+      date_release: '2026-11-19'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Firmware
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: skyroads_fw.bin
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game data
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: skyroads_data.bin
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Progress
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: skyroads.sav
+      extensions:
+      - sav
+  updaters:
+  info: |
+    SkyRoads (c) 1993 Bluemoon Interactive, freeware: the full game is a free
+    download from http://www.bluemoon.ee/history/skyroads/index.html
+
+    The game's own code, from the decompilation at https://skyroads.org,
+    compiled for a RISC-V CPU that runs in the FPGA, with the VGA screen, the
+    AdLib (an OPL2), the Sound Blaster's samples and the PC speaker as hardware
+    next to it.  The game's files are included.
+
+    Controls: d-pad steer / accelerate / brake; A, B or Y jump (Enter in the
+    menus); Start Enter; X or Select Esc.
+  requires_license: false
+funding:

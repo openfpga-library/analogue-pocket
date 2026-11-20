@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Computer
+name: SkyRoads
+manufacturer: Bluemoon Interactive
+year: 1993
