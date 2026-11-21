@@ -461,3 +461,6 @@
 - repository: frazilpop/x68000-pocket
 - repository: bertrandom/skyroads-pocket
 - repository: mcnast13/tekken3-pocket-core
+- repository: mmnbass/openfpga-system32
+  assets:
+    - mmnbass\.System32_
