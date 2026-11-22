@@ -32,7 +32,7 @@ jobs:
         uses: extractions/netrc@v2
         with:
           machine: api.github.com
-          username: github-actions[bot]
+          username: openfpga-library-updater[bot]
           password: ${{ steps.generate-token.outputs.token }}
 
       - name: Updater - Update Cores
