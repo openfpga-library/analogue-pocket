@@ -55,7 +55,7 @@ jobs:
           title: Update openFPGA Library
           body: |
             > [!NOTE]
-            > ### openFPGA Library Update
+            > ### Update openFPGA Library for Analogue Pocket
             > Automated Pull Request triggered by [${{github.workflow}}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}).
           token: ${{ steps.generate-token.outputs.token }}
           add-paths: |
