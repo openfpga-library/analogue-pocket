@@ -1,7 +1,5 @@
 name: Update openFPGA Library for Analogue Pocket
 
-run-name: ${{ github.actor }} is updating the openFPGA Library for Analogue Pocket 🎮
-
 on:
   schedule:
     # Run every 30 minutes
