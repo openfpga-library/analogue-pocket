@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Sega System 32
+manufacturer: Sega
+year: 1990
