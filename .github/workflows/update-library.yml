@@ -1,4 +1,4 @@
-name: Update openFPGA Library for Analogue Pocket
+name: Update openFPGA Library
 
 on:
   schedule:
@@ -37,9 +37,9 @@ jobs:
 
       - name: Updater - Update Cores
         run: |
-          echo "⚙️ Updating openFPGA Library for Analogue Pocket..."
+          echo "⚙️ Updating openFPGA Library..."
           ruby .github/workflows/updater/lib/updater.rb update-inventory
-          echo "🎉 Successfully updated openFPGA Library for Analogue Pocket!"
+          echo "🎉 Successfully updated openFPGA Library
 
       - name: Updater - Generate Posts
         run: |
@@ -52,7 +52,7 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           branch: create-pull-request/patch-${{github.run_id}}
-          title: Automated Update - openFPGA Library for Analogue Pocket
+          title: Automated update for openFPGA Library
           body: |
             > [!NOTE]
             > Triggered by [${{github.workflow}}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) workflow.
