@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: Arcade
+name: Tekken 3
+manufacturer: Namco
+year: 1997
