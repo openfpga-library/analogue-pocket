@@ -52,11 +52,10 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           branch: create-pull-request/patch-${{github.run_id}}
-          title: Update openFPGA Library
+          title: Automated Update - openFPGA Library for Analogue Pocket
           body: |
             > [!NOTE]
-            > ### Update openFPGA Library for Analogue Pocket
-            > Automated Pull Request triggered by [${{github.workflow}}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}).
+            > Triggered by [${{github.workflow}}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) workflow.
           token: ${{ steps.generate-token.outputs.token }}
           add-paths: |
             _data/cores/*.yml
