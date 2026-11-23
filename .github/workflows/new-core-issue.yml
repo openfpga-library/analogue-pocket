@@ -85,11 +85,12 @@ jobs:
 
       - name: Create Pull Request
         id: create-pull-request
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: create-pull-request/patch-${{github.event.issue.number}}
           title: AUTOMATED PR FOR - ${{ github.event.issue.title }}
           body: Closes \#${{ github.event.issue.number }}
+          committer: openfpga-library-updater[bot] <132828803+openfpga-library-updater[bot]@users.noreply.github.com>
           token: ${{ steps.generate-token.outputs.token }}
 
       - name: Enable Auto-Merge
