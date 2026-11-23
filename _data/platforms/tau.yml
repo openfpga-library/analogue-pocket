@@ -1,5 +1,5 @@
 --- !ruby/object:Analogue::Platform
-category: Media Players
+category: Media
 name: TAU
 manufacturer: alfatreze
 year: 2026
