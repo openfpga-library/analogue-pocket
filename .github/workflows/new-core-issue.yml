@@ -89,7 +89,10 @@ jobs:
         with:
           branch: create-pull-request/patch-${{github.event.issue.number}}
           title: AUTOMATED PR FOR - ${{ github.event.issue.title }}
-          body: Closes \#${{ github.event.issue.number }}
+          body: |            
+            > [!NOTE]
+            > Triggered by [${{github.workflow}}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) workflow.
+            Closes \#${{ github.event.issue.number }}
           committer: openfpga-library-updater[bot] <132828803+openfpga-library-updater[bot]@users.noreply.github.com>
           token: ${{ steps.generate-token.outputs.token }}
 
