@@ -77,7 +77,7 @@ jobs:
             console.log(result)
 
       - name: Generate Token
-        uses: tibdex/github-app-token@v1
+        uses: tibdex/github-app-token@v2
         id: generate-token
         with:
           app_id: ${{ secrets.PR_CREATOR_APP_ID }}
