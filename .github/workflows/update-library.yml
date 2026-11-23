@@ -39,7 +39,7 @@ jobs:
         run: |
           echo "⚙️ Updating openFPGA Library..."
           ruby .github/workflows/updater/lib/updater.rb update-inventory
-          echo "🎉 Successfully updated openFPGA Library
+          echo "🎉 Successfully updated openFPGA Library"
 
       - name: Updater - Generate Posts
         run: |
