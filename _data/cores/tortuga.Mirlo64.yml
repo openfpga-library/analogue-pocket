@@ -1005,4 +1005,158 @@ releases:
     Experimental: not every game works yet. Reports are welcome at:
     https://github.com/tortugaveloz/MIRLO64
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-11-23 14:20:52.000000000 Z
+  download_url: https://github.com/tortugaveloz/MIRLO64/releases/download/v1.0/tortuga.Mirlo64_1.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - n64
+      - gbc
+      - gb
+      shortname: Mirlo64
+      description: 'MIRLO 64: A Nintendo 64 core for the Analogue Pocket'
+      author: tortuga
+      url: https://github.com/tortugaveloz/MIRLO64
+      version: '1.0'
+      date_release: '2026-11-23'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - z64
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Controller Pak
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - mpk
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Runtime
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: n64rt.sys
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save-type database
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: n64savedb.txt
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game Boy save file 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game Boy save file 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Gameshark codes
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Transfer Pak 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - gb
+      - gbc
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Transfer Pak 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - gb
+      - gbc
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Gameshark choice file
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Gameshark cheat database
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: gameshark.gsdz
+      extensions:
+  updaters:
+  info: |
+    MIRLO 64: A Nintendo 64 core for the Analogue Pocket.
+
+    Put the ROMs (.z64, big-endian) in Assets/n64/common/ and launch the core. Saves (EEPROM, SRAM, FlashRAM) and the Controller Pak are kept in Saves/n64/.
+
+    The core also appears under GB and GBC so that the Transfer Pak works.
+
+    Controls are fully configurable. Consider that some games require remapping the controls, such as the C-Up button, or the D-Pad instead of the joystick.
+
+    For more information visit:
+    https://github.com/tortugaveloz/MIRLO64
+  requires_license: false
 funding:
