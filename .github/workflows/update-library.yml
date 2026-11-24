@@ -29,7 +29,7 @@ jobs:
           private-key: ${{ secrets.PR_CREATOR_PRIVATE_KEY }}
 
       - name: Setup .netrc
-        uses: extractions/netrc@v2
+        uses: extractions/netrc@v3
         with:
           machine: api.github.com
           username: openfpga-library-updater[bot]
