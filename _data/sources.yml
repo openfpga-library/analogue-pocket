@@ -464,3 +464,6 @@
 - repository: mmnbass/openfpga-system32
   assets:
     - mmnbass\.System32_
+- repository: grouchoglasses42/openfpga-nes
+  assets:
+    - groucho\.NES_\d.*\.zip
