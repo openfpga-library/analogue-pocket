@@ -22,18 +22,18 @@ jobs:
         run: bundle install
 
       - name: Generate Token
-        uses: tibdex/github-app-token@v2
-        id: generate-token
+        uses: actions/create-github-app-token@v3
+        id: app-token
         with:
-          app_id: ${{ secrets.PR_CREATOR_APP_ID }}
-          private_key: ${{ secrets.PR_CREATOR_PRIVATE_KEY }}
+          client-id: ${{ secrets.PR_CREATOR_APP_ID }}
+          private-key: ${{ secrets.PR_CREATOR_PRIVATE_KEY }}
 
       - name: Setup .netrc
         uses: extractions/netrc@v2
         with:
           machine: api.github.com
           username: openfpga-library-updater[bot]
-          password: ${{ steps.generate-token.outputs.token }}
+          password: ${{ steps.app-token.outputs.token }}
 
       - name: Updater - Update Cores
         run: |
@@ -57,7 +57,7 @@ jobs:
             > [!NOTE]
             > Triggered by [${{github.workflow}}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) workflow.
           committer: openfpga-library-updater[bot] <132828803+openfpga-library-updater[bot]@users.noreply.github.com>
-          token: ${{ steps.generate-token.outputs.token }}
+          token: ${{ steps.app-token.outputs.token }}
           add-paths: |
             _data/cores/*.yml
             _data/platforms/*.yml
@@ -69,5 +69,5 @@ jobs:
         run: |
           gh pr merge --squash "$PR_NUMBER"
         env:
-          GH_TOKEN: ${{ steps.generate-token.outputs.token }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
           PR_NUMBER: ${{ steps.create-pull-request.outputs.pull-request-number }}
