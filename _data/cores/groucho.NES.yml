@@ -1,0 +1,83 @@
+--- !ruby/object:Inventory::Core
+id: groucho.NES
+repository: !ruby/object:GitHub::Repository
+  name: openfpga-NES
+  owner: !ruby/object:GitHub::Repository::Owner
+    login: GrouchoGlasses42
+  html_url: https://github.com/GrouchoGlasses42/openfpga-NES
+releases:
+- !ruby/object:Inventory::Release
+  date: 2026-11-24 21:10:59.000000000 Z
+  download_url: https://github.com/GrouchoGlasses42/openfpga-NES/releases/download/1.1.0/groucho.NES_1.1.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - nes
+      shortname: NES
+      description: NES/FDS with MiSTer mappers, composite blend and save states
+      author: groucho
+      url: https://github.com/GrouchoGlasses42/openfpga-NES
+      version: 1.1.0
+      date_release: '2026-11-24'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cartridge
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - nes
+      - fc
+      - fds
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+      - srm
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Custom Palette
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename: palettes/custom.pal
+      extensions:
+      - pal
+    - !ruby/object:Analogue::Data::DataSlot
+      name: FDS BIOS
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: fds.bios
+      extensions:
+      - bios
+  updaters:
+  info: |
+    NES by groucho: derivative of agg23's Pocket port and MiSTer's NES core.
+    Not an official agg23 release.
+    Core by Ludvig Strigeus, sorgelig, greyrogue, Kitrinx, paulb-nl, Adam Gastineau and other contributors.
+    Nine blend modes from snckrz's NES Analogizer fork, based on Kitrinx's filter.
+    See Documentation/groucho.NES/README.md for instructions and credits.
+  requires_license: false
+funding:
