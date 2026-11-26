@@ -1738,4 +1738,123 @@ releases:
     Rumbledethumps' Picocomputer 6502
     https://picocomputer.github.io/
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-11-26 04:06:15.000000000 Z
+  download_url: https://github.com/picocomputer/rp6502/releases/download/v0.44/rp6502-0.44-pocket.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - rp6502
+      shortname: RP6502
+      description: 8-bit retro gaming computer
+      author: Rumbledethumps
+      url: https://picocomputer.github.io/
+      version: '0.44'
+      date_release: '2026-11-26'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '2.3'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: RP6502 ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - rp6502
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 1
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 2
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 3
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 4
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 5
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 6
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 7
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: File 8
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Firmware
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: firmware.bin
+      extensions:
+  updaters:
+  info: |
+    Rumbledethumps' Picocomputer 6502
+    https://picocomputer.github.io/
+  requires_license: false
 funding:
