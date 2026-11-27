@@ -9,6 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       issues: write
+    outputs:
+      repository: "${{ fromJSON(steps.parse-issue.outputs.issue).repository }}"
+      asset-filter: "${{ fromJSON(steps.parse-issue.outputs.issue).asset-filter }}"
+      content-path: "${{ fromJSON(steps.parse-issue.outputs.issue).content-path }}"
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v7
@@ -20,13 +24,19 @@ jobs:
           issue: "${{ github.event.issue.body }}"
           template-path: ".github/ISSUE_TEMPLATE/new-core.yml"
 
+  download_core:
+    runs-on: ubuntu-latest
+    needs: [process_issue]
+    permissions:
+      issues: write
+    steps:
       - name: Download Core
         id: download-file
         uses: openfpga-library/openfpga-toolkit/download-file@v0
         with:
-          repository: "${{ fromJSON(steps.parse-issue.outputs.issue).repository }}"
-          asset-filter: "${{ fromJSON(steps.parse-issue.outputs.issue).asset-filter }}"
-          content-path: "${{ fromJSON(steps.parse-issue.outputs.issue).content-path }}"
+          repository: "${{ needs.process_issue.outputs.repository }}"
+          asset-filter: "${{ needs.process_issue.outputs.asset-filter }}"
+          content-path: "${{ needs.process_issue.outputs.content-path }}"
 
       - name: Validate Core
         uses: openfpga-library/openfpga-toolkit/validate-core@v0
@@ -46,15 +56,9 @@ jobs:
             >
             > _If you believe this is an error, feel free to reach out for support._
 
-      - name: Close Issue
-        if: ${{ !cancelled() && steps.download-file.outcome == 'success' }}
-        run: gh issue close "${{ github.event.issue.number }}"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
   update_sources:
     runs-on: ubuntu-latest
-    needs: [process_issue]
+    needs: [download_core]
     permissions:
       contents: write
       issues: write
@@ -96,10 +100,15 @@ jobs:
           committer: openfpga-library-updater[bot] <132828803+openfpga-library-updater[bot]@users.noreply.github.com>
           token: ${{ steps.app-token.outputs.token }}
 
-      - name: Enable Auto-Merge
+      - name: Merge Pull Request
         if: steps.create-pull-request.outputs.pull-request-number
         run: |
           gh pr merge --squash "$PR_NUMBER"
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
           PR_NUMBER: ${{ steps.create-pull-request.outputs.pull-request-number }}
+
+      - name: Close Issue
+        run: gh issue close "${{ github.event.issue.number }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
