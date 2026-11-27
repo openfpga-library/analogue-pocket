@@ -4363,4 +4363,5 @@ releases:
 
     Setup, controls and source: https://github.com/GuardianSoul/openfpga-PlayStation. The core is GPL-2.0; see the licenses folder.
   requires_license: false
-funding:
+funding: !ruby/object:GitHub::Funding
+  ko_fi: https://ko-fi.com/guardiansoul7
