@@ -141,4 +141,145 @@ releases:
     copy them to Assets/segas32/common/ (see the README.txt there).
     Source code (GPL-3.0) and credits: https://github.com/mmnbass/openfpga-System32
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-11-27 05:55:04.000000000 Z
+  download_url: https://github.com/mmnbass/openfpga-System32/releases/download/v0.2.0/mmnbass.System32_0.2.0.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - segas32
+      shortname: System32
+      description: 'Sega System 32 for the Analogue Pocket. One core for Golden Axe:
+        The Revenge of Death Adder, Spider-Man: The Videogame and SegaSonic The Hedgehog,
+        in their World, US and Japanese versions, chosen by a Game file at launch.
+        Saved high scores for Spider-Man and SegaSonic, multiplayer with the Analogue
+        Dock, pauses while the Pocket menu is open. Needs your own ROM files (not
+        included).'
+      author: mmnbass
+      url: https://github.com/mmnbass/openfpga-System32
+      version: 0.2.0
+      date_release: '2026-11-24'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.1'
+      sleep_supported: false
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: false
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: true
+        platform_index: 0
+      filename:
+      extensions:
+      - json
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Program ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Tile ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sprite ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: EEPROM default
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Configuration
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Sound ROM
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - bin
+  updaters: !ruby/object:Analogue::Updaters
+    previous: []
+    declare_ai:
+    - Claude Code
+    - OpenAI Codex
+  info: |
+    Sega System 32 for Analogue Pocket, v0.2.0.
+    One core, one bitstream. At launch the core asks for a Game file, one per game and region, named by the full title:
+      Golden Axe - The Revenge of Death Adder (World, Rev B / US, Rev A / Japan)
+      Spider-Man - The Videogame (World / US, Rev A / Japan)
+      SegaSonic The Hedgehog (Japan, rev. C / Japan, prototype)
+    To change game, load another Game file from the core menu (the core reloads fully) or quit and launch again.
+
+    Players: with the Analogue Dock, controllers 1-4 = players 1-4; handheld = player 1 only. Every set starts with its own factory
+    cabinet and coin settings, as the arcade board shipped. For more players (Golden Axe and Spider-Man up to 4, SegaSonic 3) or
+    one coin slot per player, change them in the game's own operator menu: core menu > Operator buttons, then R = TEST and
+    L = SERVICE on controller 1. The settings are saved per set. The SegaSonic prototype has no such
+    settings and plays with three players as shipped. Details per game: the README.txt in Assets/segas32/common.
+    Controls: Select = insert coin, Start = start / join, D-pad = move, A = attack, B = jump, X or Y = magic (Golden Axe).
+    SegaSonic: the D-pad rolls the trackball, A is the button.
+    Pause: the game pauses while the Pocket menu is open (silent while paused). A button held while the menu is open is ignored
+    after it closes until you release it.
+    Saves: one per Game file, written on exit: the game's settings and its high-score table (Spider-Man, SegaSonic rev. C).
+    High scores are kept through a visit to the operator menu; the game's own clear still clears them.
+
+    Updating from v0.1.0: delete the old Game files ga2u.json and spidman.json (or those games are listed twice) and rename your
+    saves: see the README.txt in Assets/segas32/common.
+
+    ROM files (not included): make them from your own MAME sets with the System 32 ROM plugin (pupdate / Pocket Sync) or the ROM
+    tool build_roms.py from https://github.com/mmnbass/openfpga-System32; both check every ROM part and the finished images; the files
+    go in Assets/segas32/common/ (see the README.txt there).
+    Source code (GPL-3.0) and credits: https://github.com/mmnbass/openfpga-System32. Contains no ROM, BIOS or game data.
+  requires_license: false
 funding:
