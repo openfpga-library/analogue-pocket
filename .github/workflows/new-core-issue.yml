@@ -7,8 +7,6 @@ on:
 jobs:
   process_issue:
     runs-on: ubuntu-latest
-    permissions:
-      issues: write
     outputs:
       repository: "${{ fromJSON(steps.parse-issue.outputs.issue).repository }}"
       asset-filter: "${{ fromJSON(steps.parse-issue.outputs.issue).asset-filter }}"
@@ -29,6 +27,7 @@ jobs:
     needs: [process_issue]
     permissions:
       issues: write
+    if: ${{ needs.process_issue.outputs.repository != '' }}
     steps:
       - name: Download Core
         id: download-file
