@@ -1,12 +1,12 @@
 ---
 layout: post
 author: BitBird
-title: BitBird.GBA - 0.3.0
+title: BitBird.GBA - 0.3.1
 date: 2026-11-27
 categories: [Handheld, Game Boy Advance]
 tags: [BitBird.GBA]
 ---
-BitBird GBA 0.3.0
+BitBird GBA 0.3.1
 
 Play ROMs from the SD card, or insert
 a cartridge and choose Play Cartridge.

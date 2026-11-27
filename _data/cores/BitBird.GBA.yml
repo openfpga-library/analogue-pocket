@@ -446,4 +446,104 @@ releases:
     - Soft Colors
     - Real-time clock support
   requires_license: false
+- !ruby/object:Inventory::Release
+  date: 2026-11-27 19:38:47.000000000 Z
+  download_url: https://github.com/kewalker/gba-core/releases/download/v0.3.1/BitBird.GBA_0.3.1.zip
+  core: !ruby/object:Analogue::Core
+    metadata: !ruby/object:Analogue::Core::Metadata
+      platform_ids:
+      - gba
+      shortname: GBA
+      description: 'BitBird GBA: Game Boy Advance compatible openFPGA core.'
+      author: BitBird
+      url: https://github.com/kewalker/gba-core
+      version: 0.3.1
+      date_release: '2026-11-27'
+    framework: !ruby/object:Analogue::Core::Framework
+      version_required: '1.2'
+      sleep_supported: true
+      dock: !ruby/object:Analogue::Core::Framework::Dock
+        supported: true
+        analog_output: false
+      hardware: !ruby/object:Analogue::Core::Framework::Hardware
+        link_port: true
+  data: !ruby/object:Analogue::Data
+    data_slots:
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Game Pak
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - gba
+      - bin
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Save
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+    - !ruby/object:Analogue::Data::DataSlot
+      name: BIOS
+      required: true
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename: gba_bios.bin
+      extensions:
+      - bin
+      - rom
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Playtime & RTC
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: false
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - gbkstat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cart Playtime
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - gbkstat
+    - !ruby/object:Analogue::Data::DataSlot
+      name: Cart Backup
+      required: false
+      parameters: !ruby/object:Analogue::Data::DataSlot::Parameters
+        core_specific_file: true
+        instance_json: false
+        platform_index: 0
+      filename:
+      extensions:
+      - sav
+  updaters:
+  info: |
+    BitBird GBA 0.3.1
+
+    Play ROMs from the SD card, or insert
+    a cartridge and choose Play Cartridge.
+    Cartridge saves are written back to
+    the cart, with a backup on the SD card.
+
+    - Memories and sleep/wake
+    - Fast-forward
+    - Clock and playtime overlays
+    - Soft Colors
+    - Real-time clock support
+  requires_license: false
 funding:

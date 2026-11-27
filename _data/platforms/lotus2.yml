@@ -1,0 +1,5 @@
+--- !ruby/object:Analogue::Platform
+category: openfpgaOS
+name: PocketLotus2
+manufacturer: Krisalis
+year: 2026
