@@ -7,6 +7,8 @@ on:
 jobs:
   process_issue:
     runs-on: ubuntu-latest
+    permissions:
+      issues: read
     outputs:
       repository: "${{ fromJSON(steps.parse-issue.outputs.issue).repository }}"
       asset-filter: "${{ fromJSON(steps.parse-issue.outputs.issue).asset-filter }}"
