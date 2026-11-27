@@ -469,3 +469,4 @@
 - repository: grouchoglasses42/openfpga-nes
   assets:
     - groucho\.NES_\d.*\.zip
+- repository: buyukcaglar/pocketlotus2
